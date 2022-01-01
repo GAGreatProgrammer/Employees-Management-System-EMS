@@ -9,5 +9,7 @@ namespace Employees_Management_System.Class
     public static class GlobalVariables
     {
         public static string EmployeeID { get; set; }
+
+        public static string UserName { get; set; }
     }
 }
