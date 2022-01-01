@@ -61,6 +61,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\GlobalVariables.cs" />
     <Compile Include="Custom Controls\CustomButton.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -128,7 +129,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Class\" />
     <Folder Include="Email Template\" />
     <Folder Include="Forms\" />
     <Folder Include="Namespaces\" />
