@@ -11,5 +11,6 @@ namespace Employees_Management_System.Class
         public static string EmployeeID { get; set; }
 
         public static string UserName { get; set; }
+        public static string VisitID { get; set; }
     }
 }
