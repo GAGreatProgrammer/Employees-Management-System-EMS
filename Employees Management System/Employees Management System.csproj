@@ -193,6 +193,24 @@
     </Compile>
     <Compile Include="Custom Controls\MenuColorTable.cs" />
     <Compile Include="Custom Controls\MenuRenderer.cs" />
+    <Compile Include="Forms\Blacklist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Blacklist.Designer.cs">
+      <DependentUpon>Blacklist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Department.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Department.Designer.cs">
+      <DependentUpon>Department.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EmployeeRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EmployeeRegistration.Designer.cs">
+      <DependentUpon>EmployeeRegistration.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -204,6 +222,12 @@
     </Compile>
     <Compile Include="Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\VIPEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\VIPEmployee.Designer.cs">
+      <DependentUpon>VIPEmployee.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -233,11 +257,23 @@
     <EmbeddedResource Include="Custom Controls\CustomTextBoxRounded.resx">
       <DependentUpon>CustomTextBoxRounded.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Blacklist.resx">
+      <DependentUpon>Blacklist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Department.resx">
+      <DependentUpon>Department.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EmployeeRegistration.resx">
+      <DependentUpon>EmployeeRegistration.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\VIPEmployee.resx">
+      <DependentUpon>VIPEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -298,46 +334,13 @@
     <None Include="Resources\minus_24px.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\20945894.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\20944142.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\21404.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\20943865.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\5228739.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\3647093.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\person_40px.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Done_48px.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Close_48px.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\bell_curve_80px.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\refresh_30px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\10894.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\2846317.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\5867.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\8432.jpg" />
@@ -350,6 +353,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\padlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Employees.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Employees_Visits.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

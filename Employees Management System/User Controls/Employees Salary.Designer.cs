@@ -176,7 +176,7 @@ namespace Employees_Management_System.User_Controls
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Employees_Management_System.Properties.Resources._5867;
+            //this.pictureBox1.Image = global::Employees_Management_System.Properties.Resources._5867;
             this.pictureBox1.Location = new System.Drawing.Point(38, 14);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(300, 210);

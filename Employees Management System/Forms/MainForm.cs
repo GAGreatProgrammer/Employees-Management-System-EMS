@@ -1,4 +1,5 @@
-﻿using Employees_Management_System.User_Controls;
+﻿using Employees_Management_System.Forms;
+using Employees_Management_System.User_Controls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -87,6 +88,23 @@ namespace Employees_Management_System
             {
                 Employees_Visits.Instance.BringToFront();
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            EmployeeRegistration employeeRegistration = new EmployeeRegistration();
+            employeeRegistration.Show();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Blacklist blacklist = new Blacklist();
+            blacklist.Show();
         }
     }
 }
