@@ -113,6 +113,16 @@ namespace Employees_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Employee_QR_Card {
+            get {
+                object obj = ResourceManager.GetObject("Employee_QR_Card", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Employees {
             get {
                 object obj = ResourceManager.GetObject("Employees", resourceCulture);
@@ -123,9 +133,29 @@ namespace Employees_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Employees_Salary {
+            get {
+                object obj = ResourceManager.GetObject("Employees_Salary", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Employees_Visits {
             get {
                 object obj = ResourceManager.GetObject("Employees_Visits", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap EMS_Logo {
+            get {
+                object obj = ResourceManager.GetObject("EMS Logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -156,6 +186,26 @@ namespace Employees_Management_System.Properties {
         internal static System.Drawing.Bitmap refresh_30px {
             get {
                 object obj = ResourceManager.GetObject("refresh_30px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap search_24px {
+            get {
+                object obj = ResourceManager.GetObject("search_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap synchronize_24px {
+            get {
+                object obj = ResourceManager.GetObject("synchronize_24px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

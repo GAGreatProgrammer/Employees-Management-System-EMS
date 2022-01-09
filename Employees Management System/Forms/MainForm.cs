@@ -106,5 +106,26 @@ namespace Employees_Management_System
             Blacklist blacklist = new Blacklist();
             blacklist.Show();
         }
+
+        private void btnAddVisits_Click(object sender, EventArgs e)
+        {
+            if (!contentPanel.Controls.Contains(EmployeesQRCard.Instance))
+            {
+                contentPanel.Controls.Add(EmployeesQRCard.Instance);
+                EmployeesQRCard.Instance.Dock = DockStyle.Fill;
+                EmployeesQRCard.Instance.BringToFront();
+            }
+
+            else
+            {
+                EmployeesQRCard.Instance.BringToFront();
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Test test = new Test();
+            test.Show();
+        }
     }
 }

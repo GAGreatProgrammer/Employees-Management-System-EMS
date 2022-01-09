@@ -48,6 +48,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.2.2.5\lib\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video, Version=2.2.5.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Video.2.2.5\lib\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow, Version=2.2.5.0, Culture=neutral, PublicKeyToken=61ea4348d43881b7, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Video.DirectShow.2.2.5\lib\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.Charts.WinForms, Version=1.1.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Bunifu.Charts.WinForms.1.1.3\lib\net40\Bunifu.Charts.WinForms.dll</HintPath>
     </Reference>
@@ -223,6 +232,12 @@
     <Compile Include="Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Test.Designer.cs">
+      <DependentUpon>Test.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\VIPEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -254,6 +269,12 @@
     <Compile Include="User Controls\Employees.Designer.cs">
       <DependentUpon>Employees.cs</DependentUpon>
     </Compile>
+    <Compile Include="User Controls\EmployeesQRCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\EmployeesQRCard.Designer.cs">
+      <DependentUpon>EmployeesQRCard.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Custom Controls\CustomTextBoxRounded.resx">
       <DependentUpon>CustomTextBoxRounded.cs</DependentUpon>
     </EmbeddedResource>
@@ -272,6 +293,9 @@
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Test.resx">
+      <DependentUpon>Test.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\VIPEmployee.resx">
       <DependentUpon>VIPEmployee.cs</DependentUpon>
     </EmbeddedResource>
@@ -289,6 +313,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="User Controls\Employees.resx">
       <DependentUpon>Employees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\EmployeesQRCard.resx">
+      <DependentUpon>EmployeesQRCard.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -359,6 +386,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Employees_Visits.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Employees_Salary.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EMS Logo.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Employee_QR_Card.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\synchronize_24px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

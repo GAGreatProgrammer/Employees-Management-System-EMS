@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="bunifuButton2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="bunifuButton4.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAMgAAAAnCAYAAABKSgfJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHvSURBVHhe7d2xTxsxFMfxGzsyssGUu7B0ZWRk7JiJ54X/
@@ -146,48 +146,6 @@
         4i7hJIbDKvbndf579mKgNhKuFk6dska9umHnjRaqZo3cdduxk2Lxujrpt+0QHcWmHXWRz/az6mppOP5U
         PLzTjcd6Ext31MLO4jz7p8M8LUl60yTdnJsU+N/N4inOEkbpsX9TTfMbusX73lTEss8AAAAASUVORK5C
         YII=
-</value>
-  </data>
-  <data name="bunifuButton3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAHgAAAAeCAYAAADnydqVAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG3SURBVGhD7ZuvTsRAEIdXIpE4TrU9DBaJRCJPMWt4CwQP
-        QNhtg+cBLsGRoEhQyAo8CeLMEXIQyJFwAmaWJXB3ewkobie/Sb60yf4xX7edtrNmUazT6UpFvldSfV5Z
-        3zL3zDtYCsRF27XusiRnN8mtRm2/i4LqnZL8A0/y9GNSsISU1j3zcVSR24/6FodcCaWtz5jR7ERgySH/
-        2LX+eoNO1qLO6RC5lXV3vOTfkhOALODFKQ47Uet3hJULuVpoo9bPCM9c3JbVUFj/0qX6MMiVbDkmVMnO
-        IFPYaUFNZSTNjplYuiPIE/KT0npn5F0q2QEowN0aNj1IN4Ls4VVs+GQ81wDUIIKTDUAHEKwcCFYOBCsH
-        gpUDwcqBYOVAsHLkS9Yk1QB0ICsYtVaKMVLmkWoACiA/YMHNQWnr12QHkDt9+R/c4RNUc2hDivDI7Yaq
-        jmrPHRWEn/5qkNo68hdBrkQo27HuJtkZ5Af54VwxvNTvcMKFjDpzpL6OH7vbUet0VFRvSW00g6QrN+hY
-        bsvDhXK/IuxJsk3Dg5B45YNsMbr60x4luRJ4UD8OTk0K/p9x2BxIvhe1zYQxH6O2sIjggLwOAAAAAElF
-        TkSuQmCC
-</value>
-  </data>
-  <data name="bunifuButton4.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAHgAAAAeCAYAAADnydqVAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG3SURBVGhD7ZuvTsRAEIdXIpE4TrU9DBaJRCJPMWt4CwQP
-        QNhtg+cBLsGRoEhQyAo8CeLMEXIQyJFwAmaWJXB3ewkobie/Sb60yf4xX7edtrNmUazT6UpFvldSfV5Z
-        3zL3zDtYCsRF27XusiRnN8mtRm2/i4LqnZL8A0/y9GNSsISU1j3zcVSR24/6FodcCaWtz5jR7ERgySH/
-        2LX+eoNO1qLO6RC5lXV3vOTfkhOALODFKQ47Uet3hJULuVpoo9bPCM9c3JbVUFj/0qX6MMiVbDkmVMnO
-        IFPYaUFNZSTNjplYuiPIE/KT0npn5F0q2QEowN0aNj1IN4Ls4VVs+GQ81wDUIIKTDUAHEKwcCFYOBCsH
-        gpUDwcqBYOVAsHLkS9Yk1QB0ICsYtVaKMVLmkWoACiA/YMHNQWnr12QHkDt9+R/c4RNUc2hDivDI7Yaq
-        jmrPHRWEn/5qkNo68hdBrkQo27HuJtkZ5Af54VwxvNTvcMKFjDpzpL6OH7vbUet0VFRvSW00g6QrN+hY
-        bsvDhXK/IuxJsk3Dg5B45YNsMbr60x4luRJ4UD8OTk0K/p9x2BxIvhe1zYQxH6O2sIjggLwOAAAAAElF
-        TkSuQmCC
-</value>
-  </data>
-  <data name="bunifuButton5.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAHgAAAAeCAYAAADnydqVAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG3SURBVGhD7ZuvTsRAEIdXIpE4TrU9DBaJRCJPMWt4CwQP
-        QNhtg+cBLsGRoEhQyAo8CeLMEXIQyJFwAmaWJXB3ewkobie/Sb60yf4xX7edtrNmUazT6UpFvldSfV5Z
-        3zL3zDtYCsRF27XusiRnN8mtRm2/i4LqnZL8A0/y9GNSsISU1j3zcVSR24/6FodcCaWtz5jR7ERgySH/
-        2LX+eoNO1qLO6RC5lXV3vOTfkhOALODFKQ47Uet3hJULuVpoo9bPCM9c3JbVUFj/0qX6MMiVbDkmVMnO
-        IFPYaUFNZSTNjplYuiPIE/KT0npn5F0q2QEowN0aNj1IN4Ls4VVs+GQ81wDUIIKTDUAHEKwcCFYOBCsH
-        gpUDwcqBYOVAsHLkS9Yk1QB0ICsYtVaKMVLmkWoACiA/YMHNQWnr12QHkDt9+R/c4RNUc2hDivDI7Yaq
-        jmrPHRWEn/5qkNo68hdBrkQo27HuJtkZ5Af54VwxvNTvcMKFjDpzpL6OH7vbUet0VFRvSW00g6QrN+hY
-        bsvDhXK/IuxJsk3Dg5B45YNsMbr60x4luRJ4UD8OTk0K/p9x2BxIvhe1zYQxH6O2sIjggLwOAAAAAElF
-        TkSuQmCC
 </value>
   </data>
 </root>
