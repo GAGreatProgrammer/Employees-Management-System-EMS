@@ -402,5 +402,8 @@
   <ItemGroup>
     <None Include="Resources\synchronize_24px.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="License\Bunifu.Licensing.dll" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
