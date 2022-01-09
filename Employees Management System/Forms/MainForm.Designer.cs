@@ -47,10 +47,10 @@ namespace Employees_Management_System
             this.label2 = new System.Windows.Forms.Label();
             this.contentPanel = new Bunifu.UI.WinForms.BunifuPanel();
             this.bunifuPanel4 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.customCircularPictureBox1 = new Employees_Management_System.Custom_Controls.CustomCircularPictureBox();
-            this.button3 = new System.Windows.Forms.Button();
             this.bunifuPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
@@ -565,7 +565,7 @@ namespace Employees_Management_System
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(111)))), ((int)(((byte)(237)))));
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(25, 10);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(85, 37);
@@ -606,6 +606,16 @@ namespace Employees_Management_System
             this.bunifuPanel4.Size = new System.Drawing.Size(300, 740);
             this.bunifuPanel4.TabIndex = 9;
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(15, 655);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 8;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(15, 626);
@@ -641,16 +651,6 @@ namespace Employees_Management_System
             this.customCircularPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.customCircularPictureBox1.TabIndex = 0;
             this.customCircularPictureBox1.TabStop = false;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(15, 655);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // MainForm
             // 

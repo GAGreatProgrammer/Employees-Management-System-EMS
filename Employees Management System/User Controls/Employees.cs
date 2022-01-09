@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Employees_Management_System.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -27,6 +28,18 @@ namespace Employees_Management_System.User_Controls
         public Employees()
         {
             InitializeComponent();
+        }
+
+        private void btnEmployeeRegistration_Click(object sender, EventArgs e)
+        {
+            EmployeeRegistration employeeRegistration = new EmployeeRegistration();
+            employeeRegistration.Show();
+        }
+
+        private void btnBlacklist_Click(object sender, EventArgs e)
+        {
+            Blacklist blacklist = new Blacklist();
+            blacklist.Show();
         }
     }
 }
