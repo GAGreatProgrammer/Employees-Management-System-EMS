@@ -214,6 +214,36 @@
     <Compile Include="Forms\Department.Designer.cs">
       <DependentUpon>Department.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\EmployeeAccountGeneration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EmployeeAccountGeneration.Designer.cs">
+      <DependentUpon>EmployeeAccountGeneration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EmployeeBankAccountRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EmployeeBankAccountRegistration.Designer.cs">
+      <DependentUpon>EmployeeBankAccountRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EmployeeEditingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EmployeeEditingForm.Designer.cs">
+      <DependentUpon>EmployeeEditingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EmployeeInfoEditing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EmployeeInfoEditing.Designer.cs">
+      <DependentUpon>EmployeeInfoEditing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EmployeePayHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EmployeePayHistory.Designer.cs">
+      <DependentUpon>EmployeePayHistory.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\EmployeeRegistration.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -283,6 +313,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Department.resx">
       <DependentUpon>Department.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EmployeeAccountGeneration.resx">
+      <DependentUpon>EmployeeAccountGeneration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EmployeeBankAccountRegistration.resx">
+      <DependentUpon>EmployeeBankAccountRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EmployeeEditingForm.resx">
+      <DependentUpon>EmployeeEditingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EmployeeInfoEditing.resx">
+      <DependentUpon>EmployeeInfoEditing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EmployeePayHistory.resx">
+      <DependentUpon>EmployeePayHistory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\EmployeeRegistration.resx">
       <DependentUpon>EmployeeRegistration.cs</DependentUpon>
@@ -404,6 +449,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="License\Bunifu.Licensing.dll" />
+    <None Include="Resources\lock.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

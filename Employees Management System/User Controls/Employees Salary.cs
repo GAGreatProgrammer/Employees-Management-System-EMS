@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Employees_Management_System.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -26,6 +27,18 @@ namespace Employees_Management_System.User_Controls
         public Employees_Salary()
         {
             InitializeComponent();
+        }
+
+        private void btnEmployeeBankAccount_Click(object sender, EventArgs e)
+        {
+            EmployeeBankAccountRegistration employeeBankAccountRegistration = new EmployeeBankAccountRegistration();
+            employeeBankAccountRegistration.Show();
+        }
+
+        private void btnEmployeePayHistory_Click(object sender, EventArgs e)
+        {
+            EmployeePayHistory employeePayHistory = new EmployeePayHistory();
+            employeePayHistory.Show();
         }
     }
 }

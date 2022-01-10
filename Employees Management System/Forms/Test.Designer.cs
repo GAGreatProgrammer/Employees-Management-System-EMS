@@ -45,10 +45,7 @@ namespace Employees_Management_System.Forms
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.customTextBoxRounded3 = new Employees_Management_System.Custom_Controls.CustomTextBoxRounded();
-            this.customComboBox2 = new Employees_Management_System.Custom_Controls.CustomComboBox();
-            this.customComboBox1 = new Employees_Management_System.Custom_Controls.CustomComboBox();
-            this.customTextBoxRounded1 = new Employees_Management_System.Custom_Controls.CustomTextBoxRounded();
+            this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.btnReload = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnPirNomSearch = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnDelete = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -58,6 +55,13 @@ namespace Employees_Management_System.Forms
             this.bunifuButton2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuButton3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.customDateTimePicker2 = new Employees_Management_System.Custom_Controls.CustomDateTimePicker();
+            this.customTextBoxRounded2 = new Employees_Management_System.Custom_Controls.CustomTextBoxRounded();
+            this.customTextBoxRounded3 = new Employees_Management_System.Custom_Controls.CustomTextBoxRounded();
+            this.customComboBox2 = new Employees_Management_System.Custom_Controls.CustomComboBox();
+            this.customComboBox1 = new Employees_Management_System.Custom_Controls.CustomComboBox();
+            this.customTextBoxRounded1 = new Employees_Management_System.Custom_Controls.CustomTextBoxRounded();
             this.SuspendLayout();
             // 
             // rbRU
@@ -156,103 +160,19 @@ namespace Employees_Management_System.Forms
             this.label13.TabIndex = 153;
             this.label13.Text = "EN";
             // 
-            // customTextBoxRounded3
+            // bunifuPanel1
             // 
-            this.customTextBoxRounded3.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.customTextBoxRounded3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(111)))), ((int)(((byte)(237)))));
-            this.customTextBoxRounded3.BorderFocusColor = System.Drawing.Color.SpringGreen;
-            this.customTextBoxRounded3.BorderRadius = 5;
-            this.customTextBoxRounded3.BorderSize = 1;
-            this.customTextBoxRounded3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customTextBoxRounded3.ForeColor = System.Drawing.Color.Black;
-            this.customTextBoxRounded3.Location = new System.Drawing.Point(50, 179);
-            this.customTextBoxRounded3.Multiline = true;
-            this.customTextBoxRounded3.Name = "customTextBoxRounded3";
-            this.customTextBoxRounded3.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.customTextBoxRounded3.PasswordChar = false;
-            this.customTextBoxRounded3.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.customTextBoxRounded3.PlaceholderText = "";
-            this.customTextBoxRounded3.Size = new System.Drawing.Size(462, 100);
-            this.customTextBoxRounded3.TabIndex = 39;
-            this.customTextBoxRounded3.UnderlinedStyle = false;
-            // 
-            // customComboBox2
-            // 
-            this.customComboBox2.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.customComboBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(111)))), ((int)(((byte)(237)))));
-            this.customComboBox2.BorderSize = 1;
-            this.customComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.customComboBox2.DropDownWidth = 198;
-            this.customComboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customComboBox2.ForeColor = System.Drawing.Color.Black;
-            this.customComboBox2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(111)))), ((int)(((byte)(237)))));
-            this.customComboBox2.IntegralHeight = true;
-            this.customComboBox2.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
-            this.customComboBox2.ListTextColor = System.Drawing.Color.DimGray;
-            this.customComboBox2.Location = new System.Drawing.Point(50, 133);
-            this.customComboBox2.MaxDropDownItems = 8;
-            this.customComboBox2.MinimumSize = new System.Drawing.Size(200, 30);
-            this.customComboBox2.Name = "customComboBox2";
-            this.customComboBox2.Padding = new System.Windows.Forms.Padding(1);
-            this.customComboBox2.Size = new System.Drawing.Size(369, 30);
-            this.customComboBox2.TabIndex = 37;
-            // 
-            // customComboBox1
-            // 
-            this.customComboBox1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.customComboBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.customComboBox1.BorderSize = 1;
-            this.customComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.customComboBox1.DropDownWidth = 198;
-            this.customComboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.customComboBox1.ForeColor = System.Drawing.Color.DimGray;
-            this.customComboBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.customComboBox1.IntegralHeight = true;
-            this.customComboBox1.Items.AddRange(new object[] {
-            "wedwdwe",
-            "dwed",
-            "wed",
-            "wed",
-            "we",
-            "dwed",
-            "wed",
-            "we",
-            "dwedwedwed",
-            "we",
-            "f",
-            "wefw",
-            "ef",
-            "wef",
-            "wefwef"});
-            this.customComboBox1.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
-            this.customComboBox1.ListTextColor = System.Drawing.Color.DimGray;
-            this.customComboBox1.Location = new System.Drawing.Point(50, 79);
-            this.customComboBox1.MaxDropDownItems = 8;
-            this.customComboBox1.MinimumSize = new System.Drawing.Size(200, 30);
-            this.customComboBox1.Name = "customComboBox1";
-            this.customComboBox1.Padding = new System.Windows.Forms.Padding(1);
-            this.customComboBox1.Size = new System.Drawing.Size(369, 30);
-            this.customComboBox1.TabIndex = 1;
-            // 
-            // customTextBoxRounded1
-            // 
-            this.customTextBoxRounded1.BackColor = System.Drawing.SystemColors.Control;
-            this.customTextBoxRounded1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.customTextBoxRounded1.BorderFocusColor = System.Drawing.Color.SpringGreen;
-            this.customTextBoxRounded1.BorderRadius = 5;
-            this.customTextBoxRounded1.BorderSize = 1;
-            this.customTextBoxRounded1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customTextBoxRounded1.ForeColor = System.Drawing.Color.Black;
-            this.customTextBoxRounded1.Location = new System.Drawing.Point(50, 25);
-            this.customTextBoxRounded1.Multiline = false;
-            this.customTextBoxRounded1.Name = "customTextBoxRounded1";
-            this.customTextBoxRounded1.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.customTextBoxRounded1.PasswordChar = false;
-            this.customTextBoxRounded1.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.customTextBoxRounded1.PlaceholderText = "";
-            this.customTextBoxRounded1.Size = new System.Drawing.Size(369, 35);
-            this.customTextBoxRounded1.TabIndex = 0;
-            this.customTextBoxRounded1.UnderlinedStyle = false;
+            this.bunifuPanel1.BackgroundColor = System.Drawing.Color.Transparent;
+            this.bunifuPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel1.BackgroundImage")));
+            this.bunifuPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuPanel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(111)))), ((int)(((byte)(237)))));
+            this.bunifuPanel1.BorderRadius = 30;
+            this.bunifuPanel1.BorderThickness = 2;
+            this.bunifuPanel1.Location = new System.Drawing.Point(585, 25);
+            this.bunifuPanel1.Name = "bunifuPanel1";
+            this.bunifuPanel1.ShowBorders = true;
+            this.bunifuPanel1.Size = new System.Drawing.Size(419, 359);
+            this.bunifuPanel1.TabIndex = 160;
             // 
             // btnReload
             // 
@@ -1055,12 +975,158 @@ namespace Employees_Management_System.Forms
             this.bunifuButton1.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButton1.UseDefaultRadiusAndThickness = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(367, 414);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(145, 20);
+            this.label1.TabIndex = 162;
+            this.label1.Text = "თანამშრომელი";
+            // 
+            // customDateTimePicker2
+            // 
+            this.customDateTimePicker2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.customDateTimePicker2.BorderSize = 0;
+            this.customDateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
+            this.customDateTimePicker2.Location = new System.Drawing.Point(371, 443);
+            this.customDateTimePicker2.MinimumSize = new System.Drawing.Size(4, 35);
+            this.customDateTimePicker2.Name = "customDateTimePicker2";
+            this.customDateTimePicker2.Size = new System.Drawing.Size(250, 35);
+            this.customDateTimePicker2.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(108)))), ((int)(((byte)(163)))));
+            this.customDateTimePicker2.TabIndex = 163;
+            this.customDateTimePicker2.TextColor = System.Drawing.Color.White;
+            // 
+            // customTextBoxRounded2
+            // 
+            this.customTextBoxRounded2.BackColor = System.Drawing.SystemColors.Control;
+            this.customTextBoxRounded2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.customTextBoxRounded2.BorderFocusColor = System.Drawing.Color.SpringGreen;
+            this.customTextBoxRounded2.BorderRadius = 5;
+            this.customTextBoxRounded2.BorderSize = 1;
+            this.customTextBoxRounded2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customTextBoxRounded2.ForeColor = System.Drawing.Color.Black;
+            this.customTextBoxRounded2.Location = new System.Drawing.Point(331, 25);
+            this.customTextBoxRounded2.Multiline = false;
+            this.customTextBoxRounded2.Name = "customTextBoxRounded2";
+            this.customTextBoxRounded2.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.customTextBoxRounded2.PasswordChar = false;
+            this.customTextBoxRounded2.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.customTextBoxRounded2.PlaceholderText = "";
+            this.customTextBoxRounded2.Size = new System.Drawing.Size(130, 35);
+            this.customTextBoxRounded2.TabIndex = 161;
+            this.customTextBoxRounded2.UnderlinedStyle = false;
+            // 
+            // customTextBoxRounded3
+            // 
+            this.customTextBoxRounded3.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.customTextBoxRounded3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(111)))), ((int)(((byte)(237)))));
+            this.customTextBoxRounded3.BorderFocusColor = System.Drawing.Color.SpringGreen;
+            this.customTextBoxRounded3.BorderRadius = 5;
+            this.customTextBoxRounded3.BorderSize = 1;
+            this.customTextBoxRounded3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customTextBoxRounded3.ForeColor = System.Drawing.Color.Black;
+            this.customTextBoxRounded3.Location = new System.Drawing.Point(50, 179);
+            this.customTextBoxRounded3.Multiline = true;
+            this.customTextBoxRounded3.Name = "customTextBoxRounded3";
+            this.customTextBoxRounded3.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.customTextBoxRounded3.PasswordChar = false;
+            this.customTextBoxRounded3.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.customTextBoxRounded3.PlaceholderText = "";
+            this.customTextBoxRounded3.Size = new System.Drawing.Size(411, 100);
+            this.customTextBoxRounded3.TabIndex = 39;
+            this.customTextBoxRounded3.UnderlinedStyle = false;
+            // 
+            // customComboBox2
+            // 
+            this.customComboBox2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.customComboBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(111)))), ((int)(((byte)(237)))));
+            this.customComboBox2.BorderSize = 1;
+            this.customComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.customComboBox2.DropDownWidth = 198;
+            this.customComboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customComboBox2.ForeColor = System.Drawing.Color.Black;
+            this.customComboBox2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(111)))), ((int)(((byte)(237)))));
+            this.customComboBox2.IntegralHeight = true;
+            this.customComboBox2.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
+            this.customComboBox2.ListTextColor = System.Drawing.Color.DimGray;
+            this.customComboBox2.Location = new System.Drawing.Point(50, 133);
+            this.customComboBox2.MaxDropDownItems = 8;
+            this.customComboBox2.MinimumSize = new System.Drawing.Size(200, 30);
+            this.customComboBox2.Name = "customComboBox2";
+            this.customComboBox2.Padding = new System.Windows.Forms.Padding(1);
+            this.customComboBox2.Size = new System.Drawing.Size(275, 30);
+            this.customComboBox2.TabIndex = 37;
+            // 
+            // customComboBox1
+            // 
+            this.customComboBox1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.customComboBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.customComboBox1.BorderSize = 1;
+            this.customComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.customComboBox1.DropDownWidth = 198;
+            this.customComboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.customComboBox1.ForeColor = System.Drawing.Color.DimGray;
+            this.customComboBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.customComboBox1.IntegralHeight = true;
+            this.customComboBox1.Items.AddRange(new object[] {
+            "wedwdwe",
+            "dwed",
+            "wed",
+            "wed",
+            "we",
+            "dwed",
+            "wed",
+            "we",
+            "dwedwedwed",
+            "we",
+            "f",
+            "wefw",
+            "ef",
+            "wef",
+            "wefwef"});
+            this.customComboBox1.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
+            this.customComboBox1.ListTextColor = System.Drawing.Color.DimGray;
+            this.customComboBox1.Location = new System.Drawing.Point(50, 79);
+            this.customComboBox1.MaxDropDownItems = 8;
+            this.customComboBox1.MinimumSize = new System.Drawing.Size(200, 30);
+            this.customComboBox1.Name = "customComboBox1";
+            this.customComboBox1.Padding = new System.Windows.Forms.Padding(1);
+            this.customComboBox1.Size = new System.Drawing.Size(275, 30);
+            this.customComboBox1.TabIndex = 1;
+            // 
+            // customTextBoxRounded1
+            // 
+            this.customTextBoxRounded1.BackColor = System.Drawing.SystemColors.Control;
+            this.customTextBoxRounded1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.customTextBoxRounded1.BorderFocusColor = System.Drawing.Color.SpringGreen;
+            this.customTextBoxRounded1.BorderRadius = 5;
+            this.customTextBoxRounded1.BorderSize = 1;
+            this.customTextBoxRounded1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customTextBoxRounded1.ForeColor = System.Drawing.Color.Black;
+            this.customTextBoxRounded1.Location = new System.Drawing.Point(50, 25);
+            this.customTextBoxRounded1.Multiline = false;
+            this.customTextBoxRounded1.Name = "customTextBoxRounded1";
+            this.customTextBoxRounded1.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.customTextBoxRounded1.PasswordChar = false;
+            this.customTextBoxRounded1.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.customTextBoxRounded1.PlaceholderText = "";
+            this.customTextBoxRounded1.Size = new System.Drawing.Size(275, 35);
+            this.customTextBoxRounded1.TabIndex = 0;
+            this.customTextBoxRounded1.UnderlinedStyle = false;
+            // 
             // Test
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(41)))), ((int)(((byte)(56)))));
             this.ClientSize = new System.Drawing.Size(1016, 560);
+            this.Controls.Add(this.customDateTimePicker2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.customTextBoxRounded2);
+            this.Controls.Add(this.bunifuPanel1);
             this.Controls.Add(this.btnReload);
             this.Controls.Add(this.rbRU);
             this.Controls.Add(this.rbGE);
@@ -1111,5 +1177,9 @@ namespace Employees_Management_System.Forms
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnReload;
+        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
+        private Custom_Controls.CustomTextBoxRounded customTextBoxRounded2;
+        private System.Windows.Forms.Label label1;
+        private Custom_Controls.CustomDateTimePicker customDateTimePicker2;
     }
 }

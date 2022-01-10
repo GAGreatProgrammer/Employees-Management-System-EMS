@@ -41,5 +41,17 @@ namespace Employees_Management_System.User_Controls
             Blacklist blacklist = new Blacklist();
             blacklist.Show();
         }
+
+        private void btnEmployeeEditing_Click(object sender, EventArgs e)
+        {
+            EmployeeInfoEditing employeeInfoEditing = new EmployeeInfoEditing();
+            employeeInfoEditing.Show();
+        }
+
+        private void btnEmployeeAccount_Click(object sender, EventArgs e)
+        {
+            EmployeeAccountGeneration employeeAccountGeneration = new EmployeeAccountGeneration();
+            employeeAccountGeneration.Show();
+        }
     }
 }
