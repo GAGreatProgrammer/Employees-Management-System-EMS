@@ -55,7 +55,7 @@ namespace Employees_Management_System.Forms
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(20, 33);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(145, 20);
@@ -66,7 +66,7 @@ namespace Employees_Management_System.Forms
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(20, 87);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(156, 40);
@@ -77,7 +77,7 @@ namespace Employees_Management_System.Forms
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(20, 156);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(74, 20);
@@ -88,7 +88,7 @@ namespace Employees_Management_System.Forms
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(20, 301);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(235, 20);
@@ -97,10 +97,10 @@ namespace Employees_Management_System.Forms
             // 
             // customTextBoxRounded10
             // 
-            this.customTextBoxRounded10.BackColor = System.Drawing.SystemColors.Control;
+            this.customTextBoxRounded10.BackColor = System.Drawing.Color.White;
             this.customTextBoxRounded10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.customTextBoxRounded10.BorderFocusColor = System.Drawing.Color.SpringGreen;
-            this.customTextBoxRounded10.BorderRadius = 5;
+            this.customTextBoxRounded10.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.customTextBoxRounded10.BorderRadius = 0;
             this.customTextBoxRounded10.BorderSize = 1;
             this.customTextBoxRounded10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customTextBoxRounded10.ForeColor = System.Drawing.Color.Black;
@@ -117,7 +117,7 @@ namespace Employees_Management_System.Forms
             // 
             // customComboBox2
             // 
-            this.customComboBox2.BackColor = System.Drawing.SystemColors.Control;
+            this.customComboBox2.BackColor = System.Drawing.Color.White;
             this.customComboBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.customComboBox2.BorderSize = 1;
             this.customComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
@@ -151,10 +151,10 @@ namespace Employees_Management_System.Forms
             // 
             // customTextBoxRounded1
             // 
-            this.customTextBoxRounded1.BackColor = System.Drawing.SystemColors.Control;
+            this.customTextBoxRounded1.BackColor = System.Drawing.Color.White;
             this.customTextBoxRounded1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.customTextBoxRounded1.BorderFocusColor = System.Drawing.Color.SpringGreen;
-            this.customTextBoxRounded1.BorderRadius = 5;
+            this.customTextBoxRounded1.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.customTextBoxRounded1.BorderRadius = 0;
             this.customTextBoxRounded1.BorderSize = 1;
             this.customTextBoxRounded1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customTextBoxRounded1.ForeColor = System.Drawing.Color.Black;
@@ -176,7 +176,7 @@ namespace Employees_Management_System.Forms
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             this.bunifuDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.bunifuDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.bunifuDataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.bunifuDataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.bunifuDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bunifuDataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.bunifuDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -500,7 +500,7 @@ namespace Employees_Management_System.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(41)))), ((int)(((byte)(56)))));
+            this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(1334, 576);
             this.Controls.Add(this.bunifuButton2);
             this.Controls.Add(this.bunifuButton3);

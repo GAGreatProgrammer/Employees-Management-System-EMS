@@ -44,7 +44,7 @@ namespace Employees_Management_System.Forms
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(23, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(145, 20);
@@ -55,7 +55,7 @@ namespace Employees_Management_System.Forms
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(21, 80);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(235, 20);
@@ -64,10 +64,10 @@ namespace Employees_Management_System.Forms
             // 
             // customTextBoxRounded10
             // 
-            this.customTextBoxRounded10.BackColor = System.Drawing.SystemColors.Control;
+            this.customTextBoxRounded10.BackColor = System.Drawing.Color.White;
             this.customTextBoxRounded10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.customTextBoxRounded10.BorderFocusColor = System.Drawing.Color.SpringGreen;
-            this.customTextBoxRounded10.BorderRadius = 5;
+            this.customTextBoxRounded10.BorderRadius = 0;
             this.customTextBoxRounded10.BorderSize = 1;
             this.customTextBoxRounded10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customTextBoxRounded10.ForeColor = System.Drawing.Color.Black;
@@ -84,7 +84,7 @@ namespace Employees_Management_System.Forms
             // 
             // customComboBox2
             // 
-            this.customComboBox2.BackColor = System.Drawing.SystemColors.Control;
+            this.customComboBox2.BackColor = System.Drawing.Color.White;
             this.customComboBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.customComboBox2.BorderSize = 1;
             this.customComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
@@ -285,7 +285,7 @@ namespace Employees_Management_System.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(41)))), ((int)(((byte)(56)))));
+            this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(634, 381);
             this.Controls.Add(this.bunifuButton3);
             this.Controls.Add(this.bunifuButton1);

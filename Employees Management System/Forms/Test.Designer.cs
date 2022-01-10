@@ -39,12 +39,16 @@ namespace Employees_Management_System.Forms
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState toggleState1 = new Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState();
+            Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState toggleState2 = new Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState();
+            Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState toggleState3 = new Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState();
             this.rbRU = new Bunifu.UI.WinForms.BunifuRadioButton();
             this.rbGE = new Bunifu.UI.WinForms.BunifuRadioButton();
             this.rbEN = new Bunifu.UI.WinForms.BunifuRadioButton();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.btnReload = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnPirNomSearch = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -55,13 +59,13 @@ namespace Employees_Management_System.Forms
             this.bunifuButton2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuButton3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.label1 = new System.Windows.Forms.Label();
             this.customDateTimePicker2 = new Employees_Management_System.Custom_Controls.CustomDateTimePicker();
             this.customTextBoxRounded2 = new Employees_Management_System.Custom_Controls.CustomTextBoxRounded();
             this.customTextBoxRounded3 = new Employees_Management_System.Custom_Controls.CustomTextBoxRounded();
             this.customComboBox2 = new Employees_Management_System.Custom_Controls.CustomComboBox();
             this.customComboBox1 = new Employees_Management_System.Custom_Controls.CustomComboBox();
             this.customTextBoxRounded1 = new Employees_Management_System.Custom_Controls.CustomTextBoxRounded();
+            this.tglMimdinareJavshnebi = new Bunifu.UI.WinForms.BunifuToggleSwitch();
             this.SuspendLayout();
             // 
             // rbRU
@@ -159,6 +163,17 @@ namespace Employees_Management_System.Forms
             this.label13.Size = new System.Drawing.Size(27, 16);
             this.label13.TabIndex = 153;
             this.label13.Text = "EN";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(367, 414);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(145, 20);
+            this.label1.TabIndex = 162;
+            this.label1.Text = "თანამშრომელი";
             // 
             // bunifuPanel1
             // 
@@ -975,17 +990,6 @@ namespace Employees_Management_System.Forms
             this.bunifuButton1.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButton1.UseDefaultRadiusAndThickness = true;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(367, 414);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(145, 20);
-            this.label1.TabIndex = 162;
-            this.label1.Text = "თანამშრომელი";
-            // 
             // customDateTimePicker2
             // 
             this.customDateTimePicker2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
@@ -1117,12 +1121,56 @@ namespace Employees_Management_System.Forms
             this.customTextBoxRounded1.TabIndex = 0;
             this.customTextBoxRounded1.UnderlinedStyle = false;
             // 
+            // tglMimdinareJavshnebi
+            // 
+            this.tglMimdinareJavshnebi.Animation = 5;
+            this.tglMimdinareJavshnebi.BackColor = System.Drawing.Color.Transparent;
+            this.tglMimdinareJavshnebi.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tglMimdinareJavshnebi.BackgroundImage")));
+            this.tglMimdinareJavshnebi.Checked = false;
+            this.tglMimdinareJavshnebi.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.tglMimdinareJavshnebi.InnerCirclePadding = 3;
+            this.tglMimdinareJavshnebi.Location = new System.Drawing.Point(50, 498);
+            this.tglMimdinareJavshnebi.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tglMimdinareJavshnebi.Name = "tglMimdinareJavshnebi";
+            this.tglMimdinareJavshnebi.Size = new System.Drawing.Size(50, 22);
+            this.tglMimdinareJavshnebi.TabIndex = 164;
+            this.tglMimdinareJavshnebi.ThumbMargin = 3;
+            toggleState1.BackColor = System.Drawing.Color.DarkGray;
+            toggleState1.BackColorInner = System.Drawing.Color.White;
+            toggleState1.BorderColor = System.Drawing.Color.DarkGray;
+            toggleState1.BorderColorInner = System.Drawing.Color.White;
+            toggleState1.BorderRadius = 17;
+            toggleState1.BorderRadiusInner = 11;
+            toggleState1.BorderThickness = 1;
+            toggleState1.BorderThicknessInner = 1;
+            this.tglMimdinareJavshnebi.ToggleStateDisabled = toggleState1;
+            toggleState2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            toggleState2.BackColorInner = System.Drawing.Color.White;
+            toggleState2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            toggleState2.BorderColorInner = System.Drawing.Color.White;
+            toggleState2.BorderRadius = 17;
+            toggleState2.BorderRadiusInner = 11;
+            toggleState2.BorderThickness = 1;
+            toggleState2.BorderThicknessInner = 1;
+            this.tglMimdinareJavshnebi.ToggleStateOff = toggleState2;
+            toggleState3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(108)))), ((int)(((byte)(163)))));
+            toggleState3.BackColorInner = System.Drawing.Color.White;
+            toggleState3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(108)))), ((int)(((byte)(163)))));
+            toggleState3.BorderColorInner = System.Drawing.Color.White;
+            toggleState3.BorderRadius = 17;
+            toggleState3.BorderRadiusInner = 11;
+            toggleState3.BorderThickness = 1;
+            toggleState3.BorderThicknessInner = 1;
+            this.tglMimdinareJavshnebi.ToggleStateOn = toggleState3;
+            this.tglMimdinareJavshnebi.Value = false;
+            // 
             // Test
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(41)))), ((int)(((byte)(56)))));
             this.ClientSize = new System.Drawing.Size(1016, 560);
+            this.Controls.Add(this.tglMimdinareJavshnebi);
             this.Controls.Add(this.customDateTimePicker2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.customTextBoxRounded2);
@@ -1181,5 +1229,6 @@ namespace Employees_Management_System.Forms
         private Custom_Controls.CustomTextBoxRounded customTextBoxRounded2;
         private System.Windows.Forms.Label label1;
         private Custom_Controls.CustomDateTimePicker customDateTimePicker2;
+        private Bunifu.UI.WinForms.BunifuToggleSwitch tglMimdinareJavshnebi;
     }
 }

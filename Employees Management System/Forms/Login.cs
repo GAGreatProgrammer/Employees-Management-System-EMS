@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace Employees_Management_System.Forms
 {
-    public partial class LoginForm : Form
+    public partial class Login : Form
     {
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
@@ -26,7 +26,7 @@ namespace Employees_Management_System.Forms
 
         private int Radius = 50;
 
-        public LoginForm()
+        public Login()
         {
             InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, Radius, Radius));
