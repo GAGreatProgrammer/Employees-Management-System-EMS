@@ -37,7 +37,17 @@ namespace Employees_Management_System
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            if (!contentPanel.Controls.Contains(Employees.Instance))
+            {
+                contentPanel.Controls.Add(Employees.Instance);
+                Employees.Instance.Dock = DockStyle.Fill;
+                Employees.Instance.BringToFront();
+            }
 
+            else
+            {
+                Employees.Instance.BringToFront();
+            }
         }
 
         private void btnClose_Click(object sender, EventArgs e)

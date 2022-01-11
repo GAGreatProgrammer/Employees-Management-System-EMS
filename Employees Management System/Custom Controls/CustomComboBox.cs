@@ -72,8 +72,8 @@ namespace Employees_Management_System.Custom_Controls
             this.Controls.Add(lblText);
             this.Controls.Add(btnIcon);
             this.Controls.Add(cmbList);
-            this.MinimumSize = new Size(200, 30);
-            this.Size = new Size(200, 30);
+            this.MinimumSize = new Size(200, 35);
+            this.Size = new Size(200, 35);
             this.ForeColor = Color.DimGray;
             this.Padding = new Padding(borderSize);
             this.Font = new Font(this.Font.Name, 10F);

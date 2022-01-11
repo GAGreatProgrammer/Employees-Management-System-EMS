@@ -30,19 +30,21 @@ namespace Employees_Management_System.Forms
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Blacklist));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txtAdditionalInfo = new Employees_Management_System.Custom_Controls.CustomTextBoxRounded();
             this.cboEmployeeID = new Employees_Management_System.Custom_Controls.CustomComboBox();
+            this.employeeShortInfoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.eMSDataSet = new Employees_Management_System.EMSDataSet();
             this.dtpEffectiveDate = new Employees_Management_System.Custom_Controls.CustomDateTimePicker();
             this.txtReason = new Employees_Management_System.Custom_Controls.CustomTextBoxRounded();
             this.bunifuDataGridView1 = new Bunifu.UI.WinForms.BunifuDataGridView();
@@ -51,13 +53,11 @@ namespace Employees_Management_System.Forms
             this.label18 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.eMSDataSet = new Employees_Management_System.EMSDataSet();
-            this.employeeShortInfoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.employeeShortInfoTableAdapter = new Employees_Management_System.EMSDataSetTableAdapters.EmployeeShortInfoTableAdapter();
             this.btnDelete = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eMSDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeShortInfoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eMSDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -120,7 +120,7 @@ namespace Employees_Management_System.Forms
             this.txtAdditionalInfo.PasswordChar = false;
             this.txtAdditionalInfo.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtAdditionalInfo.PlaceholderText = "";
-            this.txtAdditionalInfo.Size = new System.Drawing.Size(479, 168);
+            this.txtAdditionalInfo.Size = new System.Drawing.Size(494, 168);
             this.txtAdditionalInfo.TabIndex = 35;
             this.txtAdditionalInfo.UnderlinedStyle = false;
             // 
@@ -139,24 +139,34 @@ namespace Employees_Management_System.Forms
             this.cboEmployeeID.IntegralHeight = false;
             this.cboEmployeeID.ListBackColor = System.Drawing.Color.White;
             this.cboEmployeeID.ListTextColor = System.Drawing.Color.Black;
-            this.cboEmployeeID.Location = new System.Drawing.Point(248, 13);
+            this.cboEmployeeID.Location = new System.Drawing.Point(196, 12);
             this.cboEmployeeID.MaxDropDownItems = 8;
             this.cboEmployeeID.MinimumSize = new System.Drawing.Size(200, 30);
             this.cboEmployeeID.Name = "cboEmployeeID";
             this.cboEmployeeID.Padding = new System.Windows.Forms.Padding(1);
-            this.cboEmployeeID.Size = new System.Drawing.Size(250, 35);
+            this.cboEmployeeID.Size = new System.Drawing.Size(310, 35);
             this.cboEmployeeID.TabIndex = 36;
             this.cboEmployeeID.ValueMember = "ID";
+            // 
+            // employeeShortInfoBindingSource
+            // 
+            this.employeeShortInfoBindingSource.DataMember = "EmployeeShortInfo";
+            this.employeeShortInfoBindingSource.DataSource = this.eMSDataSet;
+            // 
+            // eMSDataSet
+            // 
+            this.eMSDataSet.DataSetName = "EMSDataSet";
+            this.eMSDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // dtpEffectiveDate
             // 
             this.dtpEffectiveDate.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.dtpEffectiveDate.BorderSize = 0;
             this.dtpEffectiveDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
-            this.dtpEffectiveDate.Location = new System.Drawing.Point(248, 69);
+            this.dtpEffectiveDate.Location = new System.Drawing.Point(196, 68);
             this.dtpEffectiveDate.MinimumSize = new System.Drawing.Size(4, 35);
             this.dtpEffectiveDate.Name = "dtpEffectiveDate";
-            this.dtpEffectiveDate.Size = new System.Drawing.Size(250, 35);
+            this.dtpEffectiveDate.Size = new System.Drawing.Size(310, 35);
             this.dtpEffectiveDate.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(108)))), ((int)(((byte)(163)))));
             this.dtpEffectiveDate.TabIndex = 37;
             this.dtpEffectiveDate.TextColor = System.Drawing.Color.White;
@@ -177,29 +187,29 @@ namespace Employees_Management_System.Forms
             this.txtReason.PasswordChar = false;
             this.txtReason.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtReason.PlaceholderText = "";
-            this.txtReason.Size = new System.Drawing.Size(479, 100);
+            this.txtReason.Size = new System.Drawing.Size(494, 100);
             this.txtReason.TabIndex = 38;
             this.txtReason.UnderlinedStyle = false;
             // 
             // bunifuDataGridView1
             // 
             this.bunifuDataGridView1.AllowCustomTheming = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            this.bunifuDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            this.bunifuDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.bunifuDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.bunifuDataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.bunifuDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bunifuDataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.bunifuDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.bunifuDataGridView1.ColumnHeadersHeight = 40;
             this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
@@ -219,25 +229,25 @@ namespace Employees_Management_System.Forms
             this.bunifuDataGridView1.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
             this.bunifuDataGridView1.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
             this.bunifuDataGridView1.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.bunifuDataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.bunifuDataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
             this.bunifuDataGridView1.EnableHeadersVisualStyles = false;
             this.bunifuDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.bunifuDataGridView1.HeaderBackColor = System.Drawing.Color.DodgerBlue;
             this.bunifuDataGridView1.HeaderBgColor = System.Drawing.Color.Empty;
             this.bunifuDataGridView1.HeaderForeColor = System.Drawing.Color.White;
-            this.bunifuDataGridView1.Location = new System.Drawing.Point(515, 12);
+            this.bunifuDataGridView1.Location = new System.Drawing.Point(534, 12);
             this.bunifuDataGridView1.Name = "bunifuDataGridView1";
             this.bunifuDataGridView1.RowHeadersVisible = false;
             this.bunifuDataGridView1.RowTemplate.Height = 40;
             this.bunifuDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.bunifuDataGridView1.Size = new System.Drawing.Size(682, 533);
+            this.bunifuDataGridView1.Size = new System.Drawing.Size(668, 533);
             this.bunifuDataGridView1.TabIndex = 39;
             this.bunifuDataGridView1.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             // 
@@ -260,11 +270,11 @@ namespace Employees_Management_System.Forms
             this.btnCancel.ColorContrastOnClick = 45;
             this.btnCancel.ColorContrastOnHover = 45;
             this.btnCancel.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = false;
-            borderEdges1.BottomRight = false;
-            borderEdges1.TopLeft = false;
-            borderEdges1.TopRight = false;
-            this.btnCancel.CustomizableEdges = borderEdges1;
+            borderEdges4.BottomLeft = false;
+            borderEdges4.BottomRight = false;
+            borderEdges4.TopLeft = false;
+            borderEdges4.TopRight = false;
+            this.btnCancel.CustomizableEdges = borderEdges4;
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnCancel.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnCancel.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -350,11 +360,11 @@ namespace Employees_Management_System.Forms
             this.btnSave.ColorContrastOnClick = 45;
             this.btnSave.ColorContrastOnHover = 45;
             this.btnSave.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = false;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = false;
-            this.btnSave.CustomizableEdges = borderEdges2;
+            borderEdges5.BottomLeft = true;
+            borderEdges5.BottomRight = false;
+            borderEdges5.TopLeft = true;
+            borderEdges5.TopRight = false;
+            this.btnSave.CustomizableEdges = borderEdges5;
             this.btnSave.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnSave.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnSave.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -454,16 +464,6 @@ namespace Employees_Management_System.Forms
             this.label6.TabIndex = 79;
             this.label6.Text = "*";
             // 
-            // eMSDataSet
-            // 
-            this.eMSDataSet.DataSetName = "EMSDataSet";
-            this.eMSDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // employeeShortInfoBindingSource
-            // 
-            this.employeeShortInfoBindingSource.DataMember = "EmployeeShortInfo";
-            this.employeeShortInfoBindingSource.DataSource = this.eMSDataSet;
-            // 
             // employeeShortInfoTableAdapter
             // 
             this.employeeShortInfoTableAdapter.ClearBeforeFill = true;
@@ -487,11 +487,11 @@ namespace Employees_Management_System.Forms
             this.btnDelete.ColorContrastOnClick = 45;
             this.btnDelete.ColorContrastOnHover = 45;
             this.btnDelete.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges3.BottomLeft = false;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = false;
-            borderEdges3.TopRight = true;
-            this.btnDelete.CustomizableEdges = borderEdges3;
+            borderEdges6.BottomLeft = false;
+            borderEdges6.BottomRight = true;
+            borderEdges6.TopLeft = false;
+            borderEdges6.TopRight = true;
+            this.btnDelete.CustomizableEdges = borderEdges6;
             this.btnDelete.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnDelete.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnDelete.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -584,9 +584,9 @@ namespace Employees_Management_System.Forms
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "შავ სიაში დამატება";
             this.Load += new System.EventHandler(this.Blacklist_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eMSDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeShortInfoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eMSDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

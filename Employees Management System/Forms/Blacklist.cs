@@ -25,7 +25,7 @@ namespace Employees_Management_System.Forms
 
         private void Registration()
         {
-            if (cboEmployeeID.Text == "" || txtReason.Text == "" || txtAdditionalInfo.Text == "")
+            if (cboEmployeeID.Text == "" || txtReason.Text == "")
             {
                 MessageBox.Show("შეავსეთ ყველა სავალდებულო ველი!", "გაფრთხილება", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -36,7 +36,7 @@ namespace Employees_Management_System.Forms
                 SqlCommand sqlCommand = new SqlCommand("AddBlacklist", sqlConnection);
                 sqlCommand.CommandType = CommandType.StoredProcedure;
 
-                sqlCommand.Parameters.Add("@EmployeeID", SqlDbType.UniqueIdentifier).Value = cboEmployeeID.SelectedValue; ;
+                sqlCommand.Parameters.Add("@EmployeeID", SqlDbType.UniqueIdentifier).Value = cboEmployeeID.SelectedValue;
                 sqlCommand.Parameters.Add("@Effective_Date", SqlDbType.DateTime).Value = dtpEffectiveDate.Value.Date;
                 sqlCommand.Parameters.Add("@Reason", SqlDbType.NVarChar).Value = txtReason.Text;
                 sqlCommand.Parameters.Add("@Additional_Info", SqlDbType.NVarChar).Value = txtAdditionalInfo.Text;
