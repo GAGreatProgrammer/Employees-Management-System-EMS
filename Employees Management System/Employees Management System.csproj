@@ -160,6 +160,7 @@
       <HintPath>..\packages\Bunifu.UI.WinForms.4.1.1\lib\Bunifu.UI.WinForms.Deprecated.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -173,6 +174,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class\GlobalVariables.cs" />
+    <Compile Include="Class\UserActivity.cs" />
     <Compile Include="Custom Controls\CustomButton.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -202,6 +204,11 @@
     </Compile>
     <Compile Include="Custom Controls\MenuColorTable.cs" />
     <Compile Include="Custom Controls\MenuRenderer.cs" />
+    <Compile Include="EMSDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EMSDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Blacklist.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -362,6 +369,17 @@
     <EmbeddedResource Include="User Controls\EmployeesQRCard.resx">
       <DependentUpon>EmployeesQRCard.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="EMSDataSet.xsc">
+      <DependentUpon>EMSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EMSDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EMSDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EMSDataSet.xss">
+      <DependentUpon>EMSDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
