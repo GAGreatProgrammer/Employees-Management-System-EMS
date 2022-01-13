@@ -188,4 +188,33 @@
         RK5CYII=
 </value>
   </data>
+  <data name="btnBankAccount.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAMgAAAAjCAYAAADR20XfAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD5SURBVHhe7d0xSgUxFEDRKS3dgX1G0OXY2ZsRl+ISPiZ/
+        HbYuwcIFCFqpYKGFZkYEkfA2kBM4MPDSXl6Xmf6eOZez41xv56U+N18wuIctjJOr3eG8lLuUy0vnEgxr
+        C2SNozeE0U0p31zOub72hjA62wMCbYOU994A2DZIfwAIBEICgYBAICAQCAgEAgKBgEAgIBAICAQCAoGA
+        QCAgEAgIBAICgYBAICAQCAgEAgKBgEAgIBAICAQCAoFAC6R89gbAGkgu970B0AJJF/vrZItA13R0vjto
+        H4//B0ALZD1ti5ymXJ/SUj96l2BUWyDr+fmJTt17zBp+1bdvpj2wu9Qt5FcAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnSalary.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAJYAAAAjCAYAAAB2BvMkAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACHSURBVHhe7dI5EYBAAARB/GANV8g6GSeAJ6XIYLIOOtlN
+        Z1m3fVwO+NG4w3o74BNhkRAWCWGREBYJYZEQFglhkRAWCWGREBYJYZEQFglhkRAWCWGREBYJYZEQFglh
+        kRAWCWGREBYJYZEQFglhkRAWCWGREBYJYZEQFglhkRAWiTus+Rzhm32eQ5GXNvYX2poAAAAASUVORK5C
+        YII=
+</value>
+  </data>
+  <data name="btnUserAccount.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAMgAAAAjCAYAAADR20XfAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADqSURBVHhe7d2xSQRRFIbRCe1CM3Vma7EF04X3wF5sYPCN
+        LZiaWoKBkYGRiIiIgcEqC4LgzN/AnAsnujf94tsNdXr4sYOVex5quzstV9vu78wcwpp9DKXdH1+MRwKB
+        Re3x8Hw8EAjM6Ev7HOr1pUBgVtv1dXoSCAQCgUAgEAgEAoFAIBAIBAKBQCAQCAQCgUAgEAgEAoFAIBAI
+        BAKBQCAQCAQCgUAgEAgEAoFAIBAIBAKBQCAQCAQCgSWlvQkEFvR1uhEIzOjL9Lp/gTC3hHVrL/12Ovv9
+        D/L+/wDWqH1tynS7qePJPo6u674Bdb2zXXaSXLsAAAAASUVORK5CYII=
+</value>
+  </data>
 </root>

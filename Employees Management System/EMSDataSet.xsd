@@ -1052,6 +1052,58 @@ SELECT ID, EmployeeID, Additional_Info, Created_Date, Modified_Date FROM VIPEmpl
             </Mappings>
             <Sources />
           </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="EmployeeInfoForEditingTableAdapter" GeneratorDataComponentClassName="EmployeeInfoForEditingTableAdapter" Name="EmployeeInfoForEditing" UserDataComponentName="EmployeeInfoForEditingTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="EMSConnectionString (Settings)" DbObjectName="EMS.dbo.EmployeeInfoForEditing" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID, Passport_ID, Name, Surname, Gender, Telephone, Email, Department FROM dbo.EmployeeInfoForEditing</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="Passport_ID" DataSetColumn="Passport_ID" />
+              <Mapping SourceColumn="Name" DataSetColumn="Name" />
+              <Mapping SourceColumn="Surname" DataSetColumn="Surname" />
+              <Mapping SourceColumn="Gender" DataSetColumn="Gender" />
+              <Mapping SourceColumn="Telephone" DataSetColumn="Telephone" />
+              <Mapping SourceColumn="Email" DataSetColumn="Email" />
+              <Mapping SourceColumn="Department" DataSetColumn="Department" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="EditEmployeeInfoFormTableAdapter" GeneratorDataComponentClassName="EditEmployeeInfoFormTableAdapter" Name="EditEmployeeInfoForm" UserDataComponentName="EditEmployeeInfoFormTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="EMSConnectionString (Settings)" DbObjectName="EMS.dbo.EditEmployeeInfoForm" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID, Passport_ID, Name, Surname, [Father's_Name], Birth_Date, Marital_Status, Telephone, Email, City, Street, Department, Status, Photo FROM dbo.EditEmployeeInfoForm</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="Passport_ID" DataSetColumn="Passport_ID" />
+              <Mapping SourceColumn="Name" DataSetColumn="Name" />
+              <Mapping SourceColumn="Surname" DataSetColumn="Surname" />
+              <Mapping SourceColumn="Father's_Name" DataSetColumn="Father's_Name" />
+              <Mapping SourceColumn="Birth_Date" DataSetColumn="Birth_Date" />
+              <Mapping SourceColumn="Marital_Status" DataSetColumn="Marital_Status" />
+              <Mapping SourceColumn="Telephone" DataSetColumn="Telephone" />
+              <Mapping SourceColumn="Email" DataSetColumn="Email" />
+              <Mapping SourceColumn="City" DataSetColumn="City" />
+              <Mapping SourceColumn="Street" DataSetColumn="Street" />
+              <Mapping SourceColumn="Department" DataSetColumn="Department" />
+              <Mapping SourceColumn="Status" DataSetColumn="Status" />
+              <Mapping SourceColumn="Photo" DataSetColumn="Photo" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
         </Tables>
         <Sources>
           <DbSource ConnectionRef="EMSConnectionString (Settings)" DbObjectName="EMS.dbo.AddActivityLog" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="AddActivityLog" MethodsParameterType="CLR" Modifier="Public" Name="AddActivityLog" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="AddActivityLog">
@@ -1691,6 +1743,142 @@ SELECT ID, EmployeeID, Additional_Info, Created_Date, Modified_Date FROM VIPEmpl
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+        <xs:element name="EmployeeInfoForEditing" msprop:Generator_TableClassName="EmployeeInfoForEditingDataTable" msprop:Generator_TableVarName="tableEmployeeInfoForEditing" msprop:Generator_RowChangedName="EmployeeInfoForEditingRowChanged" msprop:Generator_TablePropName="EmployeeInfoForEditing" msprop:Generator_RowDeletingName="EmployeeInfoForEditingRowDeleting" msprop:Generator_RowChangingName="EmployeeInfoForEditingRowChanging" msprop:Generator_RowEvHandlerName="EmployeeInfoForEditingRowChangeEventHandler" msprop:Generator_RowDeletedName="EmployeeInfoForEditingRowDeleted" msprop:Generator_RowClassName="EmployeeInfoForEditingRow" msprop:Generator_UserTableName="EmployeeInfoForEditing" msprop:Generator_RowEvArgName="EmployeeInfoForEditingRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:string" />
+              <xs:element name="Passport_ID" msprop:Generator_ColumnVarNameInTable="columnPassport_ID" msprop:Generator_ColumnPropNameInRow="Passport_ID" msprop:Generator_ColumnPropNameInTable="Passport_IDColumn" msprop:Generator_UserColumnName="Passport_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Surname" msprop:Generator_ColumnVarNameInTable="columnSurname" msprop:Generator_ColumnPropNameInRow="Surname" msprop:Generator_ColumnPropNameInTable="SurnameColumn" msprop:Generator_UserColumnName="Surname">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Gender" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnGender" msprop:Generator_ColumnPropNameInRow="Gender" msprop:Generator_ColumnPropNameInTable="GenderColumn" msprop:Generator_UserColumnName="Gender" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Telephone" msprop:Generator_ColumnVarNameInTable="columnTelephone" msprop:Generator_ColumnPropNameInRow="Telephone" msprop:Generator_ColumnPropNameInTable="TelephoneColumn" msprop:Generator_UserColumnName="Telephone">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Email" msprop:Generator_ColumnVarNameInTable="columnEmail" msprop:Generator_ColumnPropNameInRow="Email" msprop:Generator_ColumnPropNameInTable="EmailColumn" msprop:Generator_UserColumnName="Email">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Department" msprop:Generator_ColumnVarNameInTable="columnDepartment" msprop:Generator_ColumnPropNameInRow="Department" msprop:Generator_ColumnPropNameInTable="DepartmentColumn" msprop:Generator_UserColumnName="Department">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="EditEmployeeInfoForm" msprop:Generator_TableClassName="EditEmployeeInfoFormDataTable" msprop:Generator_TableVarName="tableEditEmployeeInfoForm" msprop:Generator_TablePropName="EditEmployeeInfoForm" msprop:Generator_RowDeletingName="EditEmployeeInfoFormRowDeleting" msprop:Generator_RowChangingName="EditEmployeeInfoFormRowChanging" msprop:Generator_RowEvHandlerName="EditEmployeeInfoFormRowChangeEventHandler" msprop:Generator_RowDeletedName="EditEmployeeInfoFormRowDeleted" msprop:Generator_UserTableName="EditEmployeeInfoForm" msprop:Generator_RowChangedName="EditEmployeeInfoFormRowChanged" msprop:Generator_RowEvArgName="EditEmployeeInfoFormRowChangeEvent" msprop:Generator_RowClassName="EditEmployeeInfoFormRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Passport_ID" msprop:Generator_ColumnVarNameInTable="columnPassport_ID" msprop:Generator_ColumnPropNameInRow="Passport_ID" msprop:Generator_ColumnPropNameInTable="Passport_IDColumn" msprop:Generator_UserColumnName="Passport_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Surname" msprop:Generator_ColumnVarNameInTable="columnSurname" msprop:Generator_ColumnPropNameInRow="Surname" msprop:Generator_ColumnPropNameInTable="SurnameColumn" msprop:Generator_UserColumnName="Surname">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Father_x0027_s_Name" msprop:Generator_ColumnVarNameInTable="_columnFather_s_Name" msprop:Generator_ColumnPropNameInRow="_Father_s_Name" msprop:Generator_ColumnPropNameInTable="_Father_s_NameColumn" msprop:Generator_UserColumnName="Father's_Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Birth_Date" msprop:Generator_ColumnVarNameInTable="columnBirth_Date" msprop:Generator_ColumnPropNameInRow="Birth_Date" msprop:Generator_ColumnPropNameInTable="Birth_DateColumn" msprop:Generator_UserColumnName="Birth_Date" type="xs:dateTime" />
+              <xs:element name="Marital_Status" msprop:Generator_ColumnVarNameInTable="columnMarital_Status" msprop:Generator_ColumnPropNameInRow="Marital_Status" msprop:Generator_ColumnPropNameInTable="Marital_StatusColumn" msprop:Generator_UserColumnName="Marital_Status" type="xs:boolean" />
+              <xs:element name="Telephone" msprop:Generator_ColumnVarNameInTable="columnTelephone" msprop:Generator_ColumnPropNameInRow="Telephone" msprop:Generator_ColumnPropNameInTable="TelephoneColumn" msprop:Generator_UserColumnName="Telephone">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Email" msprop:Generator_ColumnVarNameInTable="columnEmail" msprop:Generator_ColumnPropNameInRow="Email" msprop:Generator_ColumnPropNameInTable="EmailColumn" msprop:Generator_UserColumnName="Email">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="City" msprop:Generator_ColumnVarNameInTable="columnCity" msprop:Generator_ColumnPropNameInRow="City" msprop:Generator_ColumnPropNameInTable="CityColumn" msprop:Generator_UserColumnName="City">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Street" msprop:Generator_ColumnVarNameInTable="columnStreet" msprop:Generator_ColumnPropNameInRow="Street" msprop:Generator_ColumnPropNameInTable="StreetColumn" msprop:Generator_UserColumnName="Street">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Department" msprop:Generator_ColumnVarNameInTable="columnDepartment" msprop:Generator_ColumnPropNameInRow="Department" msprop:Generator_ColumnPropNameInTable="DepartmentColumn" msprop:Generator_UserColumnName="Department">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_UserColumnName="Status" type="xs:int" />
+              <xs:element name="Photo" msprop:Generator_ColumnVarNameInTable="columnPhoto" msprop:Generator_ColumnPropNameInRow="Photo" msprop:Generator_ColumnPropNameInTable="PhotoColumn" msprop:Generator_UserColumnName="Photo" type="xs:base64Binary" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
       </xs:choice>
     </xs:complexType>
     <xs:unique name="Constraint1" msdata:PrimaryKey="true">
@@ -1747,6 +1935,10 @@ SELECT ID, EmployeeID, Additional_Info, Created_Date, Modified_Date FROM VIPEmpl
     </xs:unique>
     <xs:unique name="EmployeeShortInfo_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
       <xs:selector xpath=".//mstns:EmployeeShortInfo" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+    <xs:unique name="EmployeeInfoForEditing_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:EmployeeInfoForEditing" />
       <xs:field xpath="mstns:ID" />
     </xs:unique>
   </xs:element>

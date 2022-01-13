@@ -173,6 +173,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\Employee.cs" />
     <Compile Include="Class\GlobalVariables.cs" />
     <Compile Include="Class\UserActivity.cs" />
     <Compile Include="Custom Controls\CustomButton.cs">
@@ -251,6 +252,12 @@
     <Compile Include="Forms\EmployeePayHistory.Designer.cs">
       <DependentUpon>EmployeePayHistory.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\EmployeeQRCardInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EmployeeQRCardInfo.Designer.cs">
+      <DependentUpon>EmployeeQRCardInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\EmployeeRegistration.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -274,12 +281,6 @@
     </Compile>
     <Compile Include="Forms\Test.Designer.cs">
       <DependentUpon>Test.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\VIPEmployee.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\VIPEmployee.Designer.cs">
-      <DependentUpon>VIPEmployee.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -336,6 +337,9 @@
     <EmbeddedResource Include="Forms\EmployeePayHistory.resx">
       <DependentUpon>EmployeePayHistory.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EmployeeQRCardInfo.resx">
+      <DependentUpon>EmployeeQRCardInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\EmployeeRegistration.resx">
       <DependentUpon>EmployeeRegistration.cs</DependentUpon>
     </EmbeddedResource>
@@ -347,9 +351,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Test.resx">
       <DependentUpon>Test.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\VIPEmployee.resx">
-      <DependentUpon>VIPEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

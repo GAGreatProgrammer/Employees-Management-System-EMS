@@ -36,6 +36,9 @@ namespace Employees_Management_System.Forms
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -96,6 +99,12 @@ namespace Employees_Management_System.Forms
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.btnSearch = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.btnBankAccount = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.btnSalary = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.btnUserAccount = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.label34 = new System.Windows.Forms.Label();
+            this.txtPosition = new Employees_Management_System.Custom_Controls.CustomTextBoxRounded();
+            this.label35 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbPhoto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.departmentBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eMSDataSet)).BeginInit();
@@ -184,7 +193,7 @@ namespace Employees_Management_System.Forms
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(524, 30);
+            this.label8.Location = new System.Drawing.Point(13, 519);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(107, 20);
             this.label8.TabIndex = 7;
@@ -195,7 +204,7 @@ namespace Employees_Management_System.Forms
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(524, 87);
+            this.label9.Location = new System.Drawing.Point(15, 572);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(102, 20);
             this.label9.TabIndex = 8;
@@ -217,7 +226,7 @@ namespace Employees_Management_System.Forms
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(524, 147);
+            this.label11.Location = new System.Drawing.Point(530, 19);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(69, 20);
             this.label11.TabIndex = 10;
@@ -228,7 +237,7 @@ namespace Employees_Management_System.Forms
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(524, 206);
+            this.label12.Location = new System.Drawing.Point(530, 78);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(47, 20);
             this.label12.TabIndex = 11;
@@ -239,7 +248,7 @@ namespace Employees_Management_System.Forms
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(524, 264);
+            this.label13.Location = new System.Drawing.Point(530, 142);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(138, 20);
             this.label13.TabIndex = 12;
@@ -250,7 +259,7 @@ namespace Employees_Management_System.Forms
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(524, 390);
+            this.label14.Location = new System.Drawing.Point(530, 319);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(86, 20);
             this.label14.TabIndex = 13;
@@ -261,7 +270,7 @@ namespace Employees_Management_System.Forms
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(524, 322);
+            this.label15.Location = new System.Drawing.Point(530, 251);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(181, 40);
             this.label15.TabIndex = 14;
@@ -272,7 +281,7 @@ namespace Employees_Management_System.Forms
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(524, 435);
+            this.label16.Location = new System.Drawing.Point(530, 363);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(120, 40);
             this.label16.TabIndex = 15;
@@ -436,7 +445,7 @@ namespace Employees_Management_System.Forms
             this.btnCheck.IdleIconLeftImage = null;
             this.btnCheck.IdleIconRightImage = null;
             this.btnCheck.IndicateFocus = false;
-            this.btnCheck.Location = new System.Drawing.Point(329, 504);
+            this.btnCheck.Location = new System.Drawing.Point(329, 625);
             this.btnCheck.Name = "btnCheck";
             this.btnCheck.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnCheck.OnDisabledState.BorderRadius = 10;
@@ -525,7 +534,7 @@ namespace Employees_Management_System.Forms
             this.btnCancel.IdleIconLeftImage = null;
             this.btnCancel.IdleIconRightImage = null;
             this.btnCancel.IndicateFocus = false;
-            this.btnCancel.Location = new System.Drawing.Point(173, 504);
+            this.btnCancel.Location = new System.Drawing.Point(173, 625);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnCancel.OnDisabledState.BorderRadius = 10;
@@ -615,7 +624,7 @@ namespace Employees_Management_System.Forms
             this.btnSave.IdleIconLeftImage = null;
             this.btnSave.IdleIconRightImage = null;
             this.btnSave.IndicateFocus = false;
-            this.btnSave.Location = new System.Drawing.Point(17, 504);
+            this.btnSave.Location = new System.Drawing.Point(17, 625);
             this.btnSave.Name = "btnSave";
             this.btnSave.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnSave.OnDisabledState.BorderRadius = 10;
@@ -660,10 +669,12 @@ namespace Employees_Management_System.Forms
             // 
             // cboGender
             // 
+            this.cboGender.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.cboGender.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cboGender.BackColor = System.Drawing.Color.White;
             this.cboGender.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.cboGender.BorderSize = 1;
-            this.cboGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.cboGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboGender.DropDownWidth = 198;
             this.cboGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboGender.ForeColor = System.Drawing.Color.Black;
@@ -682,7 +693,6 @@ namespace Employees_Management_System.Forms
             this.cboGender.Padding = new System.Windows.Forms.Padding(1);
             this.cboGender.Size = new System.Drawing.Size(275, 35);
             this.cboGender.TabIndex = 58;
-            this.cboGender.OnSelectedIndexChanged += new System.EventHandler(this.cboGender_OnSelectedIndexChanged);
             // 
             // txtAdditional_Info
             // 
@@ -693,23 +703,25 @@ namespace Employees_Management_System.Forms
             this.txtAdditional_Info.BorderSize = 1;
             this.txtAdditional_Info.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAdditional_Info.ForeColor = System.Drawing.Color.Black;
-            this.txtAdditional_Info.Location = new System.Drawing.Point(720, 445);
+            this.txtAdditional_Info.Location = new System.Drawing.Point(534, 413);
             this.txtAdditional_Info.Multiline = true;
             this.txtAdditional_Info.Name = "txtAdditional_Info";
             this.txtAdditional_Info.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.txtAdditional_Info.PasswordChar = false;
             this.txtAdditional_Info.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtAdditional_Info.PlaceholderText = "";
-            this.txtAdditional_Info.Size = new System.Drawing.Size(631, 94);
+            this.txtAdditional_Info.Size = new System.Drawing.Size(817, 189);
             this.txtAdditional_Info.TabIndex = 57;
             this.txtAdditional_Info.UnderlinedStyle = false;
             // 
             // cboStatus
             // 
+            this.cboStatus.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.cboStatus.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cboStatus.BackColor = System.Drawing.Color.White;
             this.cboStatus.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.cboStatus.BorderSize = 1;
-            this.cboStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.cboStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboStatus.DropDownWidth = 198;
             this.cboStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboStatus.ForeColor = System.Drawing.Color.Black;
@@ -721,21 +733,20 @@ namespace Employees_Management_System.Forms
             "გაუქმებული"});
             this.cboStatus.ListBackColor = System.Drawing.Color.White;
             this.cboStatus.ListTextColor = System.Drawing.Color.Black;
-            this.cboStatus.Location = new System.Drawing.Point(720, 380);
+            this.cboStatus.Location = new System.Drawing.Point(726, 305);
             this.cboStatus.MaxDropDownItems = 8;
             this.cboStatus.MinimumSize = new System.Drawing.Size(200, 30);
             this.cboStatus.Name = "cboStatus";
             this.cboStatus.Padding = new System.Windows.Forms.Padding(1);
             this.cboStatus.Size = new System.Drawing.Size(275, 35);
             this.cboStatus.TabIndex = 33;
-            this.cboStatus.OnSelectedIndexChanged += new System.EventHandler(this.cboStatus_OnSelectedIndexChanged);
             // 
             // dtpStartDate
             // 
             this.dtpStartDate.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.dtpStartDate.BorderSize = 0;
             this.dtpStartDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
-            this.dtpStartDate.Location = new System.Drawing.Point(720, 314);
+            this.dtpStartDate.Location = new System.Drawing.Point(728, 246);
             this.dtpStartDate.MinimumSize = new System.Drawing.Size(4, 35);
             this.dtpStartDate.Name = "dtpStartDate";
             this.dtpStartDate.Size = new System.Drawing.Size(275, 35);
@@ -745,12 +756,14 @@ namespace Employees_Management_System.Forms
             // 
             // cboDepartment
             // 
+            this.cboDepartment.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.cboDepartment.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cboDepartment.BackColor = System.Drawing.Color.White;
             this.cboDepartment.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.cboDepartment.BorderSize = 1;
             this.cboDepartment.DataSource = this.departmentBindingSource;
             this.cboDepartment.DisplayMember = "Department";
-            this.cboDepartment.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.cboDepartment.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboDepartment.DropDownWidth = 198;
             this.cboDepartment.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboDepartment.ForeColor = System.Drawing.Color.Black;
@@ -758,7 +771,7 @@ namespace Employees_Management_System.Forms
             this.cboDepartment.IntegralHeight = false;
             this.cboDepartment.ListBackColor = System.Drawing.Color.White;
             this.cboDepartment.ListTextColor = System.Drawing.Color.Black;
-            this.cboDepartment.Location = new System.Drawing.Point(720, 253);
+            this.cboDepartment.Location = new System.Drawing.Point(726, 136);
             this.cboDepartment.MaxDropDownItems = 8;
             this.cboDepartment.MinimumSize = new System.Drawing.Size(200, 30);
             this.cboDepartment.Name = "cboDepartment";
@@ -786,7 +799,7 @@ namespace Employees_Management_System.Forms
             this.txtStreet.BorderSize = 1;
             this.txtStreet.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtStreet.ForeColor = System.Drawing.Color.Black;
-            this.txtStreet.Location = new System.Drawing.Point(720, 195);
+            this.txtStreet.Location = new System.Drawing.Point(726, 70);
             this.txtStreet.Multiline = false;
             this.txtStreet.Name = "txtStreet";
             this.txtStreet.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -806,7 +819,7 @@ namespace Employees_Management_System.Forms
             this.txtCity.BorderSize = 1;
             this.txtCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCity.ForeColor = System.Drawing.Color.Black;
-            this.txtCity.Location = new System.Drawing.Point(720, 136);
+            this.txtCity.Location = new System.Drawing.Point(726, 13);
             this.txtCity.Multiline = false;
             this.txtCity.Name = "txtCity";
             this.txtCity.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -819,12 +832,14 @@ namespace Employees_Management_System.Forms
             // 
             // cboCountry
             // 
+            this.cboCountry.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.cboCountry.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cboCountry.BackColor = System.Drawing.Color.White;
             this.cboCountry.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.cboCountry.BorderSize = 1;
             this.cboCountry.DataSource = this.countriesBindingSource;
             this.cboCountry.DisplayMember = "Country";
-            this.cboCountry.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.cboCountry.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboCountry.DropDownWidth = 198;
             this.cboCountry.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCountry.ForeColor = System.Drawing.Color.Black;
@@ -861,10 +876,12 @@ namespace Employees_Management_System.Forms
             // 
             // cboMaritalStatus
             // 
+            this.cboMaritalStatus.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.cboMaritalStatus.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cboMaritalStatus.BackColor = System.Drawing.Color.White;
             this.cboMaritalStatus.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.cboMaritalStatus.BorderSize = 1;
-            this.cboMaritalStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.cboMaritalStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboMaritalStatus.DropDownWidth = 198;
             this.cboMaritalStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboMaritalStatus.ForeColor = System.Drawing.Color.Black;
@@ -882,7 +899,6 @@ namespace Employees_Management_System.Forms
             this.cboMaritalStatus.Padding = new System.Windows.Forms.Padding(1);
             this.cboMaritalStatus.Size = new System.Drawing.Size(275, 35);
             this.cboMaritalStatus.TabIndex = 26;
-            this.cboMaritalStatus.OnSelectedIndexChanged += new System.EventHandler(this.cboMaritalStatus_OnSelectedIndexChanged);
             // 
             // txtEmail
             // 
@@ -893,7 +909,7 @@ namespace Employees_Management_System.Forms
             this.txtEmail.BorderSize = 1;
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.ForeColor = System.Drawing.Color.Black;
-            this.txtEmail.Location = new System.Drawing.Point(720, 79);
+            this.txtEmail.Location = new System.Drawing.Point(214, 567);
             this.txtEmail.Multiline = false;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -913,7 +929,7 @@ namespace Employees_Management_System.Forms
             this.txtTelephone.BorderSize = 1;
             this.txtTelephone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTelephone.ForeColor = System.Drawing.Color.Black;
-            this.txtTelephone.Location = new System.Drawing.Point(720, 19);
+            this.txtTelephone.Location = new System.Drawing.Point(214, 508);
             this.txtTelephone.Multiline = false;
             this.txtTelephone.Name = "txtTelephone";
             this.txtTelephone.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -1107,7 +1123,7 @@ namespace Employees_Management_System.Forms
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.ForeColor = System.Drawing.Color.Red;
-            this.label26.Location = new System.Drawing.Point(630, 27);
+            this.label26.Location = new System.Drawing.Point(119, 516);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(15, 20);
             this.label26.TabIndex = 84;
@@ -1118,7 +1134,7 @@ namespace Employees_Management_System.Forms
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.ForeColor = System.Drawing.Color.Red;
-            this.label27.Location = new System.Drawing.Point(625, 82);
+            this.label27.Location = new System.Drawing.Point(116, 567);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(15, 20);
             this.label27.TabIndex = 85;
@@ -1129,7 +1145,7 @@ namespace Employees_Management_System.Forms
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.ForeColor = System.Drawing.Color.Red;
-            this.label28.Location = new System.Drawing.Point(592, 144);
+            this.label28.Location = new System.Drawing.Point(598, 16);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(15, 20);
             this.label28.TabIndex = 86;
@@ -1140,7 +1156,7 @@ namespace Employees_Management_System.Forms
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label29.ForeColor = System.Drawing.Color.Red;
-            this.label29.Location = new System.Drawing.Point(571, 202);
+            this.label29.Location = new System.Drawing.Point(577, 74);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(15, 20);
             this.label29.TabIndex = 87;
@@ -1151,7 +1167,7 @@ namespace Employees_Management_System.Forms
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label30.ForeColor = System.Drawing.Color.Red;
-            this.label30.Location = new System.Drawing.Point(660, 260);
+            this.label30.Location = new System.Drawing.Point(666, 138);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(15, 20);
             this.label30.TabIndex = 88;
@@ -1162,7 +1178,7 @@ namespace Employees_Management_System.Forms
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label31.ForeColor = System.Drawing.Color.Red;
-            this.label31.Location = new System.Drawing.Point(701, 320);
+            this.label31.Location = new System.Drawing.Point(707, 249);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(15, 20);
             this.label31.TabIndex = 89;
@@ -1173,7 +1189,7 @@ namespace Employees_Management_System.Forms
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label32.ForeColor = System.Drawing.Color.Red;
-            this.label32.Location = new System.Drawing.Point(608, 386);
+            this.label32.Location = new System.Drawing.Point(614, 315);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(15, 20);
             this.label32.TabIndex = 90;
@@ -1279,12 +1295,330 @@ namespace Employees_Management_System.Forms
             this.btnSearch.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnSearch.UseDefaultRadiusAndThickness = true;
             // 
+            // btnBankAccount
+            // 
+            this.btnBankAccount.AllowAnimations = true;
+            this.btnBankAccount.AllowMouseEffects = true;
+            this.btnBankAccount.AllowToggling = false;
+            this.btnBankAccount.AnimationSpeed = 50;
+            this.btnBankAccount.AutoGenerateColors = false;
+            this.btnBankAccount.AutoRoundBorders = false;
+            this.btnBankAccount.AutoSizeLeftIcon = true;
+            this.btnBankAccount.AutoSizeRightIcon = true;
+            this.btnBankAccount.BackColor = System.Drawing.Color.Transparent;
+            this.btnBankAccount.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(108)))), ((int)(((byte)(163)))));
+            this.btnBankAccount.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBankAccount.BackgroundImage")));
+            this.btnBankAccount.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnBankAccount.ButtonText = "საბანკო ანგარიში";
+            this.btnBankAccount.ButtonTextMarginLeft = 0;
+            this.btnBankAccount.ColorContrastOnClick = 45;
+            this.btnBankAccount.ColorContrastOnHover = 45;
+            this.btnBankAccount.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges6.BottomLeft = true;
+            borderEdges6.BottomRight = false;
+            borderEdges6.TopLeft = true;
+            borderEdges6.TopRight = false;
+            this.btnBankAccount.CustomizableEdges = borderEdges6;
+            this.btnBankAccount.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnBankAccount.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnBankAccount.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnBankAccount.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnBankAccount.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.btnBankAccount.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBankAccount.ForeColor = System.Drawing.Color.White;
+            this.btnBankAccount.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBankAccount.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btnBankAccount.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.btnBankAccount.IconMarginLeft = 11;
+            this.btnBankAccount.IconPadding = 10;
+            this.btnBankAccount.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnBankAccount.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btnBankAccount.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btnBankAccount.IconSize = 25;
+            this.btnBankAccount.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(108)))), ((int)(((byte)(163)))));
+            this.btnBankAccount.IdleBorderRadius = 10;
+            this.btnBankAccount.IdleBorderThickness = 1;
+            this.btnBankAccount.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(108)))), ((int)(((byte)(163)))));
+            this.btnBankAccount.IdleIconLeftImage = null;
+            this.btnBankAccount.IdleIconRightImage = null;
+            this.btnBankAccount.IndicateFocus = false;
+            this.btnBankAccount.Location = new System.Drawing.Point(789, 625);
+            this.btnBankAccount.Name = "btnBankAccount";
+            this.btnBankAccount.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnBankAccount.OnDisabledState.BorderRadius = 10;
+            this.btnBankAccount.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnBankAccount.OnDisabledState.BorderThickness = 1;
+            this.btnBankAccount.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnBankAccount.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnBankAccount.OnDisabledState.IconLeftImage = null;
+            this.btnBankAccount.OnDisabledState.IconRightImage = null;
+            this.btnBankAccount.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.btnBankAccount.onHoverState.BorderRadius = 10;
+            this.btnBankAccount.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnBankAccount.onHoverState.BorderThickness = 1;
+            this.btnBankAccount.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.btnBankAccount.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.btnBankAccount.onHoverState.IconLeftImage = null;
+            this.btnBankAccount.onHoverState.IconRightImage = null;
+            this.btnBankAccount.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(108)))), ((int)(((byte)(163)))));
+            this.btnBankAccount.OnIdleState.BorderRadius = 10;
+            this.btnBankAccount.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnBankAccount.OnIdleState.BorderThickness = 1;
+            this.btnBankAccount.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(108)))), ((int)(((byte)(163)))));
+            this.btnBankAccount.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.btnBankAccount.OnIdleState.IconLeftImage = null;
+            this.btnBankAccount.OnIdleState.IconRightImage = null;
+            this.btnBankAccount.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(108)))), ((int)(((byte)(163)))));
+            this.btnBankAccount.OnPressedState.BorderRadius = 10;
+            this.btnBankAccount.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnBankAccount.OnPressedState.BorderThickness = 1;
+            this.btnBankAccount.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(108)))), ((int)(((byte)(163)))));
+            this.btnBankAccount.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btnBankAccount.OnPressedState.IconLeftImage = null;
+            this.btnBankAccount.OnPressedState.IconRightImage = null;
+            this.btnBankAccount.Size = new System.Drawing.Size(200, 35);
+            this.btnBankAccount.TabIndex = 135;
+            this.btnBankAccount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnBankAccount.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnBankAccount.TextMarginLeft = 0;
+            this.btnBankAccount.TextPadding = new System.Windows.Forms.Padding(0);
+            this.btnBankAccount.UseDefaultRadiusAndThickness = true;
+            this.btnBankAccount.Click += new System.EventHandler(this.btnBankAccount_Click);
+            // 
+            // btnSalary
+            // 
+            this.btnSalary.AllowAnimations = true;
+            this.btnSalary.AllowMouseEffects = true;
+            this.btnSalary.AllowToggling = false;
+            this.btnSalary.AnimationSpeed = 50;
+            this.btnSalary.AutoGenerateColors = false;
+            this.btnSalary.AutoRoundBorders = false;
+            this.btnSalary.AutoSizeLeftIcon = true;
+            this.btnSalary.AutoSizeRightIcon = true;
+            this.btnSalary.BackColor = System.Drawing.Color.Transparent;
+            this.btnSalary.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(108)))), ((int)(((byte)(163)))));
+            this.btnSalary.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSalary.BackgroundImage")));
+            this.btnSalary.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnSalary.ButtonText = "ხელფასი";
+            this.btnSalary.ButtonTextMarginLeft = 0;
+            this.btnSalary.ColorContrastOnClick = 45;
+            this.btnSalary.ColorContrastOnHover = 45;
+            this.btnSalary.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges7.BottomLeft = false;
+            borderEdges7.BottomRight = false;
+            borderEdges7.TopLeft = false;
+            borderEdges7.TopRight = false;
+            this.btnSalary.CustomizableEdges = borderEdges7;
+            this.btnSalary.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnSalary.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnSalary.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnSalary.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnSalary.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.btnSalary.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalary.ForeColor = System.Drawing.Color.White;
+            this.btnSalary.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSalary.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btnSalary.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.btnSalary.IconMarginLeft = 11;
+            this.btnSalary.IconPadding = 10;
+            this.btnSalary.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSalary.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btnSalary.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btnSalary.IconSize = 25;
+            this.btnSalary.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(108)))), ((int)(((byte)(163)))));
+            this.btnSalary.IdleBorderRadius = 10;
+            this.btnSalary.IdleBorderThickness = 1;
+            this.btnSalary.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(108)))), ((int)(((byte)(163)))));
+            this.btnSalary.IdleIconLeftImage = null;
+            this.btnSalary.IdleIconRightImage = null;
+            this.btnSalary.IndicateFocus = false;
+            this.btnSalary.Location = new System.Drawing.Point(995, 625);
+            this.btnSalary.Name = "btnSalary";
+            this.btnSalary.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnSalary.OnDisabledState.BorderRadius = 10;
+            this.btnSalary.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnSalary.OnDisabledState.BorderThickness = 1;
+            this.btnSalary.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnSalary.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnSalary.OnDisabledState.IconLeftImage = null;
+            this.btnSalary.OnDisabledState.IconRightImage = null;
+            this.btnSalary.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.btnSalary.onHoverState.BorderRadius = 10;
+            this.btnSalary.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnSalary.onHoverState.BorderThickness = 1;
+            this.btnSalary.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.btnSalary.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.btnSalary.onHoverState.IconLeftImage = null;
+            this.btnSalary.onHoverState.IconRightImage = null;
+            this.btnSalary.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(108)))), ((int)(((byte)(163)))));
+            this.btnSalary.OnIdleState.BorderRadius = 10;
+            this.btnSalary.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnSalary.OnIdleState.BorderThickness = 1;
+            this.btnSalary.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(108)))), ((int)(((byte)(163)))));
+            this.btnSalary.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.btnSalary.OnIdleState.IconLeftImage = null;
+            this.btnSalary.OnIdleState.IconRightImage = null;
+            this.btnSalary.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(108)))), ((int)(((byte)(163)))));
+            this.btnSalary.OnPressedState.BorderRadius = 10;
+            this.btnSalary.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnSalary.OnPressedState.BorderThickness = 1;
+            this.btnSalary.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(108)))), ((int)(((byte)(163)))));
+            this.btnSalary.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btnSalary.OnPressedState.IconLeftImage = null;
+            this.btnSalary.OnPressedState.IconRightImage = null;
+            this.btnSalary.Size = new System.Drawing.Size(150, 35);
+            this.btnSalary.TabIndex = 134;
+            this.btnSalary.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSalary.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnSalary.TextMarginLeft = 0;
+            this.btnSalary.TextPadding = new System.Windows.Forms.Padding(0);
+            this.btnSalary.UseDefaultRadiusAndThickness = true;
+            this.btnSalary.Click += new System.EventHandler(this.btnSalary_Click);
+            // 
+            // btnUserAccount
+            // 
+            this.btnUserAccount.AllowAnimations = true;
+            this.btnUserAccount.AllowMouseEffects = true;
+            this.btnUserAccount.AllowToggling = false;
+            this.btnUserAccount.AnimationSpeed = 50;
+            this.btnUserAccount.AutoGenerateColors = false;
+            this.btnUserAccount.AutoRoundBorders = false;
+            this.btnUserAccount.AutoSizeLeftIcon = true;
+            this.btnUserAccount.AutoSizeRightIcon = true;
+            this.btnUserAccount.BackColor = System.Drawing.Color.Transparent;
+            this.btnUserAccount.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(108)))), ((int)(((byte)(163)))));
+            this.btnUserAccount.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUserAccount.BackgroundImage")));
+            this.btnUserAccount.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnUserAccount.ButtonText = "პირადი ანგარიში";
+            this.btnUserAccount.ButtonTextMarginLeft = 0;
+            this.btnUserAccount.ColorContrastOnClick = 45;
+            this.btnUserAccount.ColorContrastOnHover = 45;
+            this.btnUserAccount.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges8.BottomLeft = false;
+            borderEdges8.BottomRight = true;
+            borderEdges8.TopLeft = false;
+            borderEdges8.TopRight = true;
+            this.btnUserAccount.CustomizableEdges = borderEdges8;
+            this.btnUserAccount.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnUserAccount.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnUserAccount.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnUserAccount.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnUserAccount.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.btnUserAccount.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUserAccount.ForeColor = System.Drawing.Color.White;
+            this.btnUserAccount.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUserAccount.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btnUserAccount.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.btnUserAccount.IconMarginLeft = 11;
+            this.btnUserAccount.IconPadding = 10;
+            this.btnUserAccount.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnUserAccount.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btnUserAccount.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btnUserAccount.IconSize = 25;
+            this.btnUserAccount.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(108)))), ((int)(((byte)(163)))));
+            this.btnUserAccount.IdleBorderRadius = 10;
+            this.btnUserAccount.IdleBorderThickness = 1;
+            this.btnUserAccount.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(108)))), ((int)(((byte)(163)))));
+            this.btnUserAccount.IdleIconLeftImage = null;
+            this.btnUserAccount.IdleIconRightImage = null;
+            this.btnUserAccount.IndicateFocus = false;
+            this.btnUserAccount.Location = new System.Drawing.Point(1151, 625);
+            this.btnUserAccount.Name = "btnUserAccount";
+            this.btnUserAccount.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnUserAccount.OnDisabledState.BorderRadius = 10;
+            this.btnUserAccount.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnUserAccount.OnDisabledState.BorderThickness = 1;
+            this.btnUserAccount.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnUserAccount.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnUserAccount.OnDisabledState.IconLeftImage = null;
+            this.btnUserAccount.OnDisabledState.IconRightImage = null;
+            this.btnUserAccount.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.btnUserAccount.onHoverState.BorderRadius = 10;
+            this.btnUserAccount.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnUserAccount.onHoverState.BorderThickness = 1;
+            this.btnUserAccount.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.btnUserAccount.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.btnUserAccount.onHoverState.IconLeftImage = null;
+            this.btnUserAccount.onHoverState.IconRightImage = null;
+            this.btnUserAccount.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(108)))), ((int)(((byte)(163)))));
+            this.btnUserAccount.OnIdleState.BorderRadius = 10;
+            this.btnUserAccount.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnUserAccount.OnIdleState.BorderThickness = 1;
+            this.btnUserAccount.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(108)))), ((int)(((byte)(163)))));
+            this.btnUserAccount.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.btnUserAccount.OnIdleState.IconLeftImage = null;
+            this.btnUserAccount.OnIdleState.IconRightImage = null;
+            this.btnUserAccount.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(108)))), ((int)(((byte)(163)))));
+            this.btnUserAccount.OnPressedState.BorderRadius = 10;
+            this.btnUserAccount.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnUserAccount.OnPressedState.BorderThickness = 1;
+            this.btnUserAccount.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(108)))), ((int)(((byte)(163)))));
+            this.btnUserAccount.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btnUserAccount.OnPressedState.IconLeftImage = null;
+            this.btnUserAccount.OnPressedState.IconRightImage = null;
+            this.btnUserAccount.Size = new System.Drawing.Size(200, 35);
+            this.btnUserAccount.TabIndex = 133;
+            this.btnUserAccount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnUserAccount.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnUserAccount.TextMarginLeft = 0;
+            this.btnUserAccount.TextPadding = new System.Windows.Forms.Padding(0);
+            this.btnUserAccount.UseDefaultRadiusAndThickness = true;
+            this.btnUserAccount.Click += new System.EventHandler(this.btnUserAccount_Click);
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.ForeColor = System.Drawing.Color.Red;
+            this.label34.Location = new System.Drawing.Point(614, 200);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(15, 20);
+            this.label34.TabIndex = 138;
+            this.label34.Text = "*";
+            // 
+            // txtPosition
+            // 
+            this.txtPosition.BackColor = System.Drawing.Color.White;
+            this.txtPosition.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.txtPosition.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.txtPosition.BorderRadius = 0;
+            this.txtPosition.BorderSize = 1;
+            this.txtPosition.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPosition.ForeColor = System.Drawing.Color.Black;
+            this.txtPosition.Location = new System.Drawing.Point(728, 195);
+            this.txtPosition.Multiline = false;
+            this.txtPosition.Name = "txtPosition";
+            this.txtPosition.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtPosition.PasswordChar = false;
+            this.txtPosition.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtPosition.PlaceholderText = "";
+            this.txtPosition.Size = new System.Drawing.Size(275, 35);
+            this.txtPosition.TabIndex = 137;
+            this.txtPosition.UnderlinedStyle = false;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.ForeColor = System.Drawing.Color.Black;
+            this.label35.Location = new System.Drawing.Point(532, 203);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(82, 20);
+            this.label35.TabIndex = 136;
+            this.label35.Text = "პოზიცია";
+            // 
             // EmployeeRegistration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(1373, 561);
+            this.ClientSize = new System.Drawing.Size(1373, 676);
+            this.Controls.Add(this.label34);
+            this.Controls.Add(this.txtPosition);
+            this.Controls.Add(this.label35);
+            this.Controls.Add(this.btnBankAccount);
+            this.Controls.Add(this.btnSalary);
+            this.Controls.Add(this.btnUserAccount);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.label33);
             this.Controls.Add(this.label32);
@@ -1417,5 +1751,11 @@ namespace Employees_Management_System.Forms
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label33;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnSearch;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnBankAccount;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnSalary;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnUserAccount;
+        private System.Windows.Forms.Label label34;
+        private Custom_Controls.CustomTextBoxRounded txtPosition;
+        private System.Windows.Forms.Label label35;
     }
 }

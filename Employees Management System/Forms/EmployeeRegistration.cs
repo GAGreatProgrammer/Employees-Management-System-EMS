@@ -21,10 +21,6 @@ namespace Employees_Management_System.Forms
 
         byte[] Image;
 
-        int Gender;
-        int MaritalStatus;
-        int Status;
-
         public EmployeeRegistration()
         {
             InitializeComponent();
@@ -61,51 +57,56 @@ namespace Employees_Management_System.Forms
             if (txtPassportID.Text == "" || txtName.Text == "" || txtSurname.Text == "" || txtFathersName.Text == "" ||
                 cboGender.Text == "" || cboMaritalStatus.Text == "" || txtTelephone.Text == "" || txtEmail.Text == "" ||
                 cboCountry.Text == "" || txtCity.Text == "" || txtStreet.Text == "" || cboDepartment.Text == "" ||
-                pbPhoto.Image == null || cboStatus.Text == "")
+                txtPosition.Text == "" || pbPhoto.Image == null || cboStatus.Text == "")
             {
                 MessageBox.Show("შეავსეთ ყველა სავალდებულო ველი!", "გაფრთხილება", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-
-            try
+            
+            else
             {
-                SqlCommand sqlCommand = new SqlCommand("EmployeeRegistration", sqlConnection);
-                sqlCommand.CommandType = CommandType.StoredProcedure;
-
-                sqlCommand.Parameters.Add("@PassportID", SqlDbType.NVarChar).Value = txtPassportID.Text;
-                sqlCommand.Parameters.Add("@Name", SqlDbType.NVarChar).Value = txtName.Text;
-                sqlCommand.Parameters.Add("@Surname", SqlDbType.NVarChar).Value = txtSurname.Text;
-                sqlCommand.Parameters.Add("@FathersName", SqlDbType.NVarChar).Value = txtFathersName.Text;
-                sqlCommand.Parameters.Add("@Gender", SqlDbType.Int).Value = Gender;
-                sqlCommand.Parameters.Add("@Birth_Date", SqlDbType.Date).Value = dtpBirth_Date.Value.Date;
-                sqlCommand.Parameters.Add("@Marital_Status", SqlDbType.Bit).Value = MaritalStatus;
-                sqlCommand.Parameters.Add("@Telephone", SqlDbType.NVarChar).Value = txtTelephone.Text;
-                sqlCommand.Parameters.Add("@Email", SqlDbType.NVarChar).Value = txtEmail.Text;
-                sqlCommand.Parameters.Add("@Country", SqlDbType.Int).Value = cboCountry.SelectedValue;
-                sqlCommand.Parameters.Add("@City", SqlDbType.NVarChar).Value = txtCity.Text;
-                sqlCommand.Parameters.Add("@Street", SqlDbType.NVarChar).Value = txtStreet.Text;
-                sqlCommand.Parameters.Add("@Department", SqlDbType.Int).Value = cboDepartment.SelectedValue;
-                sqlCommand.Parameters.Add("@Photo", SqlDbType.Image).Value = Image;
-                sqlCommand.Parameters.Add("@Status", SqlDbType.Int).Value = Status;
-                sqlCommand.Parameters.Add("@Start_Date", SqlDbType.Date).Value = dtpStartDate.Value.Date;
-                sqlCommand.Parameters.Add("@Additional_Info", SqlDbType.NVarChar).Value = txtAdditional_Info.Text;
-
-                sqlConnection.Open();
-                sqlCommand.ExecuteNonQuery();
-                MessageBox.Show($"თანამშრომელი წარმატებით დარეგისტრირდა", "თანამშრომლის რეგისტრაცია", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                if (sqlConnection.State == ConnectionState.Open)
+                try
                 {
-                    sqlConnection.Close();
+                    SqlCommand sqlCommand = new SqlCommand("EmployeeRegistration", sqlConnection);
+                    sqlCommand.CommandType = CommandType.StoredProcedure;
+
+                    sqlCommand.Parameters.Add("@PassportID", SqlDbType.NVarChar).Value = txtPassportID.Text;
+                    sqlCommand.Parameters.Add("@Name", SqlDbType.NVarChar).Value = txtName.Text;
+                    sqlCommand.Parameters.Add("@Surname", SqlDbType.NVarChar).Value = txtSurname.Text;
+                    sqlCommand.Parameters.Add("@FathersName", SqlDbType.NVarChar).Value = txtFathersName.Text;
+                    sqlCommand.Parameters.Add("@Gender", SqlDbType.NVarChar).Value = cboGender.Text;
+                    sqlCommand.Parameters.Add("@Birth_Date", SqlDbType.Date).Value = dtpBirth_Date.Value.Date;
+                    sqlCommand.Parameters.Add("@Marital_Status", SqlDbType.NVarChar).Value = cboMaritalStatus.Text;
+                    sqlCommand.Parameters.Add("@Telephone", SqlDbType.NVarChar).Value = txtTelephone.Text;
+                    sqlCommand.Parameters.Add("@Email", SqlDbType.NVarChar).Value = txtEmail.Text;
+                    sqlCommand.Parameters.Add("@Country", SqlDbType.Int).Value = cboCountry.SelectedValue;
+                    sqlCommand.Parameters.Add("@City", SqlDbType.NVarChar).Value = txtCity.Text;
+                    sqlCommand.Parameters.Add("@Street", SqlDbType.NVarChar).Value = txtStreet.Text;
+                    sqlCommand.Parameters.Add("@Department", SqlDbType.Int).Value = cboDepartment.SelectedValue;
+                    sqlCommand.Parameters.Add("@Position", SqlDbType.NVarChar).Value = txtPosition.Text;
+                    sqlCommand.Parameters.Add("@Photo", SqlDbType.Image).Value = Image;
+                    sqlCommand.Parameters.Add("@Status", SqlDbType.NVarChar).Value = cboStatus.Text;
+                    sqlCommand.Parameters.Add("@Start_Date", SqlDbType.Date).Value = dtpStartDate.Value.Date;
+                    sqlCommand.Parameters.Add("@Additional_Info", SqlDbType.NVarChar).Value = txtAdditional_Info.Text;
+
+                    sqlConnection.Open();
+                    sqlCommand.ExecuteNonQuery();
+                    MessageBox.Show($"თანამშრომელი წარმატებით დარეგისტრირდა", "თანამშრომლის რეგისტრაცია", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    if (sqlConnection.State == ConnectionState.Open)
+                    {
+                        sqlConnection.Close();
+                    }
+
+                    ClearData();
                 }
             }
-
         }
 
         private void ClearData()
@@ -123,6 +124,7 @@ namespace Employees_Management_System.Forms
             txtCity.Text = "";
             txtStreet.Text = "";
             cboDepartment.Text = "";
+            txtPosition.Text = "";
             dtpStartDate.Value = DateTime.Now;
             cboStatus.Text = "";
             txtAdditional_Info.Text = "";
@@ -142,55 +144,10 @@ namespace Employees_Management_System.Forms
             }
         }
 
-        private void cboGender_OnSelectedIndexChanged(object sender, EventArgs e)
-        {
-            switch (cboGender)
-            {
-                case var _ when cboGender.Text.Contains("მამრობითი"):
-                    Gender = 1;
-                    break;
-                case var _ when cboGender.Text.Contains("მდედრობითი"):
-                    Gender = 2;
-                    break;
-                case var _ when cboGender.Text.Contains("სხვა"):
-                    Gender = 3;
-                    break;
-            }
-        }
-
-        private void cboMaritalStatus_OnSelectedIndexChanged(object sender, EventArgs e)
-        {
-            switch(cboMaritalStatus)
-            {
-                case var _ when cboMaritalStatus.Text.Contains("დაოჯახებული"):
-                    MaritalStatus = 1;
-                    break;
-                case var _ when cboMaritalStatus.Text.Contains("დაუოჯახებელი"):
-                    MaritalStatus = 0;
-                    break;
-            }
-        }
-
-        private void cboStatus_OnSelectedIndexChanged(object sender, EventArgs e)
-        {
-            switch(cboStatus)
-            {
-                case var _ when cboStatus.Text.Contains("აქტიური"):
-                    Status = 1;
-                    break;
-                case var _ when cboStatus.Text.Contains("შეჩერებული"):
-                    Status = 2;
-                    break;
-                case var _ when cboStatus.Text.Contains("გაუქმებული"):
-                    Status = 3;
-                    break;
-            }
-        }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
             Registration();
-            ClearData();
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -232,6 +189,23 @@ namespace Employees_Management_System.Forms
                     sqlConnection.Close();
                 }
             }
+        }
+
+        private void btnBankAccount_Click(object sender, EventArgs e)
+        {
+            EmployeeBankAccountRegistration employeeBankAccountRegistration = new EmployeeBankAccountRegistration();
+            employeeBankAccountRegistration.Show();
+        }
+
+        private void btnSalary_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnUserAccount_Click(object sender, EventArgs e)
+        {
+            EmployeeAccountGeneration employeeAccountGeneration = new EmployeeAccountGeneration();
+            employeeAccountGeneration.Show();
         }
     }
 }

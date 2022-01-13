@@ -53,5 +53,11 @@ namespace Employees_Management_System.User_Controls
             EmployeeAccountGeneration employeeAccountGeneration = new EmployeeAccountGeneration();
             employeeAccountGeneration.Show();
         }
+
+        private void btnEmployeeQRCardInfo_Click(object sender, EventArgs e)
+        {
+            EmployeeQRCardInfo employeeQRCardInfo = new EmployeeQRCardInfo();
+            employeeQRCardInfo.Show();
+        }
     }
 }
