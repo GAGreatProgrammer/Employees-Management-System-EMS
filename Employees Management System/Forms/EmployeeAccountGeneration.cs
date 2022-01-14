@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Employees_Management_System.Class;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
@@ -28,6 +29,8 @@ namespace Employees_Management_System.Forms
 
         private void EmployeeAccountGeneration_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'eMSDataSet.EmployeeAccountInfo' table. You can move, or remove it, as needed.
+            this.employeeAccountInfoTableAdapter.Fill(this.eMSDataSet.EmployeeAccountInfo);
             // TODO: This line of code loads data into the 'eMSDataSet.EmployeeShortInfo' table. You can move, or remove it, as needed.
             this.employeeShortInfoTableAdapter.Fill(this.eMSDataSet.EmployeeShortInfo);
 
@@ -71,6 +74,42 @@ namespace Employees_Management_System.Forms
                 }
             }
 
+        }
+
+        private void Delete()
+        {
+            try
+            {
+                DialogResult dialogResult = MessageBox.Show("გსურთ მომხმარებლის ანგარიშის წაშლა?", "მომხმარებლის ანგარიშის წაშლა", MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Warning);
+                if(dialogResult == DialogResult.Yes)
+                {
+                    SqlCommand sqlCommand = new SqlCommand("DeleteEmployeeAccount", sqlConnection);
+                    sqlCommand.CommandType = CommandType.StoredProcedure;
+
+                    sqlCommand.Parameters.Add("@EmployeeID", SqlDbType.NVarChar).Value = GlobalVariables.EmployeeID;
+
+                    sqlConnection.Open();
+                    sqlCommand.ExecuteNonQuery();
+                    MessageBox.Show($"თანამშრომელის პირადი ანგარიში წარმატებით წაიშალა", "პირადი ანგარიშის წაშლა", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else if(dialogResult == DialogResult.No)
+                {
+                    return;
+                }
+                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                if (sqlConnection.State == ConnectionState.Open)
+                {
+                    sqlConnection.Close();
+                }
+            }
         }
 
         private void ClearData()
@@ -127,6 +166,28 @@ namespace Employees_Management_System.Forms
             {
                 txtPasswordChangePeriod.Enabled = true;
             }
+        }
+
+        private void bunifuDataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                int indexRow = e.RowIndex;
+                if (indexRow >= 0)
+                {
+                    DataGridViewRow row = dgvEmployeeAccount.Rows[indexRow];
+                    GlobalVariables.EmployeeID = row.Cells[0].Value.ToString();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            Delete();
         }
     }
 }

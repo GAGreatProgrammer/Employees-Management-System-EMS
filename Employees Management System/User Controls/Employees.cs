@@ -59,5 +59,11 @@ namespace Employees_Management_System.User_Controls
             EmployeeQRCardInfo employeeQRCardInfo = new EmployeeQRCardInfo();
             employeeQRCardInfo.Show();
         }
+
+        private void btnEmployeeFullInfo_Click(object sender, EventArgs e)
+        {
+            EmployeeFullInfoFiltering employeeFullInfo = new EmployeeFullInfoFiltering();
+            employeeFullInfo.Show();
+        }
     }
 }

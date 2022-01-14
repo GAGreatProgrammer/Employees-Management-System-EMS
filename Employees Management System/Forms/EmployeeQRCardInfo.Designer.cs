@@ -52,6 +52,7 @@ namespace Employees_Management_System.Forms
             this.employeeShortInfoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.eMSDataSet = new Employees_Management_System.EMSDataSet();
             this.employeeShortInfoTableAdapter = new Employees_Management_System.EMSDataSetTableAdapters.EmployeeShortInfoTableAdapter();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployeeQRCard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeShortInfoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eMSDataSet)).BeginInit();
@@ -525,6 +526,11 @@ namespace Employees_Management_System.Forms
             // 
             this.employeeShortInfoTableAdapter.ClearBeforeFill = true;
             // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 15;
+            this.bunifuElipse1.TargetControl = this.dgvEmployeeQRCard;
+            // 
             // EmployeeQRCardInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -573,5 +579,6 @@ namespace Employees_Management_System.Forms
         private EMSDataSet eMSDataSet;
         private System.Windows.Forms.BindingSource employeeShortInfoBindingSource;
         private EMSDataSetTableAdapters.EmployeeShortInfoTableAdapter employeeShortInfoTableAdapter;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
     }
 }

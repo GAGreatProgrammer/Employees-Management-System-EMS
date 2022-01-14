@@ -240,6 +240,18 @@
     <Compile Include="Forms\EmployeeEditingForm.Designer.cs">
       <DependentUpon>EmployeeEditingForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\EmployeeFullInfoFiltering.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EmployeeFullInfoFiltering.Designer.cs">
+      <DependentUpon>EmployeeFullInfoFiltering.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EmployeeFullInformationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EmployeeFullInformationForm.Designer.cs">
+      <DependentUpon>EmployeeFullInformationForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\EmployeeInfoEditing.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -330,6 +342,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\EmployeeEditingForm.resx">
       <DependentUpon>EmployeeEditingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EmployeeFullInfoFiltering.resx">
+      <DependentUpon>EmployeeFullInfoFiltering.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EmployeeFullInformationForm.resx">
+      <DependentUpon>EmployeeFullInformationForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\EmployeeInfoEditing.resx">
       <DependentUpon>EmployeeInfoEditing.cs</DependentUpon>
