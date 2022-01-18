@@ -184,5 +184,28 @@ namespace Employees_Management_System.Forms
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void dgvEmployeeQRCard_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                DialogResult dialogResult = MessageBox.Show("გსურთ თანამშრომლის " +
+                    "სრული ინფორმაციის დათვალიერება?", "თანამშრომლის სრული ინფორმაცია", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+
+                if (dialogResult == DialogResult.Yes)
+                {
+                    EmployeeFullInformationForm employeeFullInformationForm = new EmployeeFullInformationForm();
+                    employeeFullInformationForm.Show();
+                }
+                else if (dialogResult == DialogResult.No)
+                {
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

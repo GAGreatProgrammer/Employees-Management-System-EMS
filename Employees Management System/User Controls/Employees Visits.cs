@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Employees_Management_System.Class;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -26,6 +27,18 @@ namespace Employees_Management_System.User_Controls
         public Employees_Visits()
         {
             InitializeComponent();
+        }
+
+        private void Employees_Visits_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'eMSDataSet.BlacklistInfo' table. You can move, or remove it, as needed.
+            this.employeeVisitsInfoTableAdapter.Fill(this.eMSDataSet.EmployeeVisitsInfo);
+
+            lblEmployeeCount.Text = EmployeeGlobalInformation.EmployeeCount().ToString();
+
+            lblCameEmployees.Text = EmployeeGlobalInformation.EmployeeCame().ToString();
+
+            lblNotCameEmployees.Text = EmployeeGlobalInformation.NotCameEmployees().ToString();
         }
     }
 }

@@ -121,6 +121,7 @@ namespace Employees_Management_System.Forms
             this.dgvEmployeeQRCard.TabIndex = 0;
             this.dgvEmployeeQRCard.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             this.dgvEmployeeQRCard.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmployeeQRCard_CellClick);
+            this.dgvEmployeeQRCard.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmployeeQRCard_CellDoubleClick);
             // 
             // btnReload
             // 

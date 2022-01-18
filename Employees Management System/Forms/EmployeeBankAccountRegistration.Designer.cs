@@ -50,13 +50,13 @@ namespace Employees_Management_System.Forms
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.cboCardType = new Employees_Management_System.Custom_Controls.CustomComboBox();
-            this.txtCardNumber = new Employees_Management_System.Custom_Controls.CustomTextBoxRounded();
+            this.txtCardNumber1 = new Employees_Management_System.Custom_Controls.CustomTextBoxRounded();
             this.txtExpYear = new Employees_Management_System.Custom_Controls.CustomTextBoxRounded();
             this.txtBankAccountNumber = new Employees_Management_System.Custom_Controls.CustomTextBoxRounded();
             this.txtAdditionalInfo = new Employees_Management_System.Custom_Controls.CustomTextBoxRounded();
             this.btnCancel = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnSave = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.bunifuDataGridView1 = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.dgvEmployeeBankAccountInfo = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.btnBooking = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnPayment = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnBlacklist = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -66,9 +66,16 @@ namespace Employees_Management_System.Forms
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.employeeShortInfoTableAdapter = new Employees_Management_System.EMSDataSetTableAdapters.EmployeeShortInfoTableAdapter();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.txtCardNumber2 = new Employees_Management_System.Custom_Controls.CustomTextBoxRounded();
+            this.txtCardNumber3 = new Employees_Management_System.Custom_Controls.CustomTextBoxRounded();
+            this.txtCardNumber4 = new Employees_Management_System.Custom_Controls.CustomTextBoxRounded();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.employeeShortInfoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eMSDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmployeeBankAccountInfo)).BeginInit();
             this.SuspendLayout();
             // 
             // txtExpMonth
@@ -90,6 +97,7 @@ namespace Employees_Management_System.Forms
             this.txtExpMonth.Size = new System.Drawing.Size(145, 35);
             this.txtExpMonth.TabIndex = 77;
             this.txtExpMonth.UnderlinedStyle = false;
+            this.txtExpMonth._TextChanged += new System.EventHandler(this.txtExpMonth__TextChanged);
             // 
             // label1
             // 
@@ -152,7 +160,7 @@ namespace Employees_Management_System.Forms
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(12, 156);
+            this.label2.Location = new System.Drawing.Point(12, 152);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(155, 20);
             this.label2.TabIndex = 85;
@@ -163,7 +171,7 @@ namespace Employees_Management_System.Forms
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(14, 208);
+            this.label3.Location = new System.Drawing.Point(14, 205);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(116, 40);
             this.label3.TabIndex = 86;
@@ -174,7 +182,7 @@ namespace Employees_Management_System.Forms
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(14, 274);
+            this.label5.Location = new System.Drawing.Point(14, 272);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(170, 40);
             this.label5.TabIndex = 88;
@@ -223,25 +231,26 @@ namespace Employees_Management_System.Forms
             this.cboCardType.Size = new System.Drawing.Size(310, 35);
             this.cboCardType.TabIndex = 91;
             // 
-            // txtCardNumber
+            // txtCardNumber1
             // 
-            this.txtCardNumber.BackColor = System.Drawing.Color.White;
-            this.txtCardNumber.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.txtCardNumber.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
-            this.txtCardNumber.BorderRadius = 0;
-            this.txtCardNumber.BorderSize = 1;
-            this.txtCardNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCardNumber.ForeColor = System.Drawing.Color.Black;
-            this.txtCardNumber.Location = new System.Drawing.Point(260, 141);
-            this.txtCardNumber.Multiline = false;
-            this.txtCardNumber.Name = "txtCardNumber";
-            this.txtCardNumber.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtCardNumber.PasswordChar = false;
-            this.txtCardNumber.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtCardNumber.PlaceholderText = "";
-            this.txtCardNumber.Size = new System.Drawing.Size(310, 35);
-            this.txtCardNumber.TabIndex = 92;
-            this.txtCardNumber.UnderlinedStyle = false;
+            this.txtCardNumber1.BackColor = System.Drawing.Color.White;
+            this.txtCardNumber1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.txtCardNumber1.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.txtCardNumber1.BorderRadius = 0;
+            this.txtCardNumber1.BorderSize = 1;
+            this.txtCardNumber1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCardNumber1.ForeColor = System.Drawing.Color.Black;
+            this.txtCardNumber1.Location = new System.Drawing.Point(260, 141);
+            this.txtCardNumber1.Multiline = false;
+            this.txtCardNumber1.Name = "txtCardNumber1";
+            this.txtCardNumber1.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtCardNumber1.PasswordChar = false;
+            this.txtCardNumber1.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtCardNumber1.PlaceholderText = "";
+            this.txtCardNumber1.Size = new System.Drawing.Size(65, 35);
+            this.txtCardNumber1.TabIndex = 92;
+            this.txtCardNumber1.UnderlinedStyle = false;
+            this.txtCardNumber1._TextChanged += new System.EventHandler(this.txtCardNumber__TextChanged_1);
             // 
             // txtExpYear
             // 
@@ -262,6 +271,7 @@ namespace Employees_Management_System.Forms
             this.txtExpYear.Size = new System.Drawing.Size(145, 35);
             this.txtExpYear.TabIndex = 93;
             this.txtExpYear.UnderlinedStyle = false;
+            this.txtExpYear._TextChanged += new System.EventHandler(this.txtExpYear__TextChanged);
             // 
             // txtBankAccountNumber
             // 
@@ -483,17 +493,19 @@ namespace Employees_Management_System.Forms
             this.btnSave.UseDefaultRadiusAndThickness = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // bunifuDataGridView1
+            // dgvEmployeeBankAccountInfo
             // 
-            this.bunifuDataGridView1.AllowCustomTheming = false;
+            this.dgvEmployeeBankAccountInfo.AllowCustomTheming = false;
+            this.dgvEmployeeBankAccountInfo.AllowUserToAddRows = false;
+            this.dgvEmployeeBankAccountInfo.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            this.bunifuDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.bunifuDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.bunifuDataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.bunifuDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bunifuDataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.bunifuDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvEmployeeBankAccountInfo.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvEmployeeBankAccountInfo.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvEmployeeBankAccountInfo.BackgroundColor = System.Drawing.Color.White;
+            this.dgvEmployeeBankAccountInfo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvEmployeeBankAccountInfo.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgvEmployeeBankAccountInfo.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
@@ -501,26 +513,26 @@ namespace Employees_Management_System.Forms
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.bunifuDataGridView1.ColumnHeadersHeight = 40;
-            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            this.bunifuDataGridView1.CurrentTheme.BackColor = System.Drawing.Color.White;
-            this.bunifuDataGridView1.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
-            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
-            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.bunifuDataGridView1.CurrentTheme.Name = null;
-            this.bunifuDataGridView1.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.bunifuDataGridView1.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.bunifuDataGridView1.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.bunifuDataGridView1.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.bunifuDataGridView1.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvEmployeeBankAccountInfo.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvEmployeeBankAccountInfo.ColumnHeadersHeight = 40;
+            this.dgvEmployeeBankAccountInfo.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            this.dgvEmployeeBankAccountInfo.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.dgvEmployeeBankAccountInfo.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dgvEmployeeBankAccountInfo.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.dgvEmployeeBankAccountInfo.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvEmployeeBankAccountInfo.CurrentTheme.BackColor = System.Drawing.Color.White;
+            this.dgvEmployeeBankAccountInfo.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.dgvEmployeeBankAccountInfo.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
+            this.dgvEmployeeBankAccountInfo.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            this.dgvEmployeeBankAccountInfo.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dgvEmployeeBankAccountInfo.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            this.dgvEmployeeBankAccountInfo.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvEmployeeBankAccountInfo.CurrentTheme.Name = null;
+            this.dgvEmployeeBankAccountInfo.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgvEmployeeBankAccountInfo.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.dgvEmployeeBankAccountInfo.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dgvEmployeeBankAccountInfo.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.dgvEmployeeBankAccountInfo.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
@@ -528,20 +540,21 @@ namespace Employees_Management_System.Forms
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.bunifuDataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.bunifuDataGridView1.EnableHeadersVisualStyles = false;
-            this.bunifuDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.bunifuDataGridView1.HeaderBackColor = System.Drawing.Color.DodgerBlue;
-            this.bunifuDataGridView1.HeaderBgColor = System.Drawing.Color.Empty;
-            this.bunifuDataGridView1.HeaderForeColor = System.Drawing.Color.White;
-            this.bunifuDataGridView1.Location = new System.Drawing.Point(582, 13);
-            this.bunifuDataGridView1.Name = "bunifuDataGridView1";
-            this.bunifuDataGridView1.RowHeadersVisible = false;
-            this.bunifuDataGridView1.RowTemplate.Height = 40;
-            this.bunifuDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.bunifuDataGridView1.Size = new System.Drawing.Size(700, 497);
-            this.bunifuDataGridView1.TabIndex = 98;
-            this.bunifuDataGridView1.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            this.dgvEmployeeBankAccountInfo.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvEmployeeBankAccountInfo.EnableHeadersVisualStyles = false;
+            this.dgvEmployeeBankAccountInfo.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.dgvEmployeeBankAccountInfo.HeaderBackColor = System.Drawing.Color.DodgerBlue;
+            this.dgvEmployeeBankAccountInfo.HeaderBgColor = System.Drawing.Color.Empty;
+            this.dgvEmployeeBankAccountInfo.HeaderForeColor = System.Drawing.Color.White;
+            this.dgvEmployeeBankAccountInfo.Location = new System.Drawing.Point(582, 13);
+            this.dgvEmployeeBankAccountInfo.Name = "dgvEmployeeBankAccountInfo";
+            this.dgvEmployeeBankAccountInfo.ReadOnly = true;
+            this.dgvEmployeeBankAccountInfo.RowHeadersVisible = false;
+            this.dgvEmployeeBankAccountInfo.RowTemplate.Height = 40;
+            this.dgvEmployeeBankAccountInfo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvEmployeeBankAccountInfo.Size = new System.Drawing.Size(700, 497);
+            this.dgvEmployeeBankAccountInfo.TabIndex = 98;
+            this.dgvEmployeeBankAccountInfo.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             // 
             // btnBooking
             // 
@@ -840,7 +853,7 @@ namespace Employees_Management_System.Forms
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Red;
-            this.label8.Location = new System.Drawing.Point(164, 154);
+            this.label8.Location = new System.Drawing.Point(164, 150);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(15, 20);
             this.label8.TabIndex = 186;
@@ -851,7 +864,7 @@ namespace Employees_Management_System.Forms
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Red;
-            this.label9.Location = new System.Drawing.Point(123, 211);
+            this.label9.Location = new System.Drawing.Point(123, 208);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(15, 20);
             this.label9.TabIndex = 187;
@@ -872,12 +885,116 @@ namespace Employees_Management_System.Forms
             // 
             this.employeeShortInfoTableAdapter.ClearBeforeFill = true;
             // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 15;
+            this.bunifuElipse1.TargetControl = this.dgvEmployeeBankAccountInfo;
+            // 
+            // txtCardNumber2
+            // 
+            this.txtCardNumber2.BackColor = System.Drawing.Color.White;
+            this.txtCardNumber2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.txtCardNumber2.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.txtCardNumber2.BorderRadius = 0;
+            this.txtCardNumber2.BorderSize = 1;
+            this.txtCardNumber2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCardNumber2.ForeColor = System.Drawing.Color.Black;
+            this.txtCardNumber2.Location = new System.Drawing.Point(340, 141);
+            this.txtCardNumber2.Multiline = false;
+            this.txtCardNumber2.Name = "txtCardNumber2";
+            this.txtCardNumber2.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtCardNumber2.PasswordChar = false;
+            this.txtCardNumber2.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtCardNumber2.PlaceholderText = "";
+            this.txtCardNumber2.Size = new System.Drawing.Size(65, 35);
+            this.txtCardNumber2.TabIndex = 190;
+            this.txtCardNumber2.UnderlinedStyle = false;
+            this.txtCardNumber2._TextChanged += new System.EventHandler(this.txtCardNumber2__TextChanged);
+            // 
+            // txtCardNumber3
+            // 
+            this.txtCardNumber3.BackColor = System.Drawing.Color.White;
+            this.txtCardNumber3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.txtCardNumber3.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.txtCardNumber3.BorderRadius = 0;
+            this.txtCardNumber3.BorderSize = 1;
+            this.txtCardNumber3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCardNumber3.ForeColor = System.Drawing.Color.Black;
+            this.txtCardNumber3.Location = new System.Drawing.Point(420, 141);
+            this.txtCardNumber3.Multiline = false;
+            this.txtCardNumber3.Name = "txtCardNumber3";
+            this.txtCardNumber3.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtCardNumber3.PasswordChar = false;
+            this.txtCardNumber3.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtCardNumber3.PlaceholderText = "";
+            this.txtCardNumber3.Size = new System.Drawing.Size(65, 35);
+            this.txtCardNumber3.TabIndex = 191;
+            this.txtCardNumber3.UnderlinedStyle = false;
+            this.txtCardNumber3._TextChanged += new System.EventHandler(this.txtCardNumber3__TextChanged);
+            // 
+            // txtCardNumber4
+            // 
+            this.txtCardNumber4.BackColor = System.Drawing.Color.White;
+            this.txtCardNumber4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.txtCardNumber4.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.txtCardNumber4.BorderRadius = 0;
+            this.txtCardNumber4.BorderSize = 1;
+            this.txtCardNumber4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCardNumber4.ForeColor = System.Drawing.Color.Black;
+            this.txtCardNumber4.Location = new System.Drawing.Point(500, 141);
+            this.txtCardNumber4.Multiline = false;
+            this.txtCardNumber4.Name = "txtCardNumber4";
+            this.txtCardNumber4.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtCardNumber4.PasswordChar = false;
+            this.txtCardNumber4.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtCardNumber4.PlaceholderText = "";
+            this.txtCardNumber4.Size = new System.Drawing.Size(65, 35);
+            this.txtCardNumber4.TabIndex = 192;
+            this.txtCardNumber4.UnderlinedStyle = false;
+            this.txtCardNumber4._TextChanged += new System.EventHandler(this.txtCardNumber4__TextChanged);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Black;
+            this.label11.Location = new System.Drawing.Point(323, 145);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(20, 25);
+            this.label11.TabIndex = 193;
+            this.label11.Text = "-";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Black;
+            this.label12.Location = new System.Drawing.Point(403, 145);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(20, 25);
+            this.label12.TabIndex = 194;
+            this.label12.Text = "-";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Black;
+            this.label13.Location = new System.Drawing.Point(484, 145);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(20, 25);
+            this.label13.TabIndex = 195;
+            this.label13.Text = "-";
+            // 
             // EmployeeBankAccountRegistration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1300, 576);
+            this.Controls.Add(this.txtCardNumber4);
+            this.Controls.Add(this.txtCardNumber3);
+            this.Controls.Add(this.txtCardNumber2);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -886,13 +1003,13 @@ namespace Employees_Management_System.Forms
             this.Controls.Add(this.btnBooking);
             this.Controls.Add(this.btnPayment);
             this.Controls.Add(this.btnBlacklist);
-            this.Controls.Add(this.bunifuDataGridView1);
+            this.Controls.Add(this.dgvEmployeeBankAccountInfo);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.txtAdditionalInfo);
             this.Controls.Add(this.txtBankAccountNumber);
             this.Controls.Add(this.txtExpYear);
-            this.Controls.Add(this.txtCardNumber);
+            this.Controls.Add(this.txtCardNumber1);
             this.Controls.Add(this.cboCardType);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -902,6 +1019,9 @@ namespace Employees_Management_System.Forms
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtExpMonth);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label13);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "EmployeeBankAccountRegistration";
@@ -910,7 +1030,7 @@ namespace Employees_Management_System.Forms
             this.Load += new System.EventHandler(this.EmployeeBankAccountRegistration_Load);
             ((System.ComponentModel.ISupportInitialize)(this.employeeShortInfoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.eMSDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmployeeBankAccountInfo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -927,13 +1047,13 @@ namespace Employees_Management_System.Forms
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private Custom_Controls.CustomComboBox cboCardType;
-        private Custom_Controls.CustomTextBoxRounded txtCardNumber;
+        private Custom_Controls.CustomTextBoxRounded txtCardNumber1;
         private Custom_Controls.CustomTextBoxRounded txtExpYear;
         private Custom_Controls.CustomTextBoxRounded txtBankAccountNumber;
         private Custom_Controls.CustomTextBoxRounded txtAdditionalInfo;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnCancel;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnSave;
-        private Bunifu.UI.WinForms.BunifuDataGridView bunifuDataGridView1;
+        private Bunifu.UI.WinForms.BunifuDataGridView dgvEmployeeBankAccountInfo;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnBooking;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnPayment;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnBlacklist;
@@ -945,5 +1065,12 @@ namespace Employees_Management_System.Forms
         private EMSDataSet eMSDataSet;
         private System.Windows.Forms.BindingSource employeeShortInfoBindingSource;
         private EMSDataSetTableAdapters.EmployeeShortInfoTableAdapter employeeShortInfoTableAdapter;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
+        private Custom_Controls.CustomTextBoxRounded txtCardNumber2;
+        private Custom_Controls.CustomTextBoxRounded txtCardNumber3;
+        private Custom_Controls.CustomTextBoxRounded txtCardNumber4;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
     }
 }

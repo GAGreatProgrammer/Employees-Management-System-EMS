@@ -29,10 +29,10 @@ namespace Employees_Management_System.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmployeePayHistory));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -45,20 +45,47 @@ namespace Employees_Management_System.Forms
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.customComboBox1 = new Employees_Management_System.Custom_Controls.CustomComboBox();
-            this.customDateTimePicker2 = new Employees_Management_System.Custom_Controls.CustomDateTimePicker();
-            this.customDateTimePicker1 = new Employees_Management_System.Custom_Controls.CustomDateTimePicker();
-            this.customDateTimePicker3 = new Employees_Management_System.Custom_Controls.CustomDateTimePicker();
-            this.customComboBox2 = new Employees_Management_System.Custom_Controls.CustomComboBox();
-            this.customTextBoxRounded1 = new Employees_Management_System.Custom_Controls.CustomTextBoxRounded();
-            this.customTextBoxRounded2 = new Employees_Management_System.Custom_Controls.CustomTextBoxRounded();
-            this.customComboBox3 = new Employees_Management_System.Custom_Controls.CustomComboBox();
-            this.customTextBoxRounded3 = new Employees_Management_System.Custom_Controls.CustomTextBoxRounded();
-            this.bunifuButton2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.bunifuButton3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.bunifuDataGridView1 = new Bunifu.UI.WinForms.BunifuDataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridView1)).BeginInit();
+            this.cboEmployeeID = new Employees_Management_System.Custom_Controls.CustomComboBox();
+            this.employeeShortInfoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.eMSDataSet = new Employees_Management_System.EMSDataSet();
+            this.dtpPaymentDate = new Employees_Management_System.Custom_Controls.CustomDateTimePicker();
+            this.dtpFromDate = new Employees_Management_System.Custom_Controls.CustomDateTimePicker();
+            this.dtpToDate = new Employees_Management_System.Custom_Controls.CustomDateTimePicker();
+            this.cboPaymentType = new Employees_Management_System.Custom_Controls.CustomComboBox();
+            this.txtRate = new Employees_Management_System.Custom_Controls.CustomTextBoxRounded();
+            this.txtAward = new Employees_Management_System.Custom_Controls.CustomTextBoxRounded();
+            this.cboPaymentState = new Employees_Management_System.Custom_Controls.CustomComboBox();
+            this.txtAdditionalInfo = new Employees_Management_System.Custom_Controls.CustomTextBoxRounded();
+            this.btnCancel = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.btnSave = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.dgvEmployeePayHistory = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.employeeShortInfoTableAdapter = new Employees_Management_System.EMSDataSetTableAdapters.EmployeeShortInfoTableAdapter();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.label18 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.employeePayHistoryInfoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.employeePayHistoryInfoTableAdapter = new Employees_Management_System.EMSDataSetTableAdapters.EmployeePayHistoryInfoTableAdapter();
+            this.employeeIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.passportIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.surnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.paymentDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fromDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.toDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.paymentTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.salaryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.awardDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.paymentStateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.employeeShortInfoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eMSDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmployeePayHistory)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeePayHistoryInfoBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -77,7 +104,7 @@ namespace Employees_Management_System.Forms
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(14, 78);
+            this.label2.Location = new System.Drawing.Point(14, 70);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(197, 40);
             this.label2.TabIndex = 164;
@@ -88,7 +115,7 @@ namespace Employees_Management_System.Forms
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(14, 140);
+            this.label3.Location = new System.Drawing.Point(14, 135);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(203, 40);
             this.label3.TabIndex = 165;
@@ -99,11 +126,11 @@ namespace Employees_Management_System.Forms
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(14, 210);
+            this.label4.Location = new System.Drawing.Point(14, 208);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(192, 40);
+            this.label4.Size = new System.Drawing.Size(208, 40);
             this.label4.TabIndex = 166;
-            this.label4.Text = "ხელფასის საბოლოო\r\nსაწყისი თარიღი";
+            this.label4.Text = "ხელფასის დარიცხვის \r\nსაბოლოო თარიღი";
             // 
             // label5
             // 
@@ -114,14 +141,14 @@ namespace Employees_Management_System.Forms
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(180, 40);
             this.label5.TabIndex = 167;
-            this.label5.Text = "ჩარიცხული თანხის\r\nსახეობა";
+            this.label5.Text = "ჩარიცხული თანხის\r\nტიპი";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(14, 355);
+            this.label6.Location = new System.Drawing.Point(14, 349);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(169, 20);
             this.label6.TabIndex = 168;
@@ -132,7 +159,7 @@ namespace Employees_Management_System.Forms
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(14, 410);
+            this.label7.Location = new System.Drawing.Point(14, 405);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(68, 20);
             this.label7.TabIndex = 169;
@@ -160,542 +187,667 @@ namespace Employees_Management_System.Forms
             this.label9.TabIndex = 171;
             this.label9.Text = "დამატებითი ინფორმაცია";
             // 
-            // customComboBox1
+            // cboEmployeeID
             // 
-            this.customComboBox1.BackColor = System.Drawing.Color.White;
-            this.customComboBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.customComboBox1.BorderSize = 1;
-            this.customComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.customComboBox1.DropDownWidth = 198;
-            this.customComboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.customComboBox1.ForeColor = System.Drawing.Color.DimGray;
-            this.customComboBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.customComboBox1.IntegralHeight = true;
-            this.customComboBox1.Items.AddRange(new object[] {
-            "wedwdwe",
-            "dwed",
-            "wed",
-            "wed",
-            "we",
-            "dwed",
-            "wed",
-            "we",
-            "dwedwedwed",
-            "we",
-            "f",
-            "wefw",
-            "ef",
-            "wef",
-            "wefwef"});
-            this.customComboBox1.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
-            this.customComboBox1.ListTextColor = System.Drawing.Color.DimGray;
-            this.customComboBox1.Location = new System.Drawing.Point(275, 14);
-            this.customComboBox1.MaxDropDownItems = 8;
-            this.customComboBox1.MinimumSize = new System.Drawing.Size(200, 30);
-            this.customComboBox1.Name = "customComboBox1";
-            this.customComboBox1.Padding = new System.Windows.Forms.Padding(1);
-            this.customComboBox1.Size = new System.Drawing.Size(275, 30);
-            this.customComboBox1.TabIndex = 172;
+            this.cboEmployeeID.BackColor = System.Drawing.Color.White;
+            this.cboEmployeeID.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.cboEmployeeID.BorderSize = 1;
+            this.cboEmployeeID.DataSource = this.employeeShortInfoBindingSource;
+            this.cboEmployeeID.DisplayMember = "Employee";
+            this.cboEmployeeID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboEmployeeID.DropDownWidth = 198;
+            this.cboEmployeeID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboEmployeeID.ForeColor = System.Drawing.Color.Black;
+            this.cboEmployeeID.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.cboEmployeeID.IntegralHeight = false;
+            this.cboEmployeeID.ListBackColor = System.Drawing.Color.White;
+            this.cboEmployeeID.ListTextColor = System.Drawing.Color.Black;
+            this.cboEmployeeID.Location = new System.Drawing.Point(275, 14);
+            this.cboEmployeeID.MaxDropDownItems = 8;
+            this.cboEmployeeID.MinimumSize = new System.Drawing.Size(200, 30);
+            this.cboEmployeeID.Name = "cboEmployeeID";
+            this.cboEmployeeID.Padding = new System.Windows.Forms.Padding(1);
+            this.cboEmployeeID.Size = new System.Drawing.Size(275, 35);
+            this.cboEmployeeID.TabIndex = 172;
+            this.cboEmployeeID.ValueMember = "ID";
             // 
-            // customDateTimePicker2
+            // employeeShortInfoBindingSource
             // 
-            this.customDateTimePicker2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.customDateTimePicker2.BorderSize = 0;
-            this.customDateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
-            this.customDateTimePicker2.Location = new System.Drawing.Point(275, 70);
-            this.customDateTimePicker2.MinimumSize = new System.Drawing.Size(4, 35);
-            this.customDateTimePicker2.Name = "customDateTimePicker2";
-            this.customDateTimePicker2.Size = new System.Drawing.Size(275, 35);
-            this.customDateTimePicker2.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(108)))), ((int)(((byte)(163)))));
-            this.customDateTimePicker2.TabIndex = 173;
-            this.customDateTimePicker2.TextColor = System.Drawing.Color.White;
+            this.employeeShortInfoBindingSource.DataMember = "EmployeeShortInfo";
+            this.employeeShortInfoBindingSource.DataSource = this.eMSDataSet;
             // 
-            // customDateTimePicker1
+            // eMSDataSet
             // 
-            this.customDateTimePicker1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.customDateTimePicker1.BorderSize = 0;
-            this.customDateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
-            this.customDateTimePicker1.Location = new System.Drawing.Point(275, 140);
-            this.customDateTimePicker1.MinimumSize = new System.Drawing.Size(4, 35);
-            this.customDateTimePicker1.Name = "customDateTimePicker1";
-            this.customDateTimePicker1.Size = new System.Drawing.Size(275, 35);
-            this.customDateTimePicker1.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(108)))), ((int)(((byte)(163)))));
-            this.customDateTimePicker1.TabIndex = 174;
-            this.customDateTimePicker1.TextColor = System.Drawing.Color.White;
+            this.eMSDataSet.DataSetName = "EMSDataSet";
+            this.eMSDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // customDateTimePicker3
+            // dtpPaymentDate
             // 
-            this.customDateTimePicker3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.customDateTimePicker3.BorderSize = 0;
-            this.customDateTimePicker3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
-            this.customDateTimePicker3.Location = new System.Drawing.Point(275, 210);
-            this.customDateTimePicker3.MinimumSize = new System.Drawing.Size(4, 35);
-            this.customDateTimePicker3.Name = "customDateTimePicker3";
-            this.customDateTimePicker3.Size = new System.Drawing.Size(275, 35);
-            this.customDateTimePicker3.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(108)))), ((int)(((byte)(163)))));
-            this.customDateTimePicker3.TabIndex = 175;
-            this.customDateTimePicker3.TextColor = System.Drawing.Color.White;
+            this.dtpPaymentDate.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.dtpPaymentDate.BorderSize = 0;
+            this.dtpPaymentDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
+            this.dtpPaymentDate.Location = new System.Drawing.Point(275, 70);
+            this.dtpPaymentDate.MinimumSize = new System.Drawing.Size(4, 35);
+            this.dtpPaymentDate.Name = "dtpPaymentDate";
+            this.dtpPaymentDate.Size = new System.Drawing.Size(275, 35);
+            this.dtpPaymentDate.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(108)))), ((int)(((byte)(163)))));
+            this.dtpPaymentDate.TabIndex = 173;
+            this.dtpPaymentDate.TextColor = System.Drawing.Color.White;
+            this.dtpPaymentDate.ValueChanged += new System.EventHandler(this.dtpPaymentDate_ValueChanged);
             // 
-            // customComboBox2
+            // dtpFromDate
             // 
-            this.customComboBox2.BackColor = System.Drawing.Color.White;
-            this.customComboBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.customComboBox2.BorderSize = 1;
-            this.customComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.customComboBox2.DropDownWidth = 198;
-            this.customComboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.customComboBox2.ForeColor = System.Drawing.Color.DimGray;
-            this.customComboBox2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.customComboBox2.IntegralHeight = true;
-            this.customComboBox2.Items.AddRange(new object[] {
-            "wedwdwe",
-            "dwed",
-            "wed",
-            "wed",
-            "we",
-            "dwed",
-            "wed",
-            "we",
-            "dwedwedwed",
-            "we",
-            "f",
-            "wefw",
-            "ef",
-            "wef",
-            "wefwef"});
-            this.customComboBox2.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
-            this.customComboBox2.ListTextColor = System.Drawing.Color.DimGray;
-            this.customComboBox2.Location = new System.Drawing.Point(275, 280);
-            this.customComboBox2.MaxDropDownItems = 8;
-            this.customComboBox2.MinimumSize = new System.Drawing.Size(200, 30);
-            this.customComboBox2.Name = "customComboBox2";
-            this.customComboBox2.Padding = new System.Windows.Forms.Padding(1);
-            this.customComboBox2.Size = new System.Drawing.Size(275, 30);
-            this.customComboBox2.TabIndex = 176;
+            this.dtpFromDate.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.dtpFromDate.BorderSize = 0;
+            this.dtpFromDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
+            this.dtpFromDate.Location = new System.Drawing.Point(275, 140);
+            this.dtpFromDate.MinimumSize = new System.Drawing.Size(4, 35);
+            this.dtpFromDate.Name = "dtpFromDate";
+            this.dtpFromDate.Size = new System.Drawing.Size(275, 35);
+            this.dtpFromDate.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(108)))), ((int)(((byte)(163)))));
+            this.dtpFromDate.TabIndex = 174;
+            this.dtpFromDate.TextColor = System.Drawing.Color.White;
+            this.dtpFromDate.ValueChanged += new System.EventHandler(this.dtpFromDate_ValueChanged);
             // 
-            // customTextBoxRounded1
+            // dtpToDate
             // 
-            this.customTextBoxRounded1.BackColor = System.Drawing.Color.White;
-            this.customTextBoxRounded1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.customTextBoxRounded1.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
-            this.customTextBoxRounded1.BorderRadius = 0;
-            this.customTextBoxRounded1.BorderSize = 1;
-            this.customTextBoxRounded1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customTextBoxRounded1.ForeColor = System.Drawing.Color.Black;
-            this.customTextBoxRounded1.Location = new System.Drawing.Point(275, 340);
-            this.customTextBoxRounded1.Multiline = false;
-            this.customTextBoxRounded1.Name = "customTextBoxRounded1";
-            this.customTextBoxRounded1.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.customTextBoxRounded1.PasswordChar = false;
-            this.customTextBoxRounded1.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.customTextBoxRounded1.PlaceholderText = "";
-            this.customTextBoxRounded1.Size = new System.Drawing.Size(275, 35);
-            this.customTextBoxRounded1.TabIndex = 177;
-            this.customTextBoxRounded1.UnderlinedStyle = false;
+            this.dtpToDate.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.dtpToDate.BorderSize = 0;
+            this.dtpToDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
+            this.dtpToDate.Location = new System.Drawing.Point(275, 210);
+            this.dtpToDate.MinimumSize = new System.Drawing.Size(4, 35);
+            this.dtpToDate.Name = "dtpToDate";
+            this.dtpToDate.Size = new System.Drawing.Size(275, 35);
+            this.dtpToDate.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(108)))), ((int)(((byte)(163)))));
+            this.dtpToDate.TabIndex = 175;
+            this.dtpToDate.TextColor = System.Drawing.Color.White;
+            this.dtpToDate.ValueChanged += new System.EventHandler(this.dtpToDate_ValueChanged);
             // 
-            // customTextBoxRounded2
+            // cboPaymentType
             // 
-            this.customTextBoxRounded2.BackColor = System.Drawing.Color.White;
-            this.customTextBoxRounded2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.customTextBoxRounded2.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
-            this.customTextBoxRounded2.BorderRadius = 0;
-            this.customTextBoxRounded2.BorderSize = 1;
-            this.customTextBoxRounded2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customTextBoxRounded2.ForeColor = System.Drawing.Color.Black;
-            this.customTextBoxRounded2.Location = new System.Drawing.Point(275, 395);
-            this.customTextBoxRounded2.Multiline = false;
-            this.customTextBoxRounded2.Name = "customTextBoxRounded2";
-            this.customTextBoxRounded2.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.customTextBoxRounded2.PasswordChar = false;
-            this.customTextBoxRounded2.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.customTextBoxRounded2.PlaceholderText = "";
-            this.customTextBoxRounded2.Size = new System.Drawing.Size(275, 35);
-            this.customTextBoxRounded2.TabIndex = 178;
-            this.customTextBoxRounded2.UnderlinedStyle = false;
+            this.cboPaymentType.BackColor = System.Drawing.Color.White;
+            this.cboPaymentType.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.cboPaymentType.BorderSize = 1;
+            this.cboPaymentType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboPaymentType.DropDownWidth = 198;
+            this.cboPaymentType.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboPaymentType.ForeColor = System.Drawing.Color.Black;
+            this.cboPaymentType.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.cboPaymentType.IntegralHeight = false;
+            this.cboPaymentType.Items.AddRange(new object[] {
+            "ხელფასი",
+            "პრემია",
+            "ფულადი წახალისება",
+            "ერთჯერადი გადახდა",
+            "სხვა"});
+            this.cboPaymentType.ListBackColor = System.Drawing.Color.White;
+            this.cboPaymentType.ListTextColor = System.Drawing.Color.Black;
+            this.cboPaymentType.Location = new System.Drawing.Point(275, 280);
+            this.cboPaymentType.MaxDropDownItems = 8;
+            this.cboPaymentType.MinimumSize = new System.Drawing.Size(200, 30);
+            this.cboPaymentType.Name = "cboPaymentType";
+            this.cboPaymentType.Padding = new System.Windows.Forms.Padding(1);
+            this.cboPaymentType.Size = new System.Drawing.Size(275, 35);
+            this.cboPaymentType.TabIndex = 176;
+            this.cboPaymentType.OnSelectedIndexChanged += new System.EventHandler(this.cboPaymentType_OnSelectedIndexChanged);
             // 
-            // customComboBox3
+            // txtRate
             // 
-            this.customComboBox3.BackColor = System.Drawing.Color.White;
-            this.customComboBox3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.customComboBox3.BorderSize = 1;
-            this.customComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.customComboBox3.DropDownWidth = 198;
-            this.customComboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.customComboBox3.ForeColor = System.Drawing.Color.DimGray;
-            this.customComboBox3.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.customComboBox3.IntegralHeight = true;
-            this.customComboBox3.Items.AddRange(new object[] {
-            "wedwdwe",
-            "dwed",
-            "wed",
-            "wed",
-            "we",
-            "dwed",
-            "wed",
-            "we",
-            "dwedwedwed",
-            "we",
-            "f",
-            "wefw",
-            "ef",
-            "wef",
-            "wefwef"});
-            this.customComboBox3.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
-            this.customComboBox3.ListTextColor = System.Drawing.Color.DimGray;
-            this.customComboBox3.Location = new System.Drawing.Point(275, 450);
-            this.customComboBox3.MaxDropDownItems = 8;
-            this.customComboBox3.MinimumSize = new System.Drawing.Size(200, 30);
-            this.customComboBox3.Name = "customComboBox3";
-            this.customComboBox3.Padding = new System.Windows.Forms.Padding(1);
-            this.customComboBox3.Size = new System.Drawing.Size(275, 30);
-            this.customComboBox3.TabIndex = 179;
+            this.txtRate.BackColor = System.Drawing.Color.White;
+            this.txtRate.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.txtRate.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.txtRate.BorderRadius = 0;
+            this.txtRate.BorderSize = 1;
+            this.txtRate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRate.ForeColor = System.Drawing.Color.Black;
+            this.txtRate.Location = new System.Drawing.Point(275, 340);
+            this.txtRate.Multiline = false;
+            this.txtRate.Name = "txtRate";
+            this.txtRate.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtRate.PasswordChar = false;
+            this.txtRate.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtRate.PlaceholderText = "";
+            this.txtRate.Size = new System.Drawing.Size(275, 35);
+            this.txtRate.TabIndex = 177;
+            this.txtRate.UnderlinedStyle = false;
             // 
-            // customTextBoxRounded3
+            // txtAward
             // 
-            this.customTextBoxRounded3.BackColor = System.Drawing.Color.White;
-            this.customTextBoxRounded3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.customTextBoxRounded3.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
-            this.customTextBoxRounded3.BorderRadius = 0;
-            this.customTextBoxRounded3.BorderSize = 1;
-            this.customTextBoxRounded3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customTextBoxRounded3.ForeColor = System.Drawing.Color.Black;
-            this.customTextBoxRounded3.Location = new System.Drawing.Point(18, 541);
-            this.customTextBoxRounded3.Multiline = true;
-            this.customTextBoxRounded3.Name = "customTextBoxRounded3";
-            this.customTextBoxRounded3.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.customTextBoxRounded3.PasswordChar = false;
-            this.customTextBoxRounded3.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.customTextBoxRounded3.PlaceholderText = "";
-            this.customTextBoxRounded3.Size = new System.Drawing.Size(532, 120);
-            this.customTextBoxRounded3.TabIndex = 180;
-            this.customTextBoxRounded3.UnderlinedStyle = false;
+            this.txtAward.BackColor = System.Drawing.Color.White;
+            this.txtAward.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.txtAward.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.txtAward.BorderRadius = 0;
+            this.txtAward.BorderSize = 1;
+            this.txtAward.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAward.ForeColor = System.Drawing.Color.Black;
+            this.txtAward.Location = new System.Drawing.Point(275, 395);
+            this.txtAward.Multiline = false;
+            this.txtAward.Name = "txtAward";
+            this.txtAward.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtAward.PasswordChar = false;
+            this.txtAward.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtAward.PlaceholderText = "";
+            this.txtAward.Size = new System.Drawing.Size(275, 35);
+            this.txtAward.TabIndex = 178;
+            this.txtAward.UnderlinedStyle = false;
             // 
-            // bunifuButton2
+            // cboPaymentState
             // 
-            this.bunifuButton2.AllowAnimations = true;
-            this.bunifuButton2.AllowMouseEffects = true;
-            this.bunifuButton2.AllowToggling = false;
-            this.bunifuButton2.AnimationSpeed = 50;
-            this.bunifuButton2.AutoGenerateColors = false;
-            this.bunifuButton2.AutoRoundBorders = false;
-            this.bunifuButton2.AutoSizeLeftIcon = true;
-            this.bunifuButton2.AutoSizeRightIcon = true;
-            this.bunifuButton2.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuButton2.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(140)))), ((int)(((byte)(163)))));
-            this.bunifuButton2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton2.BackgroundImage")));
-            this.bunifuButton2.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButton2.ButtonText = "გადამოწმება";
-            this.bunifuButton2.ButtonTextMarginLeft = 0;
-            this.bunifuButton2.ColorContrastOnClick = 45;
-            this.bunifuButton2.ColorContrastOnHover = 45;
-            this.bunifuButton2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.cboPaymentState.BackColor = System.Drawing.Color.White;
+            this.cboPaymentState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.cboPaymentState.BorderSize = 1;
+            this.cboPaymentState.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboPaymentState.DropDownWidth = 198;
+            this.cboPaymentState.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboPaymentState.ForeColor = System.Drawing.Color.Black;
+            this.cboPaymentState.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.cboPaymentState.IntegralHeight = false;
+            this.cboPaymentState.Items.AddRange(new object[] {
+            "ჩარიცხულია",
+            "მუშავდება",
+            "გაუქმებულია"});
+            this.cboPaymentState.ListBackColor = System.Drawing.Color.White;
+            this.cboPaymentState.ListTextColor = System.Drawing.Color.Black;
+            this.cboPaymentState.Location = new System.Drawing.Point(275, 450);
+            this.cboPaymentState.MaxDropDownItems = 8;
+            this.cboPaymentState.MinimumSize = new System.Drawing.Size(200, 30);
+            this.cboPaymentState.Name = "cboPaymentState";
+            this.cboPaymentState.Padding = new System.Windows.Forms.Padding(1);
+            this.cboPaymentState.Size = new System.Drawing.Size(275, 35);
+            this.cboPaymentState.TabIndex = 179;
+            this.cboPaymentState.OnSelectedIndexChanged += new System.EventHandler(this.cboPaymentState_OnSelectedIndexChanged);
+            // 
+            // txtAdditionalInfo
+            // 
+            this.txtAdditionalInfo.BackColor = System.Drawing.Color.White;
+            this.txtAdditionalInfo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.txtAdditionalInfo.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.txtAdditionalInfo.BorderRadius = 0;
+            this.txtAdditionalInfo.BorderSize = 1;
+            this.txtAdditionalInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAdditionalInfo.ForeColor = System.Drawing.Color.Black;
+            this.txtAdditionalInfo.Location = new System.Drawing.Point(18, 541);
+            this.txtAdditionalInfo.Multiline = true;
+            this.txtAdditionalInfo.Name = "txtAdditionalInfo";
+            this.txtAdditionalInfo.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtAdditionalInfo.PasswordChar = false;
+            this.txtAdditionalInfo.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtAdditionalInfo.PlaceholderText = "";
+            this.txtAdditionalInfo.Size = new System.Drawing.Size(532, 120);
+            this.txtAdditionalInfo.TabIndex = 180;
+            this.txtAdditionalInfo.UnderlinedStyle = false;
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.AllowAnimations = true;
+            this.btnCancel.AllowMouseEffects = true;
+            this.btnCancel.AllowToggling = false;
+            this.btnCancel.AnimationSpeed = 50;
+            this.btnCancel.AutoGenerateColors = false;
+            this.btnCancel.AutoRoundBorders = false;
+            this.btnCancel.AutoSizeLeftIcon = true;
+            this.btnCancel.AutoSizeRightIcon = true;
+            this.btnCancel.BackColor = System.Drawing.Color.Transparent;
+            this.btnCancel.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(140)))), ((int)(((byte)(163)))));
+            this.btnCancel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCancel.BackgroundImage")));
+            this.btnCancel.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnCancel.ButtonText = "გაუქმება";
+            this.btnCancel.ButtonTextMarginLeft = 0;
+            this.btnCancel.ColorContrastOnClick = 45;
+            this.btnCancel.ColorContrastOnHover = 45;
+            this.btnCancel.Cursor = System.Windows.Forms.Cursors.Default;
             borderEdges1.BottomLeft = false;
             borderEdges1.BottomRight = true;
             borderEdges1.TopLeft = false;
             borderEdges1.TopRight = true;
-            this.bunifuButton2.CustomizableEdges = borderEdges1;
-            this.bunifuButton2.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.bunifuButton2.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.bunifuButton2.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.bunifuButton2.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.bunifuButton2.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.bunifuButton2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuButton2.ForeColor = System.Drawing.Color.White;
-            this.bunifuButton2.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuButton2.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuButton2.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
-            this.bunifuButton2.IconMarginLeft = 11;
-            this.bunifuButton2.IconPadding = 10;
-            this.bunifuButton2.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.bunifuButton2.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuButton2.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.bunifuButton2.IconSize = 25;
-            this.bunifuButton2.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(140)))), ((int)(((byte)(163)))));
-            this.bunifuButton2.IdleBorderRadius = 10;
-            this.bunifuButton2.IdleBorderThickness = 1;
-            this.bunifuButton2.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(140)))), ((int)(((byte)(163)))));
-            this.bunifuButton2.IdleIconLeftImage = null;
-            this.bunifuButton2.IdleIconRightImage = null;
-            this.bunifuButton2.IndicateFocus = false;
-            this.bunifuButton2.Location = new System.Drawing.Point(330, 678);
-            this.bunifuButton2.Name = "bunifuButton2";
-            this.bunifuButton2.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.bunifuButton2.OnDisabledState.BorderRadius = 10;
-            this.bunifuButton2.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButton2.OnDisabledState.BorderThickness = 1;
-            this.bunifuButton2.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.bunifuButton2.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.bunifuButton2.OnDisabledState.IconLeftImage = null;
-            this.bunifuButton2.OnDisabledState.IconRightImage = null;
-            this.bunifuButton2.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(195)))), ((int)(((byte)(199)))));
-            this.bunifuButton2.onHoverState.BorderRadius = 10;
-            this.bunifuButton2.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButton2.onHoverState.BorderThickness = 1;
-            this.bunifuButton2.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(195)))), ((int)(((byte)(199)))));
-            this.bunifuButton2.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.bunifuButton2.onHoverState.IconLeftImage = null;
-            this.bunifuButton2.onHoverState.IconRightImage = null;
-            this.bunifuButton2.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(140)))), ((int)(((byte)(163)))));
-            this.bunifuButton2.OnIdleState.BorderRadius = 10;
-            this.bunifuButton2.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButton2.OnIdleState.BorderThickness = 1;
-            this.bunifuButton2.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(140)))), ((int)(((byte)(163)))));
-            this.bunifuButton2.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.bunifuButton2.OnIdleState.IconLeftImage = null;
-            this.bunifuButton2.OnIdleState.IconRightImage = null;
-            this.bunifuButton2.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(140)))), ((int)(((byte)(163)))));
-            this.bunifuButton2.OnPressedState.BorderRadius = 10;
-            this.bunifuButton2.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButton2.OnPressedState.BorderThickness = 1;
-            this.bunifuButton2.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(140)))), ((int)(((byte)(163)))));
-            this.bunifuButton2.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.bunifuButton2.OnPressedState.IconLeftImage = null;
-            this.bunifuButton2.OnPressedState.IconRightImage = null;
-            this.bunifuButton2.Size = new System.Drawing.Size(150, 35);
-            this.bunifuButton2.TabIndex = 183;
-            this.bunifuButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuButton2.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.bunifuButton2.TextMarginLeft = 0;
-            this.bunifuButton2.TextPadding = new System.Windows.Forms.Padding(0);
-            this.bunifuButton2.UseDefaultRadiusAndThickness = true;
+            this.btnCancel.CustomizableEdges = borderEdges1;
+            this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnCancel.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnCancel.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnCancel.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnCancel.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.ForeColor = System.Drawing.Color.White;
+            this.btnCancel.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancel.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btnCancel.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.btnCancel.IconMarginLeft = 11;
+            this.btnCancel.IconPadding = 10;
+            this.btnCancel.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCancel.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btnCancel.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btnCancel.IconSize = 25;
+            this.btnCancel.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(140)))), ((int)(((byte)(163)))));
+            this.btnCancel.IdleBorderRadius = 10;
+            this.btnCancel.IdleBorderThickness = 1;
+            this.btnCancel.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(140)))), ((int)(((byte)(163)))));
+            this.btnCancel.IdleIconLeftImage = null;
+            this.btnCancel.IdleIconRightImage = null;
+            this.btnCancel.IndicateFocus = false;
+            this.btnCancel.Location = new System.Drawing.Point(174, 678);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnCancel.OnDisabledState.BorderRadius = 10;
+            this.btnCancel.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnCancel.OnDisabledState.BorderThickness = 1;
+            this.btnCancel.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnCancel.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnCancel.OnDisabledState.IconLeftImage = null;
+            this.btnCancel.OnDisabledState.IconRightImage = null;
+            this.btnCancel.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(195)))), ((int)(((byte)(199)))));
+            this.btnCancel.onHoverState.BorderRadius = 10;
+            this.btnCancel.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnCancel.onHoverState.BorderThickness = 1;
+            this.btnCancel.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(195)))), ((int)(((byte)(199)))));
+            this.btnCancel.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.btnCancel.onHoverState.IconLeftImage = null;
+            this.btnCancel.onHoverState.IconRightImage = null;
+            this.btnCancel.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(140)))), ((int)(((byte)(163)))));
+            this.btnCancel.OnIdleState.BorderRadius = 10;
+            this.btnCancel.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnCancel.OnIdleState.BorderThickness = 1;
+            this.btnCancel.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(140)))), ((int)(((byte)(163)))));
+            this.btnCancel.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.btnCancel.OnIdleState.IconLeftImage = null;
+            this.btnCancel.OnIdleState.IconRightImage = null;
+            this.btnCancel.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(140)))), ((int)(((byte)(163)))));
+            this.btnCancel.OnPressedState.BorderRadius = 10;
+            this.btnCancel.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnCancel.OnPressedState.BorderThickness = 1;
+            this.btnCancel.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(140)))), ((int)(((byte)(163)))));
+            this.btnCancel.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btnCancel.OnPressedState.IconLeftImage = null;
+            this.btnCancel.OnPressedState.IconRightImage = null;
+            this.btnCancel.Size = new System.Drawing.Size(150, 35);
+            this.btnCancel.TabIndex = 182;
+            this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnCancel.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnCancel.TextMarginLeft = 0;
+            this.btnCancel.TextPadding = new System.Windows.Forms.Padding(0);
+            this.btnCancel.UseDefaultRadiusAndThickness = true;
             // 
-            // bunifuButton3
+            // btnSave
             // 
-            this.bunifuButton3.AllowAnimations = true;
-            this.bunifuButton3.AllowMouseEffects = true;
-            this.bunifuButton3.AllowToggling = false;
-            this.bunifuButton3.AnimationSpeed = 50;
-            this.bunifuButton3.AutoGenerateColors = false;
-            this.bunifuButton3.AutoRoundBorders = false;
-            this.bunifuButton3.AutoSizeLeftIcon = true;
-            this.bunifuButton3.AutoSizeRightIcon = true;
-            this.bunifuButton3.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuButton3.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(140)))), ((int)(((byte)(163)))));
-            this.bunifuButton3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton3.BackgroundImage")));
-            this.bunifuButton3.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButton3.ButtonText = "გაუქმება";
-            this.bunifuButton3.ButtonTextMarginLeft = 0;
-            this.bunifuButton3.ColorContrastOnClick = 45;
-            this.bunifuButton3.ColorContrastOnHover = 45;
-            this.bunifuButton3.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = false;
+            this.btnSave.AllowAnimations = true;
+            this.btnSave.AllowMouseEffects = true;
+            this.btnSave.AllowToggling = false;
+            this.btnSave.AnimationSpeed = 50;
+            this.btnSave.AutoGenerateColors = false;
+            this.btnSave.AutoRoundBorders = false;
+            this.btnSave.AutoSizeLeftIcon = true;
+            this.btnSave.AutoSizeRightIcon = true;
+            this.btnSave.BackColor = System.Drawing.Color.Transparent;
+            this.btnSave.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.btnSave.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSave.BackgroundImage")));
+            this.btnSave.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnSave.ButtonText = "შენახვა";
+            this.btnSave.ButtonTextMarginLeft = 0;
+            this.btnSave.ColorContrastOnClick = 45;
+            this.btnSave.ColorContrastOnHover = 45;
+            this.btnSave.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges2.BottomLeft = true;
             borderEdges2.BottomRight = false;
-            borderEdges2.TopLeft = false;
+            borderEdges2.TopLeft = true;
             borderEdges2.TopRight = false;
-            this.bunifuButton3.CustomizableEdges = borderEdges2;
-            this.bunifuButton3.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.bunifuButton3.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.bunifuButton3.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.bunifuButton3.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.bunifuButton3.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.bunifuButton3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuButton3.ForeColor = System.Drawing.Color.White;
-            this.bunifuButton3.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuButton3.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuButton3.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
-            this.bunifuButton3.IconMarginLeft = 11;
-            this.bunifuButton3.IconPadding = 10;
-            this.bunifuButton3.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.bunifuButton3.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuButton3.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.bunifuButton3.IconSize = 25;
-            this.bunifuButton3.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(140)))), ((int)(((byte)(163)))));
-            this.bunifuButton3.IdleBorderRadius = 10;
-            this.bunifuButton3.IdleBorderThickness = 1;
-            this.bunifuButton3.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(140)))), ((int)(((byte)(163)))));
-            this.bunifuButton3.IdleIconLeftImage = null;
-            this.bunifuButton3.IdleIconRightImage = null;
-            this.bunifuButton3.IndicateFocus = false;
-            this.bunifuButton3.Location = new System.Drawing.Point(174, 678);
-            this.bunifuButton3.Name = "bunifuButton3";
-            this.bunifuButton3.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.bunifuButton3.OnDisabledState.BorderRadius = 10;
-            this.bunifuButton3.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButton3.OnDisabledState.BorderThickness = 1;
-            this.bunifuButton3.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.bunifuButton3.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.bunifuButton3.OnDisabledState.IconLeftImage = null;
-            this.bunifuButton3.OnDisabledState.IconRightImage = null;
-            this.bunifuButton3.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(195)))), ((int)(((byte)(199)))));
-            this.bunifuButton3.onHoverState.BorderRadius = 10;
-            this.bunifuButton3.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButton3.onHoverState.BorderThickness = 1;
-            this.bunifuButton3.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(195)))), ((int)(((byte)(199)))));
-            this.bunifuButton3.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.bunifuButton3.onHoverState.IconLeftImage = null;
-            this.bunifuButton3.onHoverState.IconRightImage = null;
-            this.bunifuButton3.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(140)))), ((int)(((byte)(163)))));
-            this.bunifuButton3.OnIdleState.BorderRadius = 10;
-            this.bunifuButton3.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButton3.OnIdleState.BorderThickness = 1;
-            this.bunifuButton3.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(140)))), ((int)(((byte)(163)))));
-            this.bunifuButton3.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.bunifuButton3.OnIdleState.IconLeftImage = null;
-            this.bunifuButton3.OnIdleState.IconRightImage = null;
-            this.bunifuButton3.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(140)))), ((int)(((byte)(163)))));
-            this.bunifuButton3.OnPressedState.BorderRadius = 10;
-            this.bunifuButton3.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButton3.OnPressedState.BorderThickness = 1;
-            this.bunifuButton3.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(140)))), ((int)(((byte)(163)))));
-            this.bunifuButton3.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.bunifuButton3.OnPressedState.IconLeftImage = null;
-            this.bunifuButton3.OnPressedState.IconRightImage = null;
-            this.bunifuButton3.Size = new System.Drawing.Size(150, 35);
-            this.bunifuButton3.TabIndex = 182;
-            this.bunifuButton3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuButton3.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.bunifuButton3.TextMarginLeft = 0;
-            this.bunifuButton3.TextPadding = new System.Windows.Forms.Padding(0);
-            this.bunifuButton3.UseDefaultRadiusAndThickness = true;
+            this.btnSave.CustomizableEdges = borderEdges2;
+            this.btnSave.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnSave.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnSave.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnSave.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnSave.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.btnSave.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.ForeColor = System.Drawing.Color.White;
+            this.btnSave.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSave.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btnSave.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.btnSave.IconMarginLeft = 11;
+            this.btnSave.IconPadding = 10;
+            this.btnSave.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSave.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btnSave.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btnSave.IconSize = 25;
+            this.btnSave.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.btnSave.IdleBorderRadius = 10;
+            this.btnSave.IdleBorderThickness = 1;
+            this.btnSave.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.btnSave.IdleIconLeftImage = null;
+            this.btnSave.IdleIconRightImage = null;
+            this.btnSave.IndicateFocus = false;
+            this.btnSave.Location = new System.Drawing.Point(18, 678);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnSave.OnDisabledState.BorderRadius = 10;
+            this.btnSave.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnSave.OnDisabledState.BorderThickness = 1;
+            this.btnSave.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnSave.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnSave.OnDisabledState.IconLeftImage = null;
+            this.btnSave.OnDisabledState.IconRightImage = null;
+            this.btnSave.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(225)))), ((int)(((byte)(113)))));
+            this.btnSave.onHoverState.BorderRadius = 10;
+            this.btnSave.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnSave.onHoverState.BorderThickness = 1;
+            this.btnSave.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(225)))), ((int)(((byte)(113)))));
+            this.btnSave.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.btnSave.onHoverState.IconLeftImage = null;
+            this.btnSave.onHoverState.IconRightImage = null;
+            this.btnSave.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.btnSave.OnIdleState.BorderRadius = 10;
+            this.btnSave.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnSave.OnIdleState.BorderThickness = 1;
+            this.btnSave.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.btnSave.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.btnSave.OnIdleState.IconLeftImage = null;
+            this.btnSave.OnIdleState.IconRightImage = null;
+            this.btnSave.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.btnSave.OnPressedState.BorderRadius = 10;
+            this.btnSave.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnSave.OnPressedState.BorderThickness = 1;
+            this.btnSave.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.btnSave.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btnSave.OnPressedState.IconLeftImage = null;
+            this.btnSave.OnPressedState.IconRightImage = null;
+            this.btnSave.Size = new System.Drawing.Size(150, 35);
+            this.btnSave.TabIndex = 181;
+            this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSave.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnSave.TextMarginLeft = 0;
+            this.btnSave.TextPadding = new System.Windows.Forms.Padding(0);
+            this.btnSave.UseDefaultRadiusAndThickness = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // bunifuButton1
+            // dgvEmployeePayHistory
             // 
-            this.bunifuButton1.AllowAnimations = true;
-            this.bunifuButton1.AllowMouseEffects = true;
-            this.bunifuButton1.AllowToggling = false;
-            this.bunifuButton1.AnimationSpeed = 50;
-            this.bunifuButton1.AutoGenerateColors = false;
-            this.bunifuButton1.AutoRoundBorders = false;
-            this.bunifuButton1.AutoSizeLeftIcon = true;
-            this.bunifuButton1.AutoSizeRightIcon = true;
-            this.bunifuButton1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuButton1.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
-            this.bunifuButton1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton1.BackgroundImage")));
-            this.bunifuButton1.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButton1.ButtonText = "შენახვა";
-            this.bunifuButton1.ButtonTextMarginLeft = 0;
-            this.bunifuButton1.ColorContrastOnClick = 45;
-            this.bunifuButton1.ColorContrastOnHover = 45;
-            this.bunifuButton1.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = false;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = false;
-            this.bunifuButton1.CustomizableEdges = borderEdges3;
-            this.bunifuButton1.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.bunifuButton1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.bunifuButton1.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.bunifuButton1.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.bunifuButton1.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.bunifuButton1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuButton1.ForeColor = System.Drawing.Color.White;
-            this.bunifuButton1.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuButton1.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuButton1.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
-            this.bunifuButton1.IconMarginLeft = 11;
-            this.bunifuButton1.IconPadding = 10;
-            this.bunifuButton1.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.bunifuButton1.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuButton1.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.bunifuButton1.IconSize = 25;
-            this.bunifuButton1.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
-            this.bunifuButton1.IdleBorderRadius = 10;
-            this.bunifuButton1.IdleBorderThickness = 1;
-            this.bunifuButton1.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
-            this.bunifuButton1.IdleIconLeftImage = null;
-            this.bunifuButton1.IdleIconRightImage = null;
-            this.bunifuButton1.IndicateFocus = false;
-            this.bunifuButton1.Location = new System.Drawing.Point(18, 678);
-            this.bunifuButton1.Name = "bunifuButton1";
-            this.bunifuButton1.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.bunifuButton1.OnDisabledState.BorderRadius = 10;
-            this.bunifuButton1.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButton1.OnDisabledState.BorderThickness = 1;
-            this.bunifuButton1.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.bunifuButton1.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.bunifuButton1.OnDisabledState.IconLeftImage = null;
-            this.bunifuButton1.OnDisabledState.IconRightImage = null;
-            this.bunifuButton1.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(225)))), ((int)(((byte)(113)))));
-            this.bunifuButton1.onHoverState.BorderRadius = 10;
-            this.bunifuButton1.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButton1.onHoverState.BorderThickness = 1;
-            this.bunifuButton1.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(225)))), ((int)(((byte)(113)))));
-            this.bunifuButton1.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.bunifuButton1.onHoverState.IconLeftImage = null;
-            this.bunifuButton1.onHoverState.IconRightImage = null;
-            this.bunifuButton1.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
-            this.bunifuButton1.OnIdleState.BorderRadius = 10;
-            this.bunifuButton1.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButton1.OnIdleState.BorderThickness = 1;
-            this.bunifuButton1.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
-            this.bunifuButton1.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.bunifuButton1.OnIdleState.IconLeftImage = null;
-            this.bunifuButton1.OnIdleState.IconRightImage = null;
-            this.bunifuButton1.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
-            this.bunifuButton1.OnPressedState.BorderRadius = 10;
-            this.bunifuButton1.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButton1.OnPressedState.BorderThickness = 1;
-            this.bunifuButton1.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
-            this.bunifuButton1.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.bunifuButton1.OnPressedState.IconLeftImage = null;
-            this.bunifuButton1.OnPressedState.IconRightImage = null;
-            this.bunifuButton1.Size = new System.Drawing.Size(150, 35);
-            this.bunifuButton1.TabIndex = 181;
-            this.bunifuButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuButton1.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.bunifuButton1.TextMarginLeft = 0;
-            this.bunifuButton1.TextPadding = new System.Windows.Forms.Padding(0);
-            this.bunifuButton1.UseDefaultRadiusAndThickness = true;
-            // 
-            // bunifuDataGridView1
-            // 
-            this.bunifuDataGridView1.AllowCustomTheming = false;
+            this.dgvEmployeePayHistory.AllowCustomTheming = false;
+            this.dgvEmployeePayHistory.AllowUserToAddRows = false;
+            this.dgvEmployeePayHistory.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            this.bunifuDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.bunifuDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.bunifuDataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.bunifuDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bunifuDataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.bunifuDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.dgvEmployeePayHistory.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvEmployeePayHistory.AutoGenerateColumns = false;
+            this.dgvEmployeePayHistory.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvEmployeePayHistory.BackgroundColor = System.Drawing.Color.White;
+            this.dgvEmployeePayHistory.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvEmployeePayHistory.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgvEmployeePayHistory.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.bunifuDataGridView1.ColumnHeadersHeight = 40;
-            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            this.bunifuDataGridView1.CurrentTheme.BackColor = System.Drawing.Color.White;
-            this.bunifuDataGridView1.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
-            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
-            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.bunifuDataGridView1.CurrentTheme.Name = null;
-            this.bunifuDataGridView1.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.bunifuDataGridView1.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.bunifuDataGridView1.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.bunifuDataGridView1.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.bunifuDataGridView1.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.dgvEmployeePayHistory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvEmployeePayHistory.ColumnHeadersHeight = 40;
+            this.dgvEmployeePayHistory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.employeeIDDataGridViewTextBoxColumn,
+            this.passportIDDataGridViewTextBoxColumn,
+            this.nameDataGridViewTextBoxColumn,
+            this.surnameDataGridViewTextBoxColumn,
+            this.paymentDateDataGridViewTextBoxColumn,
+            this.fromDateDataGridViewTextBoxColumn,
+            this.toDateDataGridViewTextBoxColumn,
+            this.paymentTypeDataGridViewTextBoxColumn,
+            this.salaryDataGridViewTextBoxColumn,
+            this.rateDataGridViewTextBoxColumn,
+            this.awardDataGridViewTextBoxColumn,
+            this.paymentStateDataGridViewTextBoxColumn});
+            this.dgvEmployeePayHistory.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            this.dgvEmployeePayHistory.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.dgvEmployeePayHistory.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dgvEmployeePayHistory.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.dgvEmployeePayHistory.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvEmployeePayHistory.CurrentTheme.BackColor = System.Drawing.Color.White;
+            this.dgvEmployeePayHistory.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.dgvEmployeePayHistory.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
+            this.dgvEmployeePayHistory.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            this.dgvEmployeePayHistory.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dgvEmployeePayHistory.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            this.dgvEmployeePayHistory.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvEmployeePayHistory.CurrentTheme.Name = null;
+            this.dgvEmployeePayHistory.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgvEmployeePayHistory.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.dgvEmployeePayHistory.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dgvEmployeePayHistory.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.dgvEmployeePayHistory.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvEmployeePayHistory.DataSource = this.employeePayHistoryInfoBindingSource;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.bunifuDataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.bunifuDataGridView1.EnableHeadersVisualStyles = false;
-            this.bunifuDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.bunifuDataGridView1.HeaderBackColor = System.Drawing.Color.DodgerBlue;
-            this.bunifuDataGridView1.HeaderBgColor = System.Drawing.Color.Empty;
-            this.bunifuDataGridView1.HeaderForeColor = System.Drawing.Color.White;
-            this.bunifuDataGridView1.Location = new System.Drawing.Point(590, 14);
-            this.bunifuDataGridView1.Name = "bunifuDataGridView1";
-            this.bunifuDataGridView1.RowHeadersVisible = false;
-            this.bunifuDataGridView1.RowTemplate.Height = 40;
-            this.bunifuDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.bunifuDataGridView1.Size = new System.Drawing.Size(800, 700);
-            this.bunifuDataGridView1.TabIndex = 184;
-            this.bunifuDataGridView1.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            this.dgvEmployeePayHistory.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvEmployeePayHistory.EnableHeadersVisualStyles = false;
+            this.dgvEmployeePayHistory.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.dgvEmployeePayHistory.HeaderBackColor = System.Drawing.Color.DodgerBlue;
+            this.dgvEmployeePayHistory.HeaderBgColor = System.Drawing.Color.Empty;
+            this.dgvEmployeePayHistory.HeaderForeColor = System.Drawing.Color.White;
+            this.dgvEmployeePayHistory.Location = new System.Drawing.Point(590, 12);
+            this.dgvEmployeePayHistory.Name = "dgvEmployeePayHistory";
+            this.dgvEmployeePayHistory.ReadOnly = true;
+            this.dgvEmployeePayHistory.RowHeadersVisible = false;
+            this.dgvEmployeePayHistory.RowTemplate.Height = 40;
+            this.dgvEmployeePayHistory.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvEmployeePayHistory.Size = new System.Drawing.Size(800, 701);
+            this.dgvEmployeePayHistory.TabIndex = 184;
+            this.dgvEmployeePayHistory.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            // 
+            // employeeShortInfoTableAdapter
+            // 
+            this.employeeShortInfoTableAdapter.ClearBeforeFill = true;
+            // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 15;
+            this.bunifuElipse1.TargetControl = this.dgvEmployeePayHistory;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.Red;
+            this.label18.Location = new System.Drawing.Point(186, 21);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(15, 20);
+            this.label18.TabIndex = 185;
+            this.label18.Text = "*";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Red;
+            this.label10.Location = new System.Drawing.Point(211, 67);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(15, 20);
+            this.label10.TabIndex = 186;
+            this.label10.Text = "*";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Red;
+            this.label11.Location = new System.Drawing.Point(215, 129);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(15, 20);
+            this.label11.TabIndex = 187;
+            this.label11.Text = "*";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Red;
+            this.label12.Location = new System.Drawing.Point(215, 204);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(15, 20);
+            this.label12.TabIndex = 188;
+            this.label12.Text = "*";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Red;
+            this.label13.Location = new System.Drawing.Point(193, 275);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(15, 20);
+            this.label13.TabIndex = 189;
+            this.label13.Text = "*";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.Red;
+            this.label14.Location = new System.Drawing.Point(182, 345);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(15, 20);
+            this.label14.TabIndex = 190;
+            this.label14.Text = "*";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.Red;
+            this.label15.Location = new System.Drawing.Point(194, 457);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(15, 20);
+            this.label15.TabIndex = 191;
+            this.label15.Text = "*";
+            // 
+            // employeePayHistoryInfoBindingSource
+            // 
+            this.employeePayHistoryInfoBindingSource.DataMember = "EmployeePayHistoryInfo";
+            this.employeePayHistoryInfoBindingSource.DataSource = this.eMSDataSet;
+            // 
+            // employeePayHistoryInfoTableAdapter
+            // 
+            this.employeePayHistoryInfoTableAdapter.ClearBeforeFill = true;
+            // 
+            // employeeIDDataGridViewTextBoxColumn
+            // 
+            this.employeeIDDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.employeeIDDataGridViewTextBoxColumn.DataPropertyName = "EmployeeID";
+            this.employeeIDDataGridViewTextBoxColumn.HeaderText = "EmployeeID";
+            this.employeeIDDataGridViewTextBoxColumn.Name = "employeeIDDataGridViewTextBoxColumn";
+            this.employeeIDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.employeeIDDataGridViewTextBoxColumn.Visible = false;
+            this.employeeIDDataGridViewTextBoxColumn.Width = 67;
+            // 
+            // passportIDDataGridViewTextBoxColumn
+            // 
+            this.passportIDDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.passportIDDataGridViewTextBoxColumn.DataPropertyName = "Passport_ID";
+            this.passportIDDataGridViewTextBoxColumn.FillWeight = 820.8122F;
+            this.passportIDDataGridViewTextBoxColumn.HeaderText = "პირადი ნომერი";
+            this.passportIDDataGridViewTextBoxColumn.Name = "passportIDDataGridViewTextBoxColumn";
+            this.passportIDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.passportIDDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            this.nameDataGridViewTextBoxColumn.FillWeight = 27.91878F;
+            this.nameDataGridViewTextBoxColumn.HeaderText = "სახელი";
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
+            this.nameDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // surnameDataGridViewTextBoxColumn
+            // 
+            this.surnameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.surnameDataGridViewTextBoxColumn.DataPropertyName = "Surname";
+            this.surnameDataGridViewTextBoxColumn.FillWeight = 27.91878F;
+            this.surnameDataGridViewTextBoxColumn.HeaderText = "გვარი";
+            this.surnameDataGridViewTextBoxColumn.Name = "surnameDataGridViewTextBoxColumn";
+            this.surnameDataGridViewTextBoxColumn.ReadOnly = true;
+            this.surnameDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // paymentDateDataGridViewTextBoxColumn
+            // 
+            this.paymentDateDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.paymentDateDataGridViewTextBoxColumn.DataPropertyName = "Payment_Date";
+            this.paymentDateDataGridViewTextBoxColumn.FillWeight = 27.91878F;
+            this.paymentDateDataGridViewTextBoxColumn.HeaderText = "გადახდის თარიღი";
+            this.paymentDateDataGridViewTextBoxColumn.Name = "paymentDateDataGridViewTextBoxColumn";
+            this.paymentDateDataGridViewTextBoxColumn.ReadOnly = true;
+            this.paymentDateDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // fromDateDataGridViewTextBoxColumn
+            // 
+            this.fromDateDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.fromDateDataGridViewTextBoxColumn.DataPropertyName = "From_Date";
+            this.fromDateDataGridViewTextBoxColumn.FillWeight = 27.91878F;
+            this.fromDateDataGridViewTextBoxColumn.HeaderText = "საწყისი თარიღი";
+            this.fromDateDataGridViewTextBoxColumn.Name = "fromDateDataGridViewTextBoxColumn";
+            this.fromDateDataGridViewTextBoxColumn.ReadOnly = true;
+            this.fromDateDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // toDateDataGridViewTextBoxColumn
+            // 
+            this.toDateDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.toDateDataGridViewTextBoxColumn.DataPropertyName = "To_Date";
+            this.toDateDataGridViewTextBoxColumn.FillWeight = 27.91878F;
+            this.toDateDataGridViewTextBoxColumn.HeaderText = "საბოლოო თარიღი";
+            this.toDateDataGridViewTextBoxColumn.Name = "toDateDataGridViewTextBoxColumn";
+            this.toDateDataGridViewTextBoxColumn.ReadOnly = true;
+            this.toDateDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // paymentTypeDataGridViewTextBoxColumn
+            // 
+            this.paymentTypeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.paymentTypeDataGridViewTextBoxColumn.DataPropertyName = "Payment_Type";
+            this.paymentTypeDataGridViewTextBoxColumn.FillWeight = 27.91878F;
+            this.paymentTypeDataGridViewTextBoxColumn.HeaderText = "თანხის ტიპი";
+            this.paymentTypeDataGridViewTextBoxColumn.Name = "paymentTypeDataGridViewTextBoxColumn";
+            this.paymentTypeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.paymentTypeDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // salaryDataGridViewTextBoxColumn
+            // 
+            this.salaryDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.salaryDataGridViewTextBoxColumn.DataPropertyName = "Salary";
+            this.salaryDataGridViewTextBoxColumn.FillWeight = 27.91878F;
+            this.salaryDataGridViewTextBoxColumn.HeaderText = "ხელფასი";
+            this.salaryDataGridViewTextBoxColumn.Name = "salaryDataGridViewTextBoxColumn";
+            this.salaryDataGridViewTextBoxColumn.ReadOnly = true;
+            this.salaryDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // rateDataGridViewTextBoxColumn
+            // 
+            this.rateDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.rateDataGridViewTextBoxColumn.DataPropertyName = "Rate";
+            this.rateDataGridViewTextBoxColumn.FillWeight = 27.91878F;
+            this.rateDataGridViewTextBoxColumn.HeaderText = "ჩარიცხული ხელფასი";
+            this.rateDataGridViewTextBoxColumn.Name = "rateDataGridViewTextBoxColumn";
+            this.rateDataGridViewTextBoxColumn.ReadOnly = true;
+            this.rateDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // awardDataGridViewTextBoxColumn
+            // 
+            this.awardDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.awardDataGridViewTextBoxColumn.DataPropertyName = "Award";
+            this.awardDataGridViewTextBoxColumn.FillWeight = 27.91878F;
+            this.awardDataGridViewTextBoxColumn.HeaderText = "პრემია";
+            this.awardDataGridViewTextBoxColumn.Name = "awardDataGridViewTextBoxColumn";
+            this.awardDataGridViewTextBoxColumn.ReadOnly = true;
+            this.awardDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // paymentStateDataGridViewTextBoxColumn
+            // 
+            this.paymentStateDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.paymentStateDataGridViewTextBoxColumn.DataPropertyName = "Payment_State";
+            this.paymentStateDataGridViewTextBoxColumn.FillWeight = 27.91878F;
+            this.paymentStateDataGridViewTextBoxColumn.HeaderText = "გადახდის სტატუსი";
+            this.paymentStateDataGridViewTextBoxColumn.Name = "paymentStateDataGridViewTextBoxColumn";
+            this.paymentStateDataGridViewTextBoxColumn.ReadOnly = true;
+            this.paymentStateDataGridViewTextBoxColumn.Width = 200;
             // 
             // EmployeePayHistory
             // 
@@ -703,19 +855,25 @@ namespace Employees_Management_System.Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1402, 728);
-            this.Controls.Add(this.bunifuDataGridView1);
-            this.Controls.Add(this.bunifuButton2);
-            this.Controls.Add(this.bunifuButton3);
-            this.Controls.Add(this.bunifuButton1);
-            this.Controls.Add(this.customTextBoxRounded3);
-            this.Controls.Add(this.customComboBox3);
-            this.Controls.Add(this.customTextBoxRounded2);
-            this.Controls.Add(this.customTextBoxRounded1);
-            this.Controls.Add(this.customComboBox2);
-            this.Controls.Add(this.customDateTimePicker3);
-            this.Controls.Add(this.customDateTimePicker1);
-            this.Controls.Add(this.customDateTimePicker2);
-            this.Controls.Add(this.customComboBox1);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label18);
+            this.Controls.Add(this.dgvEmployeePayHistory);
+            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.txtAdditionalInfo);
+            this.Controls.Add(this.cboPaymentState);
+            this.Controls.Add(this.txtAward);
+            this.Controls.Add(this.txtRate);
+            this.Controls.Add(this.cboPaymentType);
+            this.Controls.Add(this.dtpToDate);
+            this.Controls.Add(this.dtpFromDate);
+            this.Controls.Add(this.dtpPaymentDate);
+            this.Controls.Add(this.cboEmployeeID);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -730,7 +888,11 @@ namespace Employees_Management_System.Forms
             this.Name = "EmployeePayHistory";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ხელფასის ჩარიცხვის ისტორია";
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.EmployeePayHistory_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.employeeShortInfoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eMSDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmployeePayHistory)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeePayHistoryInfoBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -747,18 +909,42 @@ namespace Employees_Management_System.Forms
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private Custom_Controls.CustomComboBox customComboBox1;
-        private Custom_Controls.CustomDateTimePicker customDateTimePicker2;
-        private Custom_Controls.CustomDateTimePicker customDateTimePicker1;
-        private Custom_Controls.CustomDateTimePicker customDateTimePicker3;
-        private Custom_Controls.CustomComboBox customComboBox2;
-        private Custom_Controls.CustomTextBoxRounded customTextBoxRounded1;
-        private Custom_Controls.CustomTextBoxRounded customTextBoxRounded2;
-        private Custom_Controls.CustomComboBox customComboBox3;
-        private Custom_Controls.CustomTextBoxRounded customTextBoxRounded3;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton2;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton3;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton1;
-        private Bunifu.UI.WinForms.BunifuDataGridView bunifuDataGridView1;
+        private Custom_Controls.CustomComboBox cboEmployeeID;
+        private Custom_Controls.CustomDateTimePicker dtpPaymentDate;
+        private Custom_Controls.CustomDateTimePicker dtpFromDate;
+        private Custom_Controls.CustomDateTimePicker dtpToDate;
+        private Custom_Controls.CustomComboBox cboPaymentType;
+        private Custom_Controls.CustomTextBoxRounded txtRate;
+        private Custom_Controls.CustomTextBoxRounded txtAward;
+        private Custom_Controls.CustomComboBox cboPaymentState;
+        private Custom_Controls.CustomTextBoxRounded txtAdditionalInfo;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnCancel;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnSave;
+        private Bunifu.UI.WinForms.BunifuDataGridView dgvEmployeePayHistory;
+        private EMSDataSet eMSDataSet;
+        private System.Windows.Forms.BindingSource employeeShortInfoBindingSource;
+        private EMSDataSetTableAdapters.EmployeeShortInfoTableAdapter employeeShortInfoTableAdapter;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.BindingSource employeePayHistoryInfoBindingSource;
+        private EMSDataSetTableAdapters.EmployeePayHistoryInfoTableAdapter employeePayHistoryInfoTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn employeeIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn passportIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn surnameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn paymentDateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fromDateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn toDateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn paymentTypeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn salaryDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn rateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn awardDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn paymentStateDataGridViewTextBoxColumn;
     }
 }

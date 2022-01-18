@@ -1,4 +1,5 @@
-﻿using Employees_Management_System.Forms;
+﻿using Employees_Management_System.Class;
+using Employees_Management_System.Forms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -29,16 +30,45 @@ namespace Employees_Management_System.User_Controls
             InitializeComponent();
         }
 
+        private void Employees_Salary_Load(object sender, EventArgs e)
+        {
+            lblAverageMonthSalary.Text = EmployeeGlobalInformation.EmployeeAverageMonthSalary().ToString() + " GEL";
+
+            lblAverageYearSalary.Text = EmployeeGlobalInformation.EmployeeAverageYearSalary().ToString() + " GEL";
+
+            rgMinSalary.Minimum = 0;
+            rgMinSalary.Maximum = int.Parse(EmployeeGlobalInformation.EmployeeMaxSalary().ToString());
+            //rgMinSalary.ValueByTransition = int.Parse(EmployeeGlobalInformation.EmployeeMinSalary().ToString());
+            rgMinSalary.TransitionValue(int.Parse(EmployeeGlobalInformation.EmployeeMinSalary().ToString()), 2000);
+
+            rgMaxAward.Minimum = 0;
+            rgMaxAward.Maximum = int.Parse(EmployeeGlobalInformation.EmployeeMaxSalary().ToString());
+            //rgMaxAward.ValueByTransition = int.Parse(EmployeeGlobalInformation.EmployeeMaxAward().ToString());
+            rgMaxAward.TransitionValue(int.Parse(EmployeeGlobalInformation.EmployeeMaxAward().ToString()), 2000);
+        }
+
         private void btnEmployeeBankAccount_Click(object sender, EventArgs e)
         {
-            EmployeeBankAccountRegistration employeeBankAccountRegistration = new EmployeeBankAccountRegistration();
-            employeeBankAccountRegistration.Show();
+            EmployeeSalaryRegistration employeeSalaryRegistration = new EmployeeSalaryRegistration();
+            employeeSalaryRegistration.Show();
         }
 
         private void btnEmployeePayHistory_Click(object sender, EventArgs e)
         {
             EmployeePayHistory employeePayHistory = new EmployeePayHistory();
             employeePayHistory.Show();
+        }
+
+        private void btnDepartmentAverageSalary_Click(object sender, EventArgs e)
+        {
+            DepartmentSalaryChartForm departmentSalaryChartForm = new DepartmentSalaryChartForm();
+            departmentSalaryChartForm.Show();
+        }
+
+        private void btnAverageSalaryByYear_Click(object sender, EventArgs e)
+        {
+            AverageSalaryByAgeChartForm averageSalaryByAgeChartForm = new AverageSalaryByAgeChartForm();
+            averageSalaryByAgeChartForm.Show();
         }
     }
 }

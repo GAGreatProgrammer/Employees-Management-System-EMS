@@ -199,13 +199,19 @@ namespace Employees_Management_System.Forms
 
         private void btnSalary_Click(object sender, EventArgs e)
         {
-            
+            EmployeeSalaryRegistration employeeSalaryRegistration = new EmployeeSalaryRegistration();
+            employeeSalaryRegistration.Show();
         }
 
         private void btnUserAccount_Click(object sender, EventArgs e)
         {
             EmployeeAccountGeneration employeeAccountGeneration = new EmployeeAccountGeneration();
             employeeAccountGeneration.Show();
+        }
+
+        private void btnCheck_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

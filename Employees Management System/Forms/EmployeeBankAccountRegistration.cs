@@ -16,6 +16,7 @@ namespace Employees_Management_System.Forms
     {
         private SqlConnection sqlConnection = null;
 
+        string CardNumber;
         public EmployeeBankAccountRegistration()
         {
             InitializeComponent();
@@ -25,7 +26,7 @@ namespace Employees_Management_System.Forms
 
         private void Registration()
         {
-            if (cboEmployeeID.Text == "" || cboCardType.Text == "" || txtCardNumber.Text == "" || txtExpMonth.Text == "" ||
+            if (cboEmployeeID.Text == "" || cboCardType.Text == "" || txtCardNumber1.Text == "" || txtExpMonth.Text == "" ||
                 txtExpYear.Text == "" || txtBankAccountNumber.Text == "")
             {
                 MessageBox.Show("შეავსეთ ყველა სავალდებულო ველი!", "გაფრთხილება", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -39,7 +40,7 @@ namespace Employees_Management_System.Forms
 
                 sqlCommand.Parameters.Add("@EmployeeID", SqlDbType.UniqueIdentifier).Value = cboEmployeeID.SelectedValue;
                 sqlCommand.Parameters.Add("@Card_Type", SqlDbType.NVarChar).Value = cboCardType.Text;
-                sqlCommand.Parameters.Add("@Card_Number", SqlDbType.NVarChar).Value = txtCardNumber.Text;
+                sqlCommand.Parameters.Add("@Card_Number", SqlDbType.NVarChar).Value = CardNumber;
                 sqlCommand.Parameters.Add("@Exp_Month", SqlDbType.Int).Value = txtExpMonth.Text;
                 sqlCommand.Parameters.Add("@Exp_Year", SqlDbType.Int).Value = txtExpYear.Text;
                 sqlCommand.Parameters.Add("@Bank_Account_Number", SqlDbType.NVarChar).Value = txtBankAccountNumber.Text;
@@ -67,7 +68,7 @@ namespace Employees_Management_System.Forms
         {
             cboEmployeeID.Text = "";
             cboCardType.Text = "";
-            txtCardNumber.Text = "";
+            txtCardNumber1.Text = "";
             txtExpMonth.Text = "";
             txtExpYear.Text = "";
             txtBankAccountNumber.Text = "";
@@ -82,7 +83,8 @@ namespace Employees_Management_System.Forms
 
         private void btnPayment_Click(object sender, EventArgs e)
         {
-            
+            EmployeeSalaryRegistration employeeSalaryRegistration = new EmployeeSalaryRegistration();
+            employeeSalaryRegistration.Show();
         }
 
         private void btnBooking_Click(object sender, EventArgs e)
@@ -95,7 +97,6 @@ namespace Employees_Management_System.Forms
         {
             // TODO: This line of code loads data into the 'eMSDataSet.EmployeeShortInfo' table. You can move, or remove it, as needed.
             this.employeeShortInfoTableAdapter.Fill(this.eMSDataSet.EmployeeShortInfo);
-
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -107,6 +108,60 @@ namespace Employees_Management_System.Forms
         private void btnCancel_Click(object sender, EventArgs e)
         {
             ClearData();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCardNumber__TextChanged_1(object sender, EventArgs e)
+        {
+            if(txtCardNumber1.Text.Count(x => x != '-') % 4 == 0)
+            {
+                txtCardNumber2.Focus();
+            }
+        }
+
+        private void txtCardNumber2__TextChanged(object sender, EventArgs e)
+        {
+            if (txtCardNumber2.Text.Count(x => x != '-') % 4 == 0)
+            {
+                txtCardNumber3.Focus();
+            }
+        }
+
+        private void txtCardNumber3__TextChanged(object sender, EventArgs e)
+        {
+            if (txtCardNumber3.Text.Count(x => x != '-') % 4 == 0)
+            {
+                txtCardNumber4.Focus();
+            }
+        }
+
+        private void txtCardNumber4__TextChanged(object sender, EventArgs e)
+        {
+            if (txtCardNumber4.Text.Count(x => x != '-') % 4 == 0)
+            {
+                CardNumber = txtCardNumber1.Text + "-" + txtCardNumber2.Text + "-" + txtCardNumber3.Text + "-" + txtCardNumber4.Text;
+                txtExpMonth.Focus();
+            }
+        }
+
+        private void txtExpMonth__TextChanged(object sender, EventArgs e)
+        {
+            if (txtExpMonth.Text.Count(x => x != '-') % 2 == 0)
+            {
+                txtExpYear.Focus();
+            }
+        }
+
+        private void txtExpYear__TextChanged(object sender, EventArgs e)
+        {
+            if (txtExpYear.Text.Count(x => x != '-') % 2 == 0)
+            {
+                txtBankAccountNumber.Focus();
+            }
         }
     }
 }
