@@ -1,10 +1,16 @@
-﻿using System;
+﻿using Employees_Management_System.Class;
+using Spire.Doc;
+using Spire.Doc.Documents;
+using Spire.Doc.Fields;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,7 +29,7 @@ namespace Employees_Management_System.Forms
 
         private int PermanentCard = 1;
         private int Blocked = 0;
-
+        
 
         public QRCardGenerateForm()
         {
@@ -36,9 +42,10 @@ namespace Employees_Management_System.Forms
         {
             // TODO: This line of code loads data into the 'eMSDataSet.EmployeeShortInfo' table. You can move, or remove it, as needed.
             this.employeeShortInfoTableAdapter.Fill(this.eMSDataSet.EmployeeShortInfo);
-
         }
 
+        
+        
         private void Registration()
         {
             if (cboEmployeeID.Text == "" || txtQRCard_ID.Text == "" || txtChange_Period.Text == "")
@@ -55,7 +62,7 @@ namespace Employees_Management_System.Forms
                 sqlCommand.Parameters.Add("@EmployeeID", SqlDbType.UniqueIdentifier).Value = cboEmployeeID.SelectedValue;
                 sqlCommand.Parameters.Add("@QRCard_ID", SqlDbType.NVarChar).Value = txtQRCard_ID.Text;
                 sqlCommand.Parameters.Add("@Permanent_Card", SqlDbType.Bit).Value = PermanentCard;
-                sqlCommand.Parameters.Add("Change_Period", SqlDbType.Int).Value = txtChange_Period.Text;
+                sqlCommand.Parameters.Add("@Change_Period", SqlDbType.Int).Value = txtChange_Period.Text;
                 sqlCommand.Parameters.Add("@Blocked", SqlDbType.Bit).Value = Blocked;
                 sqlCommand.Parameters.Add("@Additional_Info", SqlDbType.NVarChar).Value = txtAdditionalInfo.Text;
 
@@ -87,6 +94,7 @@ namespace Employees_Management_System.Forms
             cboStatus.Text = "";
             txtChange_Period.Text = "";
             txtAdditionalInfo.Text = "";
+            pbQRCode.Image = null;
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -144,7 +152,6 @@ namespace Employees_Management_System.Forms
         private void GenerateQR()
         {
             var QRCode_Text = txtQRCard_ID.Text + "\n" + 
-                              cboEmployeeID.SelectedValue + "\n" +
                               DateTime.Now;
 
             EncodingOptions encodingOptions = new EncodingOptions() { Width = 400, Height = 400, Margin = 0, PureBarcode = false };
@@ -160,6 +167,75 @@ namespace Employees_Management_System.Forms
         private void btnGenerateQR_Click(object sender, EventArgs e)
         {
             GenerateQR();
+        }
+
+        private void bunifuButton1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                SaveFileDialog sfd = new SaveFileDialog();
+                sfd.Filter = "Images|.jpg";
+                ImageFormat format = ImageFormat.Png;
+                if (sfd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    string ext = System.IO.Path.GetExtension(sfd.FileName);
+                    switch (ext)
+                    {
+                        case ".jpg":
+                            format = ImageFormat.Jpeg;
+                            break;
+                    }
+                    pbQRCode.Image.Save(sfd.FileName, format);
+                    MessageBox.Show("გამოსახულება შენახულია", "შენახვა", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+           
+        }
+
+        private void Delete()
+        {
+            if (cboEmployeeID.Text == "" )
+            {
+                MessageBox.Show("შეავსეთ ყველა სავალდებულო ველი!", "გაფრთხილება", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            try
+            {
+                SqlCommand sqlCommand = new SqlCommand("DeleteEmployeeQRCard", sqlConnection);
+                sqlCommand.CommandType = CommandType.StoredProcedure;
+
+                sqlCommand.Parameters.Add("@EmployeeID", SqlDbType.NVarChar).Value = cboEmployeeID.SelectedValue.ToString();
+
+                sqlConnection.Open();
+                sqlCommand.ExecuteNonQuery();
+                MessageBox.Show($"QR ბარათი წარმატებით წაიშალა", "QR ბარათის წაშლა", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                if (sqlConnection.State == ConnectionState.Open)
+                {
+                    sqlConnection.Close();
+                }
+            }
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            Delete();
+        }
+
+        private void cboEmployeeID_OnSelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

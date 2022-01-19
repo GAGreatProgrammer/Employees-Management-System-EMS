@@ -32,5 +32,29 @@ namespace Employees_Management_System.Properties {
                 return ((string)(this["EMSConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string EmailFrom {
+            get {
+                return ((string)(this["EmailFrom"]));
+            }
+            set {
+                this["EmailFrom"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string EmailPassword {
+            get {
+                return ((string)(this["EmailPassword"]));
+            }
+            set {
+                this["EmailPassword"] = value;
+            }
+        }
     }
 }

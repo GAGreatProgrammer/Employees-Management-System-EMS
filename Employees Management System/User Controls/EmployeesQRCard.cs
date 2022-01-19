@@ -203,5 +203,11 @@ namespace Employees_Management_System.User_Controls
             txtTelephone.Text = "";
             txtPosition.Text = "";
         }
+
+        private void btnVisit_Click(object sender, EventArgs e)
+        {
+            EmployeeVisitRegistration employeeVisitRegistration = new EmployeeVisitRegistration();
+            employeeVisitRegistration.Show();
+        }
     }
 }

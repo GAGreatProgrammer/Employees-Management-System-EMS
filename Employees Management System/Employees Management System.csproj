@@ -156,9 +156,19 @@
     <Reference Include="Bunifu.UI.WinForms.Deprecated, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
       <HintPath>..\packages\Bunifu.UI.WinForms.4.1.1\lib\Bunifu.UI.WinForms.Deprecated.dll</HintPath>
     </Reference>
+    <Reference Include="Spire.Doc, Version=7.11.0.41046, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\FreeSpire.Doc.7.11.0\lib\net46\Spire.Doc.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.License, Version=1.3.7.46, Culture=neutral, PublicKeyToken=b1144360237c8b3f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FreeSpire.Doc.7.11.0\lib\net46\Spire.License.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Pdf, Version=5.11.0.2046, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\FreeSpire.Doc.7.11.0\lib\net46\Spire.Pdf.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -176,8 +186,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class\Employee.cs" />
     <Compile Include="Class\EmployeeGlobalInformation.cs" />
+    <Compile Include="Class\GlobalMethods.cs" />
     <Compile Include="Class\GlobalVariables.cs" />
     <Compile Include="Class\UserActivity.cs" />
     <Compile Include="Custom Controls\CustomButton.cs">
@@ -304,6 +314,18 @@
     <Compile Include="Forms\EmployeeSalaryRegistration.Designer.cs">
       <DependentUpon>EmployeeSalaryRegistration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\EmployeeVisitRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EmployeeVisitRegistration.Designer.cs">
+      <DependentUpon>EmployeeVisitRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EmployeeVisitsFullInfoFiltering.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EmployeeVisitsFullInfoFiltering.Designer.cs">
+      <DependentUpon>EmployeeVisitsFullInfoFiltering.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -321,6 +343,12 @@
     </Compile>
     <Compile Include="Forms\QRCardGenerateForm.Designer.cs">
       <DependentUpon>QRCardGenerateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SendEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SendEmail.Designer.cs">
+      <DependentUpon>SendEmail.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Test.cs">
       <SubType>Form</SubType>
@@ -407,6 +435,12 @@
     <EmbeddedResource Include="Forms\EmployeeSalaryRegistration.resx">
       <DependentUpon>EmployeeSalaryRegistration.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EmployeeVisitRegistration.resx">
+      <DependentUpon>EmployeeVisitRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EmployeeVisitsFullInfoFiltering.resx">
+      <DependentUpon>EmployeeVisitsFullInfoFiltering.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -415,6 +449,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\QRCardGenerateForm.resx">
       <DependentUpon>QRCardGenerateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SendEmail.resx">
+      <DependentUpon>SendEmail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Test.resx">
       <DependentUpon>Test.cs</DependentUpon>
@@ -463,7 +500,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Email Template\" />
     <Folder Include="Namespaces\" />
     <Folder Include="Reports\" />
   </ItemGroup>
@@ -535,6 +571,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="License\Bunifu.Licensing.dll" />
+    <None Include="Resources\attach_26px.png" />
     <None Include="Resources\lock.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

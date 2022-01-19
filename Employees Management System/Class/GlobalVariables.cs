@@ -8,6 +8,7 @@ namespace Employees_Management_System.Class
 {
     public static class GlobalVariables
     {
+        public static string LoggedEmployeeID { get; set; }
         public static string EmployeeID { get; set; }
         public static string EmployeePassportID { get; set; }
         public static string EmployeeFullName { get; set; }

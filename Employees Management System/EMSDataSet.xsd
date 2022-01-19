@@ -1396,6 +1396,29 @@ SELECT ID, EmployeeID, Bot_User_ID, Access_Level, Additional_Info, Created_Date,
             </Mappings>
             <Sources />
           </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="QRCardInfoTableAdapter" GeneratorDataComponentClassName="QRCardInfoTableAdapter" Name="QRCardInfo" UserDataComponentName="QRCardInfoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="EMSConnectionString (Settings)" DbObjectName="EMS.dbo.QRCardInfo" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT QRCard_ID, Passport_ID, Name, Surname, [Father's_Name], Country, Telephone, Position FROM dbo.QRCardInfo</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="QRCard_ID" DataSetColumn="QRCard_ID" />
+              <Mapping SourceColumn="Passport_ID" DataSetColumn="Passport_ID" />
+              <Mapping SourceColumn="Name" DataSetColumn="Name" />
+              <Mapping SourceColumn="Surname" DataSetColumn="Surname" />
+              <Mapping SourceColumn="Father's_Name" DataSetColumn="Father's_Name" />
+              <Mapping SourceColumn="Country" DataSetColumn="Country" />
+              <Mapping SourceColumn="Telephone" DataSetColumn="Telephone" />
+              <Mapping SourceColumn="Position" DataSetColumn="Position" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
         </Tables>
         <Sources>
           <DbSource ConnectionRef="EMSConnectionString (Settings)" DbObjectName="EMS.dbo.AddActivityLog" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="AddActivityLog" MethodsParameterType="CLR" Modifier="Public" Name="AddActivityLog" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="AddActivityLog">
@@ -1687,7 +1710,7 @@ SELECT ID, EmployeeID, Bot_User_ID, Access_Level, Additional_Info, Created_Date,
   <xs:element name="EMSDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="EMSDataSet" msprop:Generator_UserDSName="EMSDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="ActivityLog" msprop:Generator_TableClassName="ActivityLogDataTable" msprop:Generator_TableVarName="tableActivityLog" msprop:Generator_RowChangedName="ActivityLogRowChanged" msprop:Generator_TablePropName="ActivityLog" msprop:Generator_RowDeletingName="ActivityLogRowDeleting" msprop:Generator_RowChangingName="ActivityLogRowChanging" msprop:Generator_RowEvHandlerName="ActivityLogRowChangeEventHandler" msprop:Generator_RowDeletedName="ActivityLogRowDeleted" msprop:Generator_RowClassName="ActivityLogRow" msprop:Generator_UserTableName="ActivityLog" msprop:Generator_RowEvArgName="ActivityLogRowChangeEvent">
+        <xs:element name="ActivityLog" msprop:Generator_TableClassName="ActivityLogDataTable" msprop:Generator_TableVarName="tableActivityLog" msprop:Generator_TablePropName="ActivityLog" msprop:Generator_RowDeletingName="ActivityLogRowDeleting" msprop:Generator_RowChangingName="ActivityLogRowChanging" msprop:Generator_RowEvHandlerName="ActivityLogRowChangeEventHandler" msprop:Generator_RowDeletedName="ActivityLogRowDeleted" msprop:Generator_UserTableName="ActivityLog" msprop:Generator_RowChangedName="ActivityLogRowChanged" msprop:Generator_RowEvArgName="ActivityLogRowChangeEvent" msprop:Generator_RowClassName="ActivityLogRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
@@ -1706,7 +1729,7 @@ SELECT ID, EmployeeID, Bot_User_ID, Access_Level, Additional_Info, Created_Date,
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Blacklist" msprop:Generator_TableClassName="BlacklistDataTable" msprop:Generator_TableVarName="tableBlacklist" msprop:Generator_RowChangedName="BlacklistRowChanged" msprop:Generator_TablePropName="Blacklist" msprop:Generator_RowDeletingName="BlacklistRowDeleting" msprop:Generator_RowChangingName="BlacklistRowChanging" msprop:Generator_RowEvHandlerName="BlacklistRowChangeEventHandler" msprop:Generator_RowDeletedName="BlacklistRowDeleted" msprop:Generator_RowClassName="BlacklistRow" msprop:Generator_UserTableName="Blacklist" msprop:Generator_RowEvArgName="BlacklistRowChangeEvent">
+        <xs:element name="Blacklist" msprop:Generator_TableClassName="BlacklistDataTable" msprop:Generator_TableVarName="tableBlacklist" msprop:Generator_TablePropName="Blacklist" msprop:Generator_RowDeletingName="BlacklistRowDeleting" msprop:Generator_RowChangingName="BlacklistRowChanging" msprop:Generator_RowEvHandlerName="BlacklistRowChangeEventHandler" msprop:Generator_RowDeletedName="BlacklistRowDeleted" msprop:Generator_UserTableName="Blacklist" msprop:Generator_RowChangedName="BlacklistRowChanged" msprop:Generator_RowEvArgName="BlacklistRowChangeEvent" msprop:Generator_RowClassName="BlacklistRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
@@ -1731,7 +1754,7 @@ SELECT ID, EmployeeID, Bot_User_ID, Access_Level, Additional_Info, Created_Date,
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Countries" msprop:Generator_TableClassName="CountriesDataTable" msprop:Generator_TableVarName="tableCountries" msprop:Generator_RowChangedName="CountriesRowChanged" msprop:Generator_TablePropName="Countries" msprop:Generator_RowDeletingName="CountriesRowDeleting" msprop:Generator_RowChangingName="CountriesRowChanging" msprop:Generator_RowEvHandlerName="CountriesRowChangeEventHandler" msprop:Generator_RowDeletedName="CountriesRowDeleted" msprop:Generator_RowClassName="CountriesRow" msprop:Generator_UserTableName="Countries" msprop:Generator_RowEvArgName="CountriesRowChangeEvent">
+        <xs:element name="Countries" msprop:Generator_TableClassName="CountriesDataTable" msprop:Generator_TableVarName="tableCountries" msprop:Generator_TablePropName="Countries" msprop:Generator_RowDeletingName="CountriesRowDeleting" msprop:Generator_RowChangingName="CountriesRowChanging" msprop:Generator_RowEvHandlerName="CountriesRowChangeEventHandler" msprop:Generator_RowDeletedName="CountriesRowDeleted" msprop:Generator_UserTableName="Countries" msprop:Generator_RowChangedName="CountriesRowChanged" msprop:Generator_RowEvArgName="CountriesRowChangeEvent" msprop:Generator_RowClassName="CountriesRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
@@ -1745,7 +1768,7 @@ SELECT ID, EmployeeID, Bot_User_ID, Access_Level, Additional_Info, Created_Date,
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Department" msprop:Generator_TableClassName="DepartmentDataTable" msprop:Generator_TableVarName="tableDepartment" msprop:Generator_RowChangedName="DepartmentRowChanged" msprop:Generator_TablePropName="Department" msprop:Generator_RowDeletingName="DepartmentRowDeleting" msprop:Generator_RowChangingName="DepartmentRowChanging" msprop:Generator_RowEvHandlerName="DepartmentRowChangeEventHandler" msprop:Generator_RowDeletedName="DepartmentRowDeleted" msprop:Generator_RowClassName="DepartmentRow" msprop:Generator_UserTableName="Department" msprop:Generator_RowEvArgName="DepartmentRowChangeEvent">
+        <xs:element name="Department" msprop:Generator_TableClassName="DepartmentDataTable" msprop:Generator_TableVarName="tableDepartment" msprop:Generator_TablePropName="Department" msprop:Generator_RowDeletingName="DepartmentRowDeleting" msprop:Generator_RowChangingName="DepartmentRowChanging" msprop:Generator_RowEvHandlerName="DepartmentRowChangeEventHandler" msprop:Generator_RowDeletedName="DepartmentRowDeleted" msprop:Generator_UserTableName="Department" msprop:Generator_RowChangedName="DepartmentRowChanged" msprop:Generator_RowEvArgName="DepartmentRowChangeEvent" msprop:Generator_RowClassName="DepartmentRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
@@ -1773,7 +1796,7 @@ SELECT ID, EmployeeID, Bot_User_ID, Access_Level, Additional_Info, Created_Date,
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Employee" msprop:Generator_TableClassName="EmployeeDataTable" msprop:Generator_TableVarName="tableEmployee" msprop:Generator_RowChangedName="EmployeeRowChanged" msprop:Generator_TablePropName="Employee" msprop:Generator_RowDeletingName="EmployeeRowDeleting" msprop:Generator_RowChangingName="EmployeeRowChanging" msprop:Generator_RowEvHandlerName="EmployeeRowChangeEventHandler" msprop:Generator_RowDeletedName="EmployeeRowDeleted" msprop:Generator_RowClassName="EmployeeRow" msprop:Generator_UserTableName="Employee" msprop:Generator_RowEvArgName="EmployeeRowChangeEvent">
+        <xs:element name="Employee" msprop:Generator_TableClassName="EmployeeDataTable" msprop:Generator_TableVarName="tableEmployee" msprop:Generator_TablePropName="Employee" msprop:Generator_RowDeletingName="EmployeeRowDeleting" msprop:Generator_RowChangingName="EmployeeRowChanging" msprop:Generator_RowEvHandlerName="EmployeeRowChangeEventHandler" msprop:Generator_RowDeletedName="EmployeeRowDeleted" msprop:Generator_UserTableName="Employee" msprop:Generator_RowChangedName="EmployeeRowChanged" msprop:Generator_RowEvArgName="EmployeeRowChangeEvent" msprop:Generator_RowClassName="EmployeeRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:string" />
@@ -1860,7 +1883,7 @@ SELECT ID, EmployeeID, Bot_User_ID, Access_Level, Additional_Info, Created_Date,
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="EmployeeAccount" msprop:Generator_TableClassName="EmployeeAccountDataTable" msprop:Generator_TableVarName="tableEmployeeAccount" msprop:Generator_RowChangedName="EmployeeAccountRowChanged" msprop:Generator_TablePropName="EmployeeAccount" msprop:Generator_RowDeletingName="EmployeeAccountRowDeleting" msprop:Generator_RowChangingName="EmployeeAccountRowChanging" msprop:Generator_RowEvHandlerName="EmployeeAccountRowChangeEventHandler" msprop:Generator_RowDeletedName="EmployeeAccountRowDeleted" msprop:Generator_RowClassName="EmployeeAccountRow" msprop:Generator_UserTableName="EmployeeAccount" msprop:Generator_RowEvArgName="EmployeeAccountRowChangeEvent">
+        <xs:element name="EmployeeAccount" msprop:Generator_TableClassName="EmployeeAccountDataTable" msprop:Generator_TableVarName="tableEmployeeAccount" msprop:Generator_TablePropName="EmployeeAccount" msprop:Generator_RowDeletingName="EmployeeAccountRowDeleting" msprop:Generator_RowChangingName="EmployeeAccountRowChanging" msprop:Generator_RowEvHandlerName="EmployeeAccountRowChangeEventHandler" msprop:Generator_RowDeletedName="EmployeeAccountRowDeleted" msprop:Generator_UserTableName="EmployeeAccount" msprop:Generator_RowChangedName="EmployeeAccountRowChanged" msprop:Generator_RowEvArgName="EmployeeAccountRowChangeEvent" msprop:Generator_RowClassName="EmployeeAccountRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
@@ -1887,7 +1910,7 @@ SELECT ID, EmployeeID, Bot_User_ID, Access_Level, Additional_Info, Created_Date,
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="EmployeeBankAccount" msprop:Generator_TableClassName="EmployeeBankAccountDataTable" msprop:Generator_TableVarName="tableEmployeeBankAccount" msprop:Generator_RowChangedName="EmployeeBankAccountRowChanged" msprop:Generator_TablePropName="EmployeeBankAccount" msprop:Generator_RowDeletingName="EmployeeBankAccountRowDeleting" msprop:Generator_RowChangingName="EmployeeBankAccountRowChanging" msprop:Generator_RowEvHandlerName="EmployeeBankAccountRowChangeEventHandler" msprop:Generator_RowDeletedName="EmployeeBankAccountRowDeleted" msprop:Generator_RowClassName="EmployeeBankAccountRow" msprop:Generator_UserTableName="EmployeeBankAccount" msprop:Generator_RowEvArgName="EmployeeBankAccountRowChangeEvent">
+        <xs:element name="EmployeeBankAccount" msprop:Generator_TableClassName="EmployeeBankAccountDataTable" msprop:Generator_TableVarName="tableEmployeeBankAccount" msprop:Generator_TablePropName="EmployeeBankAccount" msprop:Generator_RowDeletingName="EmployeeBankAccountRowDeleting" msprop:Generator_RowChangingName="EmployeeBankAccountRowChanging" msprop:Generator_RowEvHandlerName="EmployeeBankAccountRowChangeEventHandler" msprop:Generator_RowDeletedName="EmployeeBankAccountRowDeleted" msprop:Generator_UserTableName="EmployeeBankAccount" msprop:Generator_RowChangedName="EmployeeBankAccountRowChanged" msprop:Generator_RowEvArgName="EmployeeBankAccountRowChangeEvent" msprop:Generator_RowClassName="EmployeeBankAccountRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
@@ -1927,7 +1950,7 @@ SELECT ID, EmployeeID, Bot_User_ID, Access_Level, Additional_Info, Created_Date,
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="EmployeePayHistory" msprop:Generator_TableClassName="EmployeePayHistoryDataTable" msprop:Generator_TableVarName="tableEmployeePayHistory" msprop:Generator_RowChangedName="EmployeePayHistoryRowChanged" msprop:Generator_TablePropName="EmployeePayHistory" msprop:Generator_RowDeletingName="EmployeePayHistoryRowDeleting" msprop:Generator_RowChangingName="EmployeePayHistoryRowChanging" msprop:Generator_RowEvHandlerName="EmployeePayHistoryRowChangeEventHandler" msprop:Generator_RowDeletedName="EmployeePayHistoryRowDeleted" msprop:Generator_RowClassName="EmployeePayHistoryRow" msprop:Generator_UserTableName="EmployeePayHistory" msprop:Generator_RowEvArgName="EmployeePayHistoryRowChangeEvent">
+        <xs:element name="EmployeePayHistory" msprop:Generator_TableClassName="EmployeePayHistoryDataTable" msprop:Generator_TableVarName="tableEmployeePayHistory" msprop:Generator_TablePropName="EmployeePayHistory" msprop:Generator_RowDeletingName="EmployeePayHistoryRowDeleting" msprop:Generator_RowChangingName="EmployeePayHistoryRowChanging" msprop:Generator_RowEvHandlerName="EmployeePayHistoryRowChangeEventHandler" msprop:Generator_RowDeletedName="EmployeePayHistoryRowDeleted" msprop:Generator_UserTableName="EmployeePayHistory" msprop:Generator_RowChangedName="EmployeePayHistoryRowChanged" msprop:Generator_RowEvArgName="EmployeePayHistoryRowChangeEvent" msprop:Generator_RowClassName="EmployeePayHistoryRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
@@ -1951,7 +1974,7 @@ SELECT ID, EmployeeID, Bot_User_ID, Access_Level, Additional_Info, Created_Date,
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="EmployeeQRCard" msprop:Generator_TableClassName="EmployeeQRCardDataTable" msprop:Generator_TableVarName="tableEmployeeQRCard" msprop:Generator_RowChangedName="EmployeeQRCardRowChanged" msprop:Generator_TablePropName="EmployeeQRCard" msprop:Generator_RowDeletingName="EmployeeQRCardRowDeleting" msprop:Generator_RowChangingName="EmployeeQRCardRowChanging" msprop:Generator_RowEvHandlerName="EmployeeQRCardRowChangeEventHandler" msprop:Generator_RowDeletedName="EmployeeQRCardRowDeleted" msprop:Generator_RowClassName="EmployeeQRCardRow" msprop:Generator_UserTableName="EmployeeQRCard" msprop:Generator_RowEvArgName="EmployeeQRCardRowChangeEvent">
+        <xs:element name="EmployeeQRCard" msprop:Generator_TableClassName="EmployeeQRCardDataTable" msprop:Generator_TableVarName="tableEmployeeQRCard" msprop:Generator_TablePropName="EmployeeQRCard" msprop:Generator_RowDeletingName="EmployeeQRCardRowDeleting" msprop:Generator_RowChangingName="EmployeeQRCardRowChanging" msprop:Generator_RowEvHandlerName="EmployeeQRCardRowChangeEventHandler" msprop:Generator_RowDeletedName="EmployeeQRCardRowDeleted" msprop:Generator_UserTableName="EmployeeQRCard" msprop:Generator_RowChangedName="EmployeeQRCardRowChanged" msprop:Generator_RowEvArgName="EmployeeQRCardRowChangeEvent" msprop:Generator_RowClassName="EmployeeQRCardRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
@@ -1978,7 +2001,7 @@ SELECT ID, EmployeeID, Bot_User_ID, Access_Level, Additional_Info, Created_Date,
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="EmployeeSalary" msprop:Generator_TableClassName="EmployeeSalaryDataTable" msprop:Generator_TableVarName="tableEmployeeSalary" msprop:Generator_RowChangedName="EmployeeSalaryRowChanged" msprop:Generator_TablePropName="EmployeeSalary" msprop:Generator_RowDeletingName="EmployeeSalaryRowDeleting" msprop:Generator_RowChangingName="EmployeeSalaryRowChanging" msprop:Generator_RowEvHandlerName="EmployeeSalaryRowChangeEventHandler" msprop:Generator_RowDeletedName="EmployeeSalaryRowDeleted" msprop:Generator_RowClassName="EmployeeSalaryRow" msprop:Generator_UserTableName="EmployeeSalary" msprop:Generator_RowEvArgName="EmployeeSalaryRowChangeEvent">
+        <xs:element name="EmployeeSalary" msprop:Generator_TableClassName="EmployeeSalaryDataTable" msprop:Generator_TableVarName="tableEmployeeSalary" msprop:Generator_TablePropName="EmployeeSalary" msprop:Generator_RowDeletingName="EmployeeSalaryRowDeleting" msprop:Generator_RowChangingName="EmployeeSalaryRowChanging" msprop:Generator_RowEvHandlerName="EmployeeSalaryRowChangeEventHandler" msprop:Generator_RowDeletedName="EmployeeSalaryRowDeleted" msprop:Generator_UserTableName="EmployeeSalary" msprop:Generator_RowChangedName="EmployeeSalaryRowChanged" msprop:Generator_RowEvArgName="EmployeeSalaryRowChangeEvent" msprop:Generator_RowClassName="EmployeeSalaryRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
@@ -1997,7 +2020,7 @@ SELECT ID, EmployeeID, Bot_User_ID, Access_Level, Additional_Info, Created_Date,
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="EmployeeVisits" msprop:Generator_TableClassName="EmployeeVisitsDataTable" msprop:Generator_TableVarName="tableEmployeeVisits" msprop:Generator_RowChangedName="EmployeeVisitsRowChanged" msprop:Generator_TablePropName="EmployeeVisits" msprop:Generator_RowDeletingName="EmployeeVisitsRowDeleting" msprop:Generator_RowChangingName="EmployeeVisitsRowChanging" msprop:Generator_RowEvHandlerName="EmployeeVisitsRowChangeEventHandler" msprop:Generator_RowDeletedName="EmployeeVisitsRowDeleted" msprop:Generator_RowClassName="EmployeeVisitsRow" msprop:Generator_UserTableName="EmployeeVisits" msprop:Generator_RowEvArgName="EmployeeVisitsRowChangeEvent">
+        <xs:element name="EmployeeVisits" msprop:Generator_TableClassName="EmployeeVisitsDataTable" msprop:Generator_TableVarName="tableEmployeeVisits" msprop:Generator_TablePropName="EmployeeVisits" msprop:Generator_RowDeletingName="EmployeeVisitsRowDeleting" msprop:Generator_RowChangingName="EmployeeVisitsRowChanging" msprop:Generator_RowEvHandlerName="EmployeeVisitsRowChangeEventHandler" msprop:Generator_RowDeletedName="EmployeeVisitsRowDeleted" msprop:Generator_UserTableName="EmployeeVisits" msprop:Generator_RowChangedName="EmployeeVisitsRowChanged" msprop:Generator_RowEvArgName="EmployeeVisitsRowChangeEvent" msprop:Generator_RowClassName="EmployeeVisitsRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
@@ -2011,7 +2034,7 @@ SELECT ID, EmployeeID, Bot_User_ID, Access_Level, Additional_Info, Created_Date,
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="TelegramBotUsers" msprop:Generator_TableClassName="TelegramBotUsersDataTable" msprop:Generator_TableVarName="tableTelegramBotUsers" msprop:Generator_RowChangedName="TelegramBotUsersRowChanged" msprop:Generator_TablePropName="TelegramBotUsers" msprop:Generator_RowDeletingName="TelegramBotUsersRowDeleting" msprop:Generator_RowChangingName="TelegramBotUsersRowChanging" msprop:Generator_RowEvHandlerName="TelegramBotUsersRowChangeEventHandler" msprop:Generator_RowDeletedName="TelegramBotUsersRowDeleted" msprop:Generator_RowClassName="TelegramBotUsersRow" msprop:Generator_UserTableName="TelegramBotUsers" msprop:Generator_RowEvArgName="TelegramBotUsersRowChangeEvent">
+        <xs:element name="TelegramBotUsers" msprop:Generator_TableClassName="TelegramBotUsersDataTable" msprop:Generator_TableVarName="tableTelegramBotUsers" msprop:Generator_TablePropName="TelegramBotUsers" msprop:Generator_RowDeletingName="TelegramBotUsersRowDeleting" msprop:Generator_RowChangingName="TelegramBotUsersRowChanging" msprop:Generator_RowEvHandlerName="TelegramBotUsersRowChangeEventHandler" msprop:Generator_RowDeletedName="TelegramBotUsersRowDeleted" msprop:Generator_UserTableName="TelegramBotUsers" msprop:Generator_RowChangedName="TelegramBotUsersRowChanged" msprop:Generator_RowEvArgName="TelegramBotUsersRowChangeEvent" msprop:Generator_RowClassName="TelegramBotUsersRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
@@ -2036,7 +2059,7 @@ SELECT ID, EmployeeID, Bot_User_ID, Access_Level, Additional_Info, Created_Date,
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="EmployeeShortInfo" msprop:Generator_TableClassName="EmployeeShortInfoDataTable" msprop:Generator_TableVarName="tableEmployeeShortInfo" msprop:Generator_TablePropName="EmployeeShortInfo" msprop:Generator_RowDeletingName="EmployeeShortInfoRowDeleting" msprop:Generator_RowChangingName="EmployeeShortInfoRowChanging" msprop:Generator_RowEvHandlerName="EmployeeShortInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="EmployeeShortInfoRowDeleted" msprop:Generator_UserTableName="EmployeeShortInfo" msprop:Generator_RowChangedName="EmployeeShortInfoRowChanged" msprop:Generator_RowEvArgName="EmployeeShortInfoRowChangeEvent" msprop:Generator_RowClassName="EmployeeShortInfoRow">
+        <xs:element name="EmployeeShortInfo" msprop:Generator_TableClassName="EmployeeShortInfoDataTable" msprop:Generator_TableVarName="tableEmployeeShortInfo" msprop:Generator_RowChangedName="EmployeeShortInfoRowChanged" msprop:Generator_TablePropName="EmployeeShortInfo" msprop:Generator_RowDeletingName="EmployeeShortInfoRowDeleting" msprop:Generator_RowChangingName="EmployeeShortInfoRowChanging" msprop:Generator_RowEvHandlerName="EmployeeShortInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="EmployeeShortInfoRowDeleted" msprop:Generator_RowClassName="EmployeeShortInfoRow" msprop:Generator_UserTableName="EmployeeShortInfo" msprop:Generator_RowEvArgName="EmployeeShortInfoRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:string" />
@@ -2050,7 +2073,7 @@ SELECT ID, EmployeeID, Bot_User_ID, Access_Level, Additional_Info, Created_Date,
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="EmployeeInfoForEditing" msprop:Generator_TableClassName="EmployeeInfoForEditingDataTable" msprop:Generator_TableVarName="tableEmployeeInfoForEditing" msprop:Generator_RowChangedName="EmployeeInfoForEditingRowChanged" msprop:Generator_TablePropName="EmployeeInfoForEditing" msprop:Generator_RowDeletingName="EmployeeInfoForEditingRowDeleting" msprop:Generator_RowChangingName="EmployeeInfoForEditingRowChanging" msprop:Generator_RowEvHandlerName="EmployeeInfoForEditingRowChangeEventHandler" msprop:Generator_RowDeletedName="EmployeeInfoForEditingRowDeleted" msprop:Generator_RowClassName="EmployeeInfoForEditingRow" msprop:Generator_UserTableName="EmployeeInfoForEditing" msprop:Generator_RowEvArgName="EmployeeInfoForEditingRowChangeEvent">
+        <xs:element name="EmployeeInfoForEditing" msprop:Generator_TableClassName="EmployeeInfoForEditingDataTable" msprop:Generator_TableVarName="tableEmployeeInfoForEditing" msprop:Generator_TablePropName="EmployeeInfoForEditing" msprop:Generator_RowDeletingName="EmployeeInfoForEditingRowDeleting" msprop:Generator_RowChangingName="EmployeeInfoForEditingRowChanging" msprop:Generator_RowEvHandlerName="EmployeeInfoForEditingRowChangeEventHandler" msprop:Generator_RowDeletedName="EmployeeInfoForEditingRowDeleted" msprop:Generator_UserTableName="EmployeeInfoForEditing" msprop:Generator_RowChangedName="EmployeeInfoForEditingRowChanged" msprop:Generator_RowEvArgName="EmployeeInfoForEditingRowChangeEvent" msprop:Generator_RowClassName="EmployeeInfoForEditingRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:string" />
@@ -2106,7 +2129,7 @@ SELECT ID, EmployeeID, Bot_User_ID, Access_Level, Additional_Info, Created_Date,
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="EditEmployeeInfoForm" msprop:Generator_TableClassName="EditEmployeeInfoFormDataTable" msprop:Generator_TableVarName="tableEditEmployeeInfoForm" msprop:Generator_TablePropName="EditEmployeeInfoForm" msprop:Generator_RowDeletingName="EditEmployeeInfoFormRowDeleting" msprop:Generator_RowChangingName="EditEmployeeInfoFormRowChanging" msprop:Generator_RowEvHandlerName="EditEmployeeInfoFormRowChangeEventHandler" msprop:Generator_RowDeletedName="EditEmployeeInfoFormRowDeleted" msprop:Generator_UserTableName="EditEmployeeInfoForm" msprop:Generator_RowChangedName="EditEmployeeInfoFormRowChanged" msprop:Generator_RowEvArgName="EditEmployeeInfoFormRowChangeEvent" msprop:Generator_RowClassName="EditEmployeeInfoFormRow">
+        <xs:element name="EditEmployeeInfoForm" msprop:Generator_TableClassName="EditEmployeeInfoFormDataTable" msprop:Generator_TableVarName="tableEditEmployeeInfoForm" msprop:Generator_RowChangedName="EditEmployeeInfoFormRowChanged" msprop:Generator_TablePropName="EditEmployeeInfoForm" msprop:Generator_RowDeletingName="EditEmployeeInfoFormRowDeleting" msprop:Generator_RowChangingName="EditEmployeeInfoFormRowChanging" msprop:Generator_RowEvHandlerName="EditEmployeeInfoFormRowChangeEventHandler" msprop:Generator_RowDeletedName="EditEmployeeInfoFormRowDeleted" msprop:Generator_RowClassName="EditEmployeeInfoFormRow" msprop:Generator_UserTableName="EditEmployeeInfoForm" msprop:Generator_RowEvArgName="EditEmployeeInfoFormRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" minOccurs="0">
@@ -2186,7 +2209,7 @@ SELECT ID, EmployeeID, Bot_User_ID, Access_Level, Additional_Info, Created_Date,
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="EmployeeAccountInfo" msprop:Generator_TableClassName="EmployeeAccountInfoDataTable" msprop:Generator_TableVarName="tableEmployeeAccountInfo" msprop:Generator_RowChangedName="EmployeeAccountInfoRowChanged" msprop:Generator_TablePropName="EmployeeAccountInfo" msprop:Generator_RowDeletingName="EmployeeAccountInfoRowDeleting" msprop:Generator_RowChangingName="EmployeeAccountInfoRowChanging" msprop:Generator_RowEvHandlerName="EmployeeAccountInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="EmployeeAccountInfoRowDeleted" msprop:Generator_RowClassName="EmployeeAccountInfoRow" msprop:Generator_UserTableName="EmployeeAccountInfo" msprop:Generator_RowEvArgName="EmployeeAccountInfoRowChangeEvent">
+        <xs:element name="EmployeeAccountInfo" msprop:Generator_TableClassName="EmployeeAccountInfoDataTable" msprop:Generator_TableVarName="tableEmployeeAccountInfo" msprop:Generator_TablePropName="EmployeeAccountInfo" msprop:Generator_RowDeletingName="EmployeeAccountInfoRowDeleting" msprop:Generator_RowChangingName="EmployeeAccountInfoRowChanging" msprop:Generator_RowEvHandlerName="EmployeeAccountInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="EmployeeAccountInfoRowDeleted" msprop:Generator_UserTableName="EmployeeAccountInfo" msprop:Generator_RowChangedName="EmployeeAccountInfoRowChanged" msprop:Generator_RowEvArgName="EmployeeAccountInfoRowChangeEvent" msprop:Generator_RowClassName="EmployeeAccountInfoRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="EmployeeID" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEmployeeID" msprop:Generator_ColumnPropNameInRow="EmployeeID" msprop:Generator_ColumnPropNameInTable="EmployeeIDColumn" msprop:Generator_UserColumnName="EmployeeID" minOccurs="0">
@@ -2222,7 +2245,7 @@ SELECT ID, EmployeeID, Bot_User_ID, Access_Level, Additional_Info, Created_Date,
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="EmployeeQRCardInfo" msprop:Generator_TableClassName="EmployeeQRCardInfoDataTable" msprop:Generator_TableVarName="tableEmployeeQRCardInfo" msprop:Generator_RowChangedName="EmployeeQRCardInfoRowChanged" msprop:Generator_TablePropName="EmployeeQRCardInfo" msprop:Generator_RowDeletingName="EmployeeQRCardInfoRowDeleting" msprop:Generator_RowChangingName="EmployeeQRCardInfoRowChanging" msprop:Generator_RowEvHandlerName="EmployeeQRCardInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="EmployeeQRCardInfoRowDeleted" msprop:Generator_RowClassName="EmployeeQRCardInfoRow" msprop:Generator_UserTableName="EmployeeQRCardInfo" msprop:Generator_RowEvArgName="EmployeeQRCardInfoRowChangeEvent">
+        <xs:element name="EmployeeQRCardInfo" msprop:Generator_TableClassName="EmployeeQRCardInfoDataTable" msprop:Generator_TableVarName="tableEmployeeQRCardInfo" msprop:Generator_TablePropName="EmployeeQRCardInfo" msprop:Generator_RowDeletingName="EmployeeQRCardInfoRowDeleting" msprop:Generator_RowChangingName="EmployeeQRCardInfoRowChanging" msprop:Generator_RowEvHandlerName="EmployeeQRCardInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="EmployeeQRCardInfoRowDeleted" msprop:Generator_UserTableName="EmployeeQRCardInfo" msprop:Generator_RowChangedName="EmployeeQRCardInfoRowChanged" msprop:Generator_RowEvArgName="EmployeeQRCardInfoRowChangeEvent" msprop:Generator_RowClassName="EmployeeQRCardInfoRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="EmployeeID" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEmployeeID" msprop:Generator_ColumnPropNameInRow="EmployeeID" msprop:Generator_ColumnPropNameInTable="EmployeeIDColumn" msprop:Generator_UserColumnName="EmployeeID" minOccurs="0">
@@ -2271,7 +2294,7 @@ SELECT ID, EmployeeID, Bot_User_ID, Access_Level, Additional_Info, Created_Date,
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="BlacklistInfo" msprop:Generator_TableClassName="BlacklistInfoDataTable" msprop:Generator_TableVarName="tableBlacklistInfo" msprop:Generator_TablePropName="BlacklistInfo" msprop:Generator_RowDeletingName="BlacklistInfoRowDeleting" msprop:Generator_RowChangingName="BlacklistInfoRowChanging" msprop:Generator_RowEvHandlerName="BlacklistInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="BlacklistInfoRowDeleted" msprop:Generator_UserTableName="BlacklistInfo" msprop:Generator_RowChangedName="BlacklistInfoRowChanged" msprop:Generator_RowEvArgName="BlacklistInfoRowChangeEvent" msprop:Generator_RowClassName="BlacklistInfoRow">
+        <xs:element name="BlacklistInfo" msprop:Generator_TableClassName="BlacklistInfoDataTable" msprop:Generator_TableVarName="tableBlacklistInfo" msprop:Generator_RowChangedName="BlacklistInfoRowChanged" msprop:Generator_TablePropName="BlacklistInfo" msprop:Generator_RowDeletingName="BlacklistInfoRowDeleting" msprop:Generator_RowChangingName="BlacklistInfoRowChanging" msprop:Generator_RowEvHandlerName="BlacklistInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="BlacklistInfoRowDeleted" msprop:Generator_RowClassName="BlacklistInfoRow" msprop:Generator_UserTableName="BlacklistInfo" msprop:Generator_RowEvArgName="BlacklistInfoRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="EmployeeID" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEmployeeID" msprop:Generator_ColumnPropNameInRow="EmployeeID" msprop:Generator_ColumnPropNameInTable="EmployeeIDColumn" msprop:Generator_UserColumnName="EmployeeID" minOccurs="0">
@@ -2306,7 +2329,7 @@ SELECT ID, EmployeeID, Bot_User_ID, Access_Level, Additional_Info, Created_Date,
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="EmployeeFullInfoFiltering" msprop:Generator_TableClassName="EmployeeFullInfoFilteringDataTable" msprop:Generator_TableVarName="tableEmployeeFullInfoFiltering" msprop:Generator_RowChangedName="EmployeeFullInfoFilteringRowChanged" msprop:Generator_TablePropName="EmployeeFullInfoFiltering" msprop:Generator_RowDeletingName="EmployeeFullInfoFilteringRowDeleting" msprop:Generator_RowChangingName="EmployeeFullInfoFilteringRowChanging" msprop:Generator_RowEvHandlerName="EmployeeFullInfoFilteringRowChangeEventHandler" msprop:Generator_RowDeletedName="EmployeeFullInfoFilteringRowDeleted" msprop:Generator_RowClassName="EmployeeFullInfoFilteringRow" msprop:Generator_UserTableName="EmployeeFullInfoFiltering" msprop:Generator_RowEvArgName="EmployeeFullInfoFilteringRowChangeEvent">
+        <xs:element name="EmployeeFullInfoFiltering" msprop:Generator_TableClassName="EmployeeFullInfoFilteringDataTable" msprop:Generator_TableVarName="tableEmployeeFullInfoFiltering" msprop:Generator_TablePropName="EmployeeFullInfoFiltering" msprop:Generator_RowDeletingName="EmployeeFullInfoFilteringRowDeleting" msprop:Generator_RowChangingName="EmployeeFullInfoFilteringRowChanging" msprop:Generator_RowEvHandlerName="EmployeeFullInfoFilteringRowChangeEventHandler" msprop:Generator_RowDeletedName="EmployeeFullInfoFilteringRowDeleted" msprop:Generator_UserTableName="EmployeeFullInfoFiltering" msprop:Generator_RowChangedName="EmployeeFullInfoFilteringRowChanged" msprop:Generator_RowEvArgName="EmployeeFullInfoFilteringRowChangeEvent" msprop:Generator_RowClassName="EmployeeFullInfoFilteringRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="EmployeeID" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEmployeeID" msprop:Generator_ColumnPropNameInRow="EmployeeID" msprop:Generator_ColumnPropNameInTable="EmployeeIDColumn" msprop:Generator_UserColumnName="EmployeeID" minOccurs="0">
@@ -2407,7 +2430,7 @@ SELECT ID, EmployeeID, Bot_User_ID, Access_Level, Additional_Info, Created_Date,
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="EmployeeFullInfoPrimary" msprop:Generator_TableClassName="EmployeeFullInfoPrimaryDataTable" msprop:Generator_TableVarName="tableEmployeeFullInfoPrimary" msprop:Generator_RowChangedName="EmployeeFullInfoPrimaryRowChanged" msprop:Generator_TablePropName="EmployeeFullInfoPrimary" msprop:Generator_RowDeletingName="EmployeeFullInfoPrimaryRowDeleting" msprop:Generator_RowChangingName="EmployeeFullInfoPrimaryRowChanging" msprop:Generator_RowEvHandlerName="EmployeeFullInfoPrimaryRowChangeEventHandler" msprop:Generator_RowDeletedName="EmployeeFullInfoPrimaryRowDeleted" msprop:Generator_RowClassName="EmployeeFullInfoPrimaryRow" msprop:Generator_UserTableName="EmployeeFullInfoPrimary" msprop:Generator_RowEvArgName="EmployeeFullInfoPrimaryRowChangeEvent">
+        <xs:element name="EmployeeFullInfoPrimary" msprop:Generator_TableClassName="EmployeeFullInfoPrimaryDataTable" msprop:Generator_TableVarName="tableEmployeeFullInfoPrimary" msprop:Generator_TablePropName="EmployeeFullInfoPrimary" msprop:Generator_RowDeletingName="EmployeeFullInfoPrimaryRowDeleting" msprop:Generator_RowChangingName="EmployeeFullInfoPrimaryRowChanging" msprop:Generator_RowEvHandlerName="EmployeeFullInfoPrimaryRowChangeEventHandler" msprop:Generator_RowDeletedName="EmployeeFullInfoPrimaryRowDeleted" msprop:Generator_UserTableName="EmployeeFullInfoPrimary" msprop:Generator_RowChangedName="EmployeeFullInfoPrimaryRowChanged" msprop:Generator_RowEvArgName="EmployeeFullInfoPrimaryRowChangeEvent" msprop:Generator_RowClassName="EmployeeFullInfoPrimaryRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="EmployeeID" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEmployeeID" msprop:Generator_ColumnPropNameInRow="EmployeeID" msprop:Generator_ColumnPropNameInTable="EmployeeIDColumn" msprop:Generator_UserColumnName="EmployeeID" minOccurs="0">
@@ -2497,7 +2520,7 @@ SELECT ID, EmployeeID, Bot_User_ID, Access_Level, Additional_Info, Created_Date,
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="EmployeeFullInformation" msprop:Generator_TableClassName="EmployeeFullInformationDataTable" msprop:Generator_TableVarName="tableEmployeeFullInformation" msprop:Generator_RowChangedName="EmployeeFullInformationRowChanged" msprop:Generator_TablePropName="EmployeeFullInformation" msprop:Generator_RowDeletingName="EmployeeFullInformationRowDeleting" msprop:Generator_RowChangingName="EmployeeFullInformationRowChanging" msprop:Generator_RowEvHandlerName="EmployeeFullInformationRowChangeEventHandler" msprop:Generator_RowDeletedName="EmployeeFullInformationRowDeleted" msprop:Generator_RowClassName="EmployeeFullInformationRow" msprop:Generator_UserTableName="EmployeeFullInformation" msprop:Generator_RowEvArgName="EmployeeFullInformationRowChangeEvent">
+        <xs:element name="EmployeeFullInformation" msprop:Generator_TableClassName="EmployeeFullInformationDataTable" msprop:Generator_TableVarName="tableEmployeeFullInformation" msprop:Generator_TablePropName="EmployeeFullInformation" msprop:Generator_RowDeletingName="EmployeeFullInformationRowDeleting" msprop:Generator_RowChangingName="EmployeeFullInformationRowChanging" msprop:Generator_RowEvHandlerName="EmployeeFullInformationRowChangeEventHandler" msprop:Generator_RowDeletedName="EmployeeFullInformationRowDeleted" msprop:Generator_UserTableName="EmployeeFullInformation" msprop:Generator_RowChangedName="EmployeeFullInformationRowChanged" msprop:Generator_RowEvArgName="EmployeeFullInformationRowChangeEvent" msprop:Generator_RowClassName="EmployeeFullInformationRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:string" />
@@ -2662,7 +2685,7 @@ SELECT ID, EmployeeID, Bot_User_ID, Access_Level, Additional_Info, Created_Date,
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="EmployeePayHistoryInfo" msprop:Generator_TableClassName="EmployeePayHistoryInfoDataTable" msprop:Generator_TableVarName="tableEmployeePayHistoryInfo" msprop:Generator_RowChangedName="EmployeePayHistoryInfoRowChanged" msprop:Generator_TablePropName="EmployeePayHistoryInfo" msprop:Generator_RowDeletingName="EmployeePayHistoryInfoRowDeleting" msprop:Generator_RowChangingName="EmployeePayHistoryInfoRowChanging" msprop:Generator_RowEvHandlerName="EmployeePayHistoryInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="EmployeePayHistoryInfoRowDeleted" msprop:Generator_RowClassName="EmployeePayHistoryInfoRow" msprop:Generator_UserTableName="EmployeePayHistoryInfo" msprop:Generator_RowEvArgName="EmployeePayHistoryInfoRowChangeEvent">
+        <xs:element name="EmployeePayHistoryInfo" msprop:Generator_TableClassName="EmployeePayHistoryInfoDataTable" msprop:Generator_TableVarName="tableEmployeePayHistoryInfo" msprop:Generator_TablePropName="EmployeePayHistoryInfo" msprop:Generator_RowDeletingName="EmployeePayHistoryInfoRowDeleting" msprop:Generator_RowChangingName="EmployeePayHistoryInfoRowChanging" msprop:Generator_RowEvHandlerName="EmployeePayHistoryInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="EmployeePayHistoryInfoRowDeleted" msprop:Generator_UserTableName="EmployeePayHistoryInfo" msprop:Generator_RowChangedName="EmployeePayHistoryInfoRowChanged" msprop:Generator_RowEvArgName="EmployeePayHistoryInfoRowChangeEvent" msprop:Generator_RowClassName="EmployeePayHistoryInfoRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="EmployeeID" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEmployeeID" msprop:Generator_ColumnPropNameInRow="EmployeeID" msprop:Generator_ColumnPropNameInTable="EmployeeIDColumn" msprop:Generator_UserColumnName="EmployeeID" minOccurs="0">
@@ -2716,14 +2739,14 @@ SELECT ID, EmployeeID, Bot_User_ID, Access_Level, Additional_Info, Created_Date,
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="CameEmployees" msprop:Generator_TableClassName="CameEmployeesDataTable" msprop:Generator_TableVarName="tableCameEmployees" msprop:Generator_TablePropName="CameEmployees" msprop:Generator_RowDeletingName="CameEmployeesRowDeleting" msprop:Generator_RowChangingName="CameEmployeesRowChanging" msprop:Generator_RowEvHandlerName="CameEmployeesRowChangeEventHandler" msprop:Generator_RowDeletedName="CameEmployeesRowDeleted" msprop:Generator_UserTableName="CameEmployees" msprop:Generator_RowChangedName="CameEmployeesRowChanged" msprop:Generator_RowEvArgName="CameEmployeesRowChangeEvent" msprop:Generator_RowClassName="CameEmployeesRow">
+        <xs:element name="CameEmployees" msprop:Generator_TableClassName="CameEmployeesDataTable" msprop:Generator_TableVarName="tableCameEmployees" msprop:Generator_RowChangedName="CameEmployeesRowChanged" msprop:Generator_TablePropName="CameEmployees" msprop:Generator_RowDeletingName="CameEmployeesRowDeleting" msprop:Generator_RowChangingName="CameEmployeesRowChanging" msprop:Generator_RowEvHandlerName="CameEmployeesRowChangeEventHandler" msprop:Generator_RowDeletedName="CameEmployeesRowDeleted" msprop:Generator_RowClassName="CameEmployeesRow" msprop:Generator_UserTableName="CameEmployees" msprop:Generator_RowEvArgName="CameEmployeesRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="EmployeeCount" msprop:Generator_ColumnVarNameInTable="columnEmployeeCount" msprop:Generator_ColumnPropNameInRow="EmployeeCount" msprop:Generator_ColumnPropNameInTable="EmployeeCountColumn" msprop:Generator_UserColumnName="EmployeeCount" type="xs:int" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="EmployeeAverageDepartmentSalary" msprop:Generator_TableClassName="EmployeeAverageDepartmentSalaryDataTable" msprop:Generator_TableVarName="tableEmployeeAverageDepartmentSalary" msprop:Generator_TablePropName="EmployeeAverageDepartmentSalary" msprop:Generator_RowDeletingName="EmployeeAverageDepartmentSalaryRowDeleting" msprop:Generator_RowChangingName="EmployeeAverageDepartmentSalaryRowChanging" msprop:Generator_RowEvHandlerName="EmployeeAverageDepartmentSalaryRowChangeEventHandler" msprop:Generator_RowDeletedName="EmployeeAverageDepartmentSalaryRowDeleted" msprop:Generator_UserTableName="EmployeeAverageDepartmentSalary" msprop:Generator_RowChangedName="EmployeeAverageDepartmentSalaryRowChanged" msprop:Generator_RowEvArgName="EmployeeAverageDepartmentSalaryRowChangeEvent" msprop:Generator_RowClassName="EmployeeAverageDepartmentSalaryRow">
+        <xs:element name="EmployeeAverageDepartmentSalary" msprop:Generator_TableClassName="EmployeeAverageDepartmentSalaryDataTable" msprop:Generator_TableVarName="tableEmployeeAverageDepartmentSalary" msprop:Generator_RowChangedName="EmployeeAverageDepartmentSalaryRowChanged" msprop:Generator_TablePropName="EmployeeAverageDepartmentSalary" msprop:Generator_RowDeletingName="EmployeeAverageDepartmentSalaryRowDeleting" msprop:Generator_RowChangingName="EmployeeAverageDepartmentSalaryRowChanging" msprop:Generator_RowEvHandlerName="EmployeeAverageDepartmentSalaryRowChangeEventHandler" msprop:Generator_RowDeletedName="EmployeeAverageDepartmentSalaryRowDeleted" msprop:Generator_RowClassName="EmployeeAverageDepartmentSalaryRow" msprop:Generator_UserTableName="EmployeeAverageDepartmentSalary" msprop:Generator_RowEvArgName="EmployeeAverageDepartmentSalaryRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Department" msprop:Generator_ColumnVarNameInTable="columnDepartment" msprop:Generator_ColumnPropNameInRow="Department" msprop:Generator_ColumnPropNameInTable="DepartmentColumn" msprop:Generator_UserColumnName="Department">
@@ -2737,14 +2760,14 @@ SELECT ID, EmployeeID, Bot_User_ID, Access_Level, Additional_Info, Created_Date,
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="EmployeeAverageMonthSalary" msprop:Generator_TableClassName="EmployeeAverageMonthSalaryDataTable" msprop:Generator_TableVarName="tableEmployeeAverageMonthSalary" msprop:Generator_TablePropName="EmployeeAverageMonthSalary" msprop:Generator_RowDeletingName="EmployeeAverageMonthSalaryRowDeleting" msprop:Generator_RowChangingName="EmployeeAverageMonthSalaryRowChanging" msprop:Generator_RowEvHandlerName="EmployeeAverageMonthSalaryRowChangeEventHandler" msprop:Generator_RowDeletedName="EmployeeAverageMonthSalaryRowDeleted" msprop:Generator_UserTableName="EmployeeAverageMonthSalary" msprop:Generator_RowChangedName="EmployeeAverageMonthSalaryRowChanged" msprop:Generator_RowEvArgName="EmployeeAverageMonthSalaryRowChangeEvent" msprop:Generator_RowClassName="EmployeeAverageMonthSalaryRow">
+        <xs:element name="EmployeeAverageMonthSalary" msprop:Generator_TableClassName="EmployeeAverageMonthSalaryDataTable" msprop:Generator_TableVarName="tableEmployeeAverageMonthSalary" msprop:Generator_RowChangedName="EmployeeAverageMonthSalaryRowChanged" msprop:Generator_TablePropName="EmployeeAverageMonthSalary" msprop:Generator_RowDeletingName="EmployeeAverageMonthSalaryRowDeleting" msprop:Generator_RowChangingName="EmployeeAverageMonthSalaryRowChanging" msprop:Generator_RowEvHandlerName="EmployeeAverageMonthSalaryRowChangeEventHandler" msprop:Generator_RowDeletedName="EmployeeAverageMonthSalaryRowDeleted" msprop:Generator_RowClassName="EmployeeAverageMonthSalaryRow" msprop:Generator_UserTableName="EmployeeAverageMonthSalary" msprop:Generator_RowEvArgName="EmployeeAverageMonthSalaryRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Salary" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnSalary" msprop:Generator_ColumnPropNameInRow="Salary" msprop:Generator_ColumnPropNameInTable="SalaryColumn" msprop:Generator_UserColumnName="Salary" type="xs:double" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="EmployeeAverageSalaryByAge" msprop:Generator_TableClassName="EmployeeAverageSalaryByAgeDataTable" msprop:Generator_TableVarName="tableEmployeeAverageSalaryByAge" msprop:Generator_TablePropName="EmployeeAverageSalaryByAge" msprop:Generator_RowDeletingName="EmployeeAverageSalaryByAgeRowDeleting" msprop:Generator_RowChangingName="EmployeeAverageSalaryByAgeRowChanging" msprop:Generator_RowEvHandlerName="EmployeeAverageSalaryByAgeRowChangeEventHandler" msprop:Generator_RowDeletedName="EmployeeAverageSalaryByAgeRowDeleted" msprop:Generator_UserTableName="EmployeeAverageSalaryByAge" msprop:Generator_RowChangedName="EmployeeAverageSalaryByAgeRowChanged" msprop:Generator_RowEvArgName="EmployeeAverageSalaryByAgeRowChangeEvent" msprop:Generator_RowClassName="EmployeeAverageSalaryByAgeRow">
+        <xs:element name="EmployeeAverageSalaryByAge" msprop:Generator_TableClassName="EmployeeAverageSalaryByAgeDataTable" msprop:Generator_TableVarName="tableEmployeeAverageSalaryByAge" msprop:Generator_RowChangedName="EmployeeAverageSalaryByAgeRowChanged" msprop:Generator_TablePropName="EmployeeAverageSalaryByAge" msprop:Generator_RowDeletingName="EmployeeAverageSalaryByAgeRowDeleting" msprop:Generator_RowChangingName="EmployeeAverageSalaryByAgeRowChanging" msprop:Generator_RowEvHandlerName="EmployeeAverageSalaryByAgeRowChangeEventHandler" msprop:Generator_RowDeletedName="EmployeeAverageSalaryByAgeRowDeleted" msprop:Generator_RowClassName="EmployeeAverageSalaryByAgeRow" msprop:Generator_UserTableName="EmployeeAverageSalaryByAge" msprop:Generator_RowEvArgName="EmployeeAverageSalaryByAgeRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Age" msprop:Generator_ColumnVarNameInTable="columnAge" msprop:Generator_ColumnPropNameInRow="Age" msprop:Generator_ColumnPropNameInTable="AgeColumn" msprop:Generator_UserColumnName="Age" type="xs:int" minOccurs="0" />
@@ -2752,14 +2775,14 @@ SELECT ID, EmployeeID, Bot_User_ID, Access_Level, Additional_Info, Created_Date,
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="EmployeeAverageYearSalary" msprop:Generator_TableClassName="EmployeeAverageYearSalaryDataTable" msprop:Generator_TableVarName="tableEmployeeAverageYearSalary" msprop:Generator_TablePropName="EmployeeAverageYearSalary" msprop:Generator_RowDeletingName="EmployeeAverageYearSalaryRowDeleting" msprop:Generator_RowChangingName="EmployeeAverageYearSalaryRowChanging" msprop:Generator_RowEvHandlerName="EmployeeAverageYearSalaryRowChangeEventHandler" msprop:Generator_RowDeletedName="EmployeeAverageYearSalaryRowDeleted" msprop:Generator_UserTableName="EmployeeAverageYearSalary" msprop:Generator_RowChangedName="EmployeeAverageYearSalaryRowChanged" msprop:Generator_RowEvArgName="EmployeeAverageYearSalaryRowChangeEvent" msprop:Generator_RowClassName="EmployeeAverageYearSalaryRow">
+        <xs:element name="EmployeeAverageYearSalary" msprop:Generator_TableClassName="EmployeeAverageYearSalaryDataTable" msprop:Generator_TableVarName="tableEmployeeAverageYearSalary" msprop:Generator_RowChangedName="EmployeeAverageYearSalaryRowChanged" msprop:Generator_TablePropName="EmployeeAverageYearSalary" msprop:Generator_RowDeletingName="EmployeeAverageYearSalaryRowDeleting" msprop:Generator_RowChangingName="EmployeeAverageYearSalaryRowChanging" msprop:Generator_RowEvHandlerName="EmployeeAverageYearSalaryRowChangeEventHandler" msprop:Generator_RowDeletedName="EmployeeAverageYearSalaryRowDeleted" msprop:Generator_RowClassName="EmployeeAverageYearSalaryRow" msprop:Generator_UserTableName="EmployeeAverageYearSalary" msprop:Generator_RowEvArgName="EmployeeAverageYearSalaryRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Rate" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnRate" msprop:Generator_ColumnPropNameInRow="Rate" msprop:Generator_ColumnPropNameInTable="RateColumn" msprop:Generator_UserColumnName="Rate" type="xs:double" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="EmployeeTotalAwardByYear" msprop:Generator_TableClassName="EmployeeTotalAwardByYearDataTable" msprop:Generator_TableVarName="tableEmployeeTotalAwardByYear" msprop:Generator_TablePropName="EmployeeTotalAwardByYear" msprop:Generator_RowDeletingName="EmployeeTotalAwardByYearRowDeleting" msprop:Generator_RowChangingName="EmployeeTotalAwardByYearRowChanging" msprop:Generator_RowEvHandlerName="EmployeeTotalAwardByYearRowChangeEventHandler" msprop:Generator_RowDeletedName="EmployeeTotalAwardByYearRowDeleted" msprop:Generator_UserTableName="EmployeeTotalAwardByYear" msprop:Generator_RowChangedName="EmployeeTotalAwardByYearRowChanged" msprop:Generator_RowEvArgName="EmployeeTotalAwardByYearRowChangeEvent" msprop:Generator_RowClassName="EmployeeTotalAwardByYearRow">
+        <xs:element name="EmployeeTotalAwardByYear" msprop:Generator_TableClassName="EmployeeTotalAwardByYearDataTable" msprop:Generator_TableVarName="tableEmployeeTotalAwardByYear" msprop:Generator_RowChangedName="EmployeeTotalAwardByYearRowChanged" msprop:Generator_TablePropName="EmployeeTotalAwardByYear" msprop:Generator_RowDeletingName="EmployeeTotalAwardByYearRowDeleting" msprop:Generator_RowChangingName="EmployeeTotalAwardByYearRowChanging" msprop:Generator_RowEvHandlerName="EmployeeTotalAwardByYearRowChangeEventHandler" msprop:Generator_RowDeletedName="EmployeeTotalAwardByYearRowDeleted" msprop:Generator_RowClassName="EmployeeTotalAwardByYearRow" msprop:Generator_UserTableName="EmployeeTotalAwardByYear" msprop:Generator_RowEvArgName="EmployeeTotalAwardByYearRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Year" msprop:Generator_ColumnVarNameInTable="columnYear" msprop:Generator_ColumnPropNameInRow="Year" msprop:Generator_ColumnPropNameInTable="YearColumn" msprop:Generator_UserColumnName="Year" type="xs:int" minOccurs="0" />
@@ -2767,7 +2790,7 @@ SELECT ID, EmployeeID, Bot_User_ID, Access_Level, Additional_Info, Created_Date,
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="EmployeeTotalRateByYear" msprop:Generator_TableClassName="EmployeeTotalRateByYearDataTable" msprop:Generator_TableVarName="tableEmployeeTotalRateByYear" msprop:Generator_TablePropName="EmployeeTotalRateByYear" msprop:Generator_RowDeletingName="EmployeeTotalRateByYearRowDeleting" msprop:Generator_RowChangingName="EmployeeTotalRateByYearRowChanging" msprop:Generator_RowEvHandlerName="EmployeeTotalRateByYearRowChangeEventHandler" msprop:Generator_RowDeletedName="EmployeeTotalRateByYearRowDeleted" msprop:Generator_UserTableName="EmployeeTotalRateByYear" msprop:Generator_RowChangedName="EmployeeTotalRateByYearRowChanged" msprop:Generator_RowEvArgName="EmployeeTotalRateByYearRowChangeEvent" msprop:Generator_RowClassName="EmployeeTotalRateByYearRow">
+        <xs:element name="EmployeeTotalRateByYear" msprop:Generator_TableClassName="EmployeeTotalRateByYearDataTable" msprop:Generator_TableVarName="tableEmployeeTotalRateByYear" msprop:Generator_RowChangedName="EmployeeTotalRateByYearRowChanged" msprop:Generator_TablePropName="EmployeeTotalRateByYear" msprop:Generator_RowDeletingName="EmployeeTotalRateByYearRowDeleting" msprop:Generator_RowChangingName="EmployeeTotalRateByYearRowChanging" msprop:Generator_RowEvHandlerName="EmployeeTotalRateByYearRowChangeEventHandler" msprop:Generator_RowDeletedName="EmployeeTotalRateByYearRowDeleted" msprop:Generator_RowClassName="EmployeeTotalRateByYearRow" msprop:Generator_UserTableName="EmployeeTotalRateByYear" msprop:Generator_RowEvArgName="EmployeeTotalRateByYearRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Year" msprop:Generator_ColumnVarNameInTable="columnYear" msprop:Generator_ColumnPropNameInRow="Year" msprop:Generator_ColumnPropNameInTable="YearColumn" msprop:Generator_UserColumnName="Year" type="xs:int" minOccurs="0" />
@@ -2775,14 +2798,14 @@ SELECT ID, EmployeeID, Bot_User_ID, Access_Level, Additional_Info, Created_Date,
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="NotCameEmployees" msprop:Generator_TableClassName="NotCameEmployeesDataTable" msprop:Generator_TableVarName="tableNotCameEmployees" msprop:Generator_TablePropName="NotCameEmployees" msprop:Generator_RowDeletingName="NotCameEmployeesRowDeleting" msprop:Generator_RowChangingName="NotCameEmployeesRowChanging" msprop:Generator_RowEvHandlerName="NotCameEmployeesRowChangeEventHandler" msprop:Generator_RowDeletedName="NotCameEmployeesRowDeleted" msprop:Generator_UserTableName="NotCameEmployees" msprop:Generator_RowChangedName="NotCameEmployeesRowChanged" msprop:Generator_RowEvArgName="NotCameEmployeesRowChangeEvent" msprop:Generator_RowClassName="NotCameEmployeesRow">
+        <xs:element name="NotCameEmployees" msprop:Generator_TableClassName="NotCameEmployeesDataTable" msprop:Generator_TableVarName="tableNotCameEmployees" msprop:Generator_RowChangedName="NotCameEmployeesRowChanged" msprop:Generator_TablePropName="NotCameEmployees" msprop:Generator_RowDeletingName="NotCameEmployeesRowDeleting" msprop:Generator_RowChangingName="NotCameEmployeesRowChanging" msprop:Generator_RowEvHandlerName="NotCameEmployeesRowChangeEventHandler" msprop:Generator_RowDeletedName="NotCameEmployeesRowDeleted" msprop:Generator_RowClassName="NotCameEmployeesRow" msprop:Generator_UserTableName="NotCameEmployees" msprop:Generator_RowEvArgName="NotCameEmployeesRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="NotCameEmployees" msprop:Generator_ColumnVarNameInTable="columnNotCameEmployees" msprop:Generator_ColumnPropNameInRow="NotCameEmployees" msprop:Generator_ColumnPropNameInTable="NotCameEmployeesColumn" msprop:Generator_UserColumnName="NotCameEmployees" type="xs:int" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="EmployeeVisitsInfo" msprop:Generator_TableClassName="EmployeeVisitsInfoDataTable" msprop:Generator_TableVarName="tableEmployeeVisitsInfo" msprop:Generator_TablePropName="EmployeeVisitsInfo" msprop:Generator_RowDeletingName="EmployeeVisitsInfoRowDeleting" msprop:Generator_RowChangingName="EmployeeVisitsInfoRowChanging" msprop:Generator_RowEvHandlerName="EmployeeVisitsInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="EmployeeVisitsInfoRowDeleted" msprop:Generator_UserTableName="EmployeeVisitsInfo" msprop:Generator_RowChangedName="EmployeeVisitsInfoRowChanged" msprop:Generator_RowEvArgName="EmployeeVisitsInfoRowChangeEvent" msprop:Generator_RowClassName="EmployeeVisitsInfoRow">
+        <xs:element name="EmployeeVisitsInfo" msprop:Generator_TableClassName="EmployeeVisitsInfoDataTable" msprop:Generator_TableVarName="tableEmployeeVisitsInfo" msprop:Generator_RowChangedName="EmployeeVisitsInfoRowChanged" msprop:Generator_TablePropName="EmployeeVisitsInfo" msprop:Generator_RowDeletingName="EmployeeVisitsInfoRowDeleting" msprop:Generator_RowChangingName="EmployeeVisitsInfoRowChanging" msprop:Generator_RowEvHandlerName="EmployeeVisitsInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="EmployeeVisitsInfoRowDeleted" msprop:Generator_RowClassName="EmployeeVisitsInfoRow" msprop:Generator_UserTableName="EmployeeVisitsInfo" msprop:Generator_RowEvArgName="EmployeeVisitsInfoRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
@@ -2841,6 +2864,68 @@ SELECT ID, EmployeeID, Bot_User_ID, Access_Level, Additional_Info, Created_Date,
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="QRCardInfo" msprop:Generator_TableClassName="QRCardInfoDataTable" msprop:Generator_TableVarName="tableQRCardInfo" msprop:Generator_TablePropName="QRCardInfo" msprop:Generator_RowDeletingName="QRCardInfoRowDeleting" msprop:Generator_RowChangingName="QRCardInfoRowChanging" msprop:Generator_RowEvHandlerName="QRCardInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="QRCardInfoRowDeleted" msprop:Generator_UserTableName="QRCardInfo" msprop:Generator_RowChangedName="QRCardInfoRowChanged" msprop:Generator_RowEvArgName="QRCardInfoRowChangeEvent" msprop:Generator_RowClassName="QRCardInfoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QRCard_ID" msprop:Generator_ColumnVarNameInTable="columnQRCard_ID" msprop:Generator_ColumnPropNameInRow="QRCard_ID" msprop:Generator_ColumnPropNameInTable="QRCard_IDColumn" msprop:Generator_UserColumnName="QRCard_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Passport_ID" msprop:Generator_ColumnVarNameInTable="columnPassport_ID" msprop:Generator_ColumnPropNameInRow="Passport_ID" msprop:Generator_ColumnPropNameInTable="Passport_IDColumn" msprop:Generator_UserColumnName="Passport_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Surname" msprop:Generator_ColumnVarNameInTable="columnSurname" msprop:Generator_ColumnPropNameInRow="Surname" msprop:Generator_ColumnPropNameInTable="SurnameColumn" msprop:Generator_UserColumnName="Surname">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Father_x0027_s_Name" msprop:Generator_ColumnVarNameInTable="_columnFather_s_Name" msprop:Generator_ColumnPropNameInRow="_Father_s_Name" msprop:Generator_ColumnPropNameInTable="_Father_s_NameColumn" msprop:Generator_UserColumnName="Father's_Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Country" msprop:Generator_ColumnVarNameInTable="columnCountry" msprop:Generator_ColumnPropNameInRow="Country" msprop:Generator_ColumnPropNameInTable="CountryColumn" msprop:Generator_UserColumnName="Country">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Telephone" msprop:Generator_ColumnVarNameInTable="columnTelephone" msprop:Generator_ColumnPropNameInRow="Telephone" msprop:Generator_ColumnPropNameInTable="TelephoneColumn" msprop:Generator_UserColumnName="Telephone">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Position" msprop:Generator_ColumnVarNameInTable="columnPosition" msprop:Generator_ColumnPropNameInRow="Position" msprop:Generator_ColumnPropNameInTable="PositionColumn" msprop:Generator_UserColumnName="Position">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
@@ -2916,17 +3001,17 @@ SELECT ID, EmployeeID, Bot_User_ID, Access_Level, Additional_Info, Created_Date,
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="FK_ActivityLog_Employee" msdata:parent="Employee" msdata:child="ActivityLog" msdata:parentkey="ID" msdata:childkey="UserID" msprop:Generator_UserChildTable="ActivityLog" msprop:Generator_ChildPropName="GetActivityLogRows" msprop:Generator_UserRelationName="FK_ActivityLog_Employee" msprop:Generator_ParentPropName="EmployeeRow" msprop:Generator_RelationVarName="relationFK_ActivityLog_Employee" msprop:Generator_UserParentTable="Employee" />
-      <msdata:Relationship name="FK_Blacklist_Employee" msdata:parent="Employee" msdata:child="Blacklist" msdata:parentkey="ID" msdata:childkey="EmployeeID" msprop:Generator_UserChildTable="Blacklist" msprop:Generator_ChildPropName="GetBlacklistRows" msprop:Generator_UserRelationName="FK_Blacklist_Employee" msprop:Generator_ParentPropName="EmployeeRow" msprop:Generator_RelationVarName="relationFK_Blacklist_Employee" msprop:Generator_UserParentTable="Employee" />
-      <msdata:Relationship name="FK_Employee_Countries" msdata:parent="Countries" msdata:child="Employee" msdata:parentkey="ID" msdata:childkey="Country" msprop:Generator_UserChildTable="Employee" msprop:Generator_ChildPropName="GetEmployeeRows" msprop:Generator_UserRelationName="FK_Employee_Countries" msprop:Generator_RelationVarName="relationFK_Employee_Countries" msprop:Generator_UserParentTable="Countries" msprop:Generator_ParentPropName="CountriesRow" />
-      <msdata:Relationship name="FK_Employee_Department" msdata:parent="Department" msdata:child="Employee" msdata:parentkey="ID" msdata:childkey="Department" msprop:Generator_UserChildTable="Employee" msprop:Generator_ChildPropName="GetEmployeeRows" msprop:Generator_UserRelationName="FK_Employee_Department" msprop:Generator_RelationVarName="relationFK_Employee_Department" msprop:Generator_UserParentTable="Department" msprop:Generator_ParentPropName="DepartmentRow" />
-      <msdata:Relationship name="FK_EmployeeAccount_Employee" msdata:parent="Employee" msdata:child="EmployeeAccount" msdata:parentkey="ID" msdata:childkey="EmployeeID" msprop:Generator_UserChildTable="EmployeeAccount" msprop:Generator_ChildPropName="GetEmployeeAccountRows" msprop:Generator_UserRelationName="FK_EmployeeAccount_Employee" msprop:Generator_RelationVarName="relationFK_EmployeeAccount_Employee" msprop:Generator_UserParentTable="Employee" msprop:Generator_ParentPropName="EmployeeRow" />
-      <msdata:Relationship name="FK_EmployeeBankAccount_Employee" msdata:parent="Employee" msdata:child="EmployeeBankAccount" msdata:parentkey="ID" msdata:childkey="EmployeeID" msprop:Generator_UserChildTable="EmployeeBankAccount" msprop:Generator_ChildPropName="GetEmployeeBankAccountRows" msprop:Generator_UserRelationName="FK_EmployeeBankAccount_Employee" msprop:Generator_RelationVarName="relationFK_EmployeeBankAccount_Employee" msprop:Generator_UserParentTable="Employee" msprop:Generator_ParentPropName="EmployeeRow" />
-      <msdata:Relationship name="FK_EmployeePayHistory_Employee" msdata:parent="Employee" msdata:child="EmployeePayHistory" msdata:parentkey="ID" msdata:childkey="EmployeeID" msprop:Generator_UserChildTable="EmployeePayHistory" msprop:Generator_ChildPropName="GetEmployeePayHistoryRows" msprop:Generator_UserRelationName="FK_EmployeePayHistory_Employee" msprop:Generator_RelationVarName="relationFK_EmployeePayHistory_Employee" msprop:Generator_UserParentTable="Employee" msprop:Generator_ParentPropName="EmployeeRow" />
-      <msdata:Relationship name="FK_EmployeeQRCard_Employee" msdata:parent="Employee" msdata:child="EmployeeQRCard" msdata:parentkey="ID" msdata:childkey="EmployeeID" msprop:Generator_UserChildTable="EmployeeQRCard" msprop:Generator_ChildPropName="GetEmployeeQRCardRows" msprop:Generator_UserRelationName="FK_EmployeeQRCard_Employee" msprop:Generator_RelationVarName="relationFK_EmployeeQRCard_Employee" msprop:Generator_UserParentTable="Employee" msprop:Generator_ParentPropName="EmployeeRow" />
-      <msdata:Relationship name="FK_EmployeeSalary_Employee" msdata:parent="Employee" msdata:child="EmployeeSalary" msdata:parentkey="ID" msdata:childkey="EmployeeID" msprop:Generator_UserChildTable="EmployeeSalary" msprop:Generator_ChildPropName="GetEmployeeSalaryRows" msprop:Generator_UserRelationName="FK_EmployeeSalary_Employee" msprop:Generator_RelationVarName="relationFK_EmployeeSalary_Employee" msprop:Generator_UserParentTable="Employee" msprop:Generator_ParentPropName="EmployeeRow" />
-      <msdata:Relationship name="FK_EmployeeVisits_Employee" msdata:parent="Employee" msdata:child="EmployeeVisits" msdata:parentkey="ID" msdata:childkey="EmployeeID" msprop:Generator_UserChildTable="EmployeeVisits" msprop:Generator_ChildPropName="GetEmployeeVisitsRows" msprop:Generator_UserRelationName="FK_EmployeeVisits_Employee" msprop:Generator_RelationVarName="relationFK_EmployeeVisits_Employee" msprop:Generator_UserParentTable="Employee" msprop:Generator_ParentPropName="EmployeeRow" />
-      <msdata:Relationship name="FK_TelegramBotUsers_Employee" msdata:parent="Employee" msdata:child="TelegramBotUsers" msdata:parentkey="ID" msdata:childkey="EmployeeID" msprop:Generator_UserChildTable="TelegramBotUsers" msprop:Generator_ChildPropName="GetTelegramBotUsersRows" msprop:Generator_UserRelationName="FK_TelegramBotUsers_Employee" msprop:Generator_RelationVarName="relationFK_TelegramBotUsers_Employee" msprop:Generator_UserParentTable="Employee" msprop:Generator_ParentPropName="EmployeeRow" />
+      <msdata:Relationship name="FK_ActivityLog_Employee" msdata:parent="Employee" msdata:child="ActivityLog" msdata:parentkey="ID" msdata:childkey="UserID" msprop:Generator_UserChildTable="ActivityLog" msprop:Generator_ChildPropName="GetActivityLogRows" msprop:Generator_UserRelationName="FK_ActivityLog_Employee" msprop:Generator_RelationVarName="relationFK_ActivityLog_Employee" msprop:Generator_UserParentTable="Employee" msprop:Generator_ParentPropName="EmployeeRow" />
+      <msdata:Relationship name="FK_Blacklist_Employee" msdata:parent="Employee" msdata:child="Blacklist" msdata:parentkey="ID" msdata:childkey="EmployeeID" msprop:Generator_UserChildTable="Blacklist" msprop:Generator_ChildPropName="GetBlacklistRows" msprop:Generator_UserRelationName="FK_Blacklist_Employee" msprop:Generator_RelationVarName="relationFK_Blacklist_Employee" msprop:Generator_UserParentTable="Employee" msprop:Generator_ParentPropName="EmployeeRow" />
+      <msdata:Relationship name="FK_Employee_Countries" msdata:parent="Countries" msdata:child="Employee" msdata:parentkey="ID" msdata:childkey="Country" msprop:Generator_UserChildTable="Employee" msprop:Generator_ChildPropName="GetEmployeeRows" msprop:Generator_UserRelationName="FK_Employee_Countries" msprop:Generator_ParentPropName="CountriesRow" msprop:Generator_RelationVarName="relationFK_Employee_Countries" msprop:Generator_UserParentTable="Countries" />
+      <msdata:Relationship name="FK_Employee_Department" msdata:parent="Department" msdata:child="Employee" msdata:parentkey="ID" msdata:childkey="Department" msprop:Generator_UserChildTable="Employee" msprop:Generator_ChildPropName="GetEmployeeRows" msprop:Generator_UserRelationName="FK_Employee_Department" msprop:Generator_ParentPropName="DepartmentRow" msprop:Generator_RelationVarName="relationFK_Employee_Department" msprop:Generator_UserParentTable="Department" />
+      <msdata:Relationship name="FK_EmployeeAccount_Employee" msdata:parent="Employee" msdata:child="EmployeeAccount" msdata:parentkey="ID" msdata:childkey="EmployeeID" msprop:Generator_UserChildTable="EmployeeAccount" msprop:Generator_ChildPropName="GetEmployeeAccountRows" msprop:Generator_UserRelationName="FK_EmployeeAccount_Employee" msprop:Generator_ParentPropName="EmployeeRow" msprop:Generator_RelationVarName="relationFK_EmployeeAccount_Employee" msprop:Generator_UserParentTable="Employee" />
+      <msdata:Relationship name="FK_EmployeeBankAccount_Employee" msdata:parent="Employee" msdata:child="EmployeeBankAccount" msdata:parentkey="ID" msdata:childkey="EmployeeID" msprop:Generator_UserChildTable="EmployeeBankAccount" msprop:Generator_ChildPropName="GetEmployeeBankAccountRows" msprop:Generator_UserRelationName="FK_EmployeeBankAccount_Employee" msprop:Generator_ParentPropName="EmployeeRow" msprop:Generator_RelationVarName="relationFK_EmployeeBankAccount_Employee" msprop:Generator_UserParentTable="Employee" />
+      <msdata:Relationship name="FK_EmployeePayHistory_Employee" msdata:parent="Employee" msdata:child="EmployeePayHistory" msdata:parentkey="ID" msdata:childkey="EmployeeID" msprop:Generator_UserChildTable="EmployeePayHistory" msprop:Generator_ChildPropName="GetEmployeePayHistoryRows" msprop:Generator_UserRelationName="FK_EmployeePayHistory_Employee" msprop:Generator_ParentPropName="EmployeeRow" msprop:Generator_RelationVarName="relationFK_EmployeePayHistory_Employee" msprop:Generator_UserParentTable="Employee" />
+      <msdata:Relationship name="FK_EmployeeQRCard_Employee" msdata:parent="Employee" msdata:child="EmployeeQRCard" msdata:parentkey="ID" msdata:childkey="EmployeeID" msprop:Generator_UserChildTable="EmployeeQRCard" msprop:Generator_ChildPropName="GetEmployeeQRCardRows" msprop:Generator_UserRelationName="FK_EmployeeQRCard_Employee" msprop:Generator_ParentPropName="EmployeeRow" msprop:Generator_RelationVarName="relationFK_EmployeeQRCard_Employee" msprop:Generator_UserParentTable="Employee" />
+      <msdata:Relationship name="FK_EmployeeSalary_Employee" msdata:parent="Employee" msdata:child="EmployeeSalary" msdata:parentkey="ID" msdata:childkey="EmployeeID" msprop:Generator_UserChildTable="EmployeeSalary" msprop:Generator_ChildPropName="GetEmployeeSalaryRows" msprop:Generator_UserRelationName="FK_EmployeeSalary_Employee" msprop:Generator_ParentPropName="EmployeeRow" msprop:Generator_RelationVarName="relationFK_EmployeeSalary_Employee" msprop:Generator_UserParentTable="Employee" />
+      <msdata:Relationship name="FK_EmployeeVisits_Employee" msdata:parent="Employee" msdata:child="EmployeeVisits" msdata:parentkey="ID" msdata:childkey="EmployeeID" msprop:Generator_UserChildTable="EmployeeVisits" msprop:Generator_ChildPropName="GetEmployeeVisitsRows" msprop:Generator_UserRelationName="FK_EmployeeVisits_Employee" msprop:Generator_ParentPropName="EmployeeRow" msprop:Generator_RelationVarName="relationFK_EmployeeVisits_Employee" msprop:Generator_UserParentTable="Employee" />
+      <msdata:Relationship name="FK_TelegramBotUsers_Employee" msdata:parent="Employee" msdata:child="TelegramBotUsers" msdata:parentkey="ID" msdata:childkey="EmployeeID" msprop:Generator_UserChildTable="TelegramBotUsers" msprop:Generator_ChildPropName="GetTelegramBotUsersRows" msprop:Generator_UserRelationName="FK_TelegramBotUsers_Employee" msprop:Generator_ParentPropName="EmployeeRow" msprop:Generator_RelationVarName="relationFK_TelegramBotUsers_Employee" msprop:Generator_UserParentTable="Employee" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

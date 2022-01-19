@@ -1,4 +1,5 @@
 ﻿using Employees_Management_System.Class;
+using Employees_Management_System.Forms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -39,6 +40,18 @@ namespace Employees_Management_System.User_Controls
             lblCameEmployees.Text = EmployeeGlobalInformation.EmployeeCame().ToString();
 
             lblNotCameEmployees.Text = EmployeeGlobalInformation.NotCameEmployees().ToString();
+        }
+
+        private void btnSendEmail_Click(object sender, EventArgs e)
+        {
+            SendEmail sendEmail = new SendEmail();
+            sendEmail.Show();
+        }
+
+        private void btnEmployeeVisitsFullInfo_Click(object sender, EventArgs e)
+        {
+            EmployeeVisitsFullInfoFiltering employeeVisitsFullInfoFiltering = new EmployeeVisitsFullInfoFiltering();
+            employeeVisitsFullInfoFiltering.Show();
         }
     }
 }
