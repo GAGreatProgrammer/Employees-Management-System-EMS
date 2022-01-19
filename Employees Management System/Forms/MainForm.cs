@@ -1,10 +1,14 @@
-﻿using Employees_Management_System.Forms;
+﻿using Employees_Management_System.Class;
+using Employees_Management_System.Forms;
 using Employees_Management_System.User_Controls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -26,11 +30,15 @@ namespace Employees_Management_System
             int nHeightEllipse // width of ellipse
         );
 
+        private SqlConnection sqlConnection = null;
+
+
         private int Radius = 50;
 
         public MainForm()
         {
             InitializeComponent();
+            sqlConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["EMSConnectionString"].ConnectionString);
 
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, Radius, Radius));
         }
@@ -48,9 +56,42 @@ namespace Employees_Management_System
             {
                 Employees.Instance.BringToFront();
             }
+
+            Fill();
+
+            lblEmployee.Text = GlobalVariables.LoggedEmployeeFullName;
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
+        private void Fill()
+        {
+            try
+            {
+                sqlConnection.Open();
+
+                SqlCommand cmd = new SqlCommand($"SELECT * FROM EmployeeImage WHERE [Username] = '{GlobalVariables.LoggedEmployeeFullName}'", sqlConnection);
+                SqlDataReader dr = cmd.ExecuteReader();
+
+                while (dr.Read())
+                {
+                    MemoryStream ms = new MemoryStream((byte[])dr.GetValue(1));
+                    pbEmployeePhoto.Image = new Bitmap(ms);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                if (sqlConnection.State == ConnectionState.Open)
+                {
+                    sqlConnection.Close();
+                }
+            }
+        }
+
+            private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
         }

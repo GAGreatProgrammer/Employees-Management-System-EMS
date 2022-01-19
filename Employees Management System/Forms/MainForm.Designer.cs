@@ -30,12 +30,12 @@ namespace Employees_Management_System
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            this.label1 = new System.Windows.Forms.Label();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            this.lblEmployee = new System.Windows.Forms.Label();
             this.btnEmails = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuButton4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnAddVisits = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -47,25 +47,25 @@ namespace Employees_Management_System
             this.label2 = new System.Windows.Forms.Label();
             this.contentPanel = new Bunifu.UI.WinForms.BunifuPanel();
             this.bunifuPanel4 = new Bunifu.UI.WinForms.BunifuPanel();
-            this.customCircularPictureBox1 = new Employees_Management_System.Custom_Controls.CustomCircularPictureBox();
+            this.pbEmployeePhoto = new Employees_Management_System.Custom_Controls.CustomCircularPictureBox();
             this.bunifuPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             this.bunifuPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.customCircularPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbEmployeePhoto)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // lblEmployee
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(33)))), ((int)(((byte)(43)))));
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(95, 242);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(105, 24);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "User Name";
+            this.lblEmployee.AutoSize = true;
+            this.lblEmployee.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(33)))), ((int)(((byte)(43)))));
+            this.lblEmployee.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmployee.ForeColor = System.Drawing.Color.White;
+            this.lblEmployee.Location = new System.Drawing.Point(68, 183);
+            this.lblEmployee.Name = "lblEmployee";
+            this.lblEmployee.Size = new System.Drawing.Size(105, 24);
+            this.lblEmployee.TabIndex = 2;
+            this.lblEmployee.Text = "User Name";
             // 
             // btnEmails
             // 
@@ -86,11 +86,11 @@ namespace Employees_Management_System
             this.btnEmails.ColorContrastOnClick = 45;
             this.btnEmails.ColorContrastOnHover = 45;
             this.btnEmails.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.btnEmails.CustomizableEdges = borderEdges1;
+            borderEdges6.BottomLeft = true;
+            borderEdges6.BottomRight = true;
+            borderEdges6.TopLeft = true;
+            borderEdges6.TopRight = true;
+            this.btnEmails.CustomizableEdges = borderEdges6;
             this.btnEmails.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnEmails.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(41)))), ((int)(((byte)(56)))));
             this.btnEmails.DisabledFillColor = System.Drawing.Color.LightGray;
@@ -176,11 +176,11 @@ namespace Employees_Management_System
             this.bunifuButton4.ColorContrastOnClick = 45;
             this.bunifuButton4.ColorContrastOnHover = 45;
             this.bunifuButton4.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.bunifuButton4.CustomizableEdges = borderEdges2;
+            borderEdges7.BottomLeft = true;
+            borderEdges7.BottomRight = true;
+            borderEdges7.TopLeft = true;
+            borderEdges7.TopRight = true;
+            this.bunifuButton4.CustomizableEdges = borderEdges7;
             this.bunifuButton4.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton4.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(41)))), ((int)(((byte)(56)))));
             this.bunifuButton4.DisabledFillColor = System.Drawing.Color.LightGray;
@@ -265,11 +265,11 @@ namespace Employees_Management_System
             this.btnAddVisits.ColorContrastOnClick = 45;
             this.btnAddVisits.ColorContrastOnHover = 45;
             this.btnAddVisits.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.btnAddVisits.CustomizableEdges = borderEdges3;
+            borderEdges8.BottomLeft = true;
+            borderEdges8.BottomRight = true;
+            borderEdges8.TopLeft = true;
+            borderEdges8.TopRight = true;
+            this.btnAddVisits.CustomizableEdges = borderEdges8;
             this.btnAddVisits.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnAddVisits.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(41)))), ((int)(((byte)(56)))));
             this.btnAddVisits.DisabledFillColor = System.Drawing.Color.LightGray;
@@ -355,11 +355,11 @@ namespace Employees_Management_System
             this.btnSalary.ColorContrastOnClick = 45;
             this.btnSalary.ColorContrastOnHover = 45;
             this.btnSalary.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.btnSalary.CustomizableEdges = borderEdges4;
+            borderEdges9.BottomLeft = true;
+            borderEdges9.BottomRight = true;
+            borderEdges9.TopLeft = true;
+            borderEdges9.TopRight = true;
+            this.btnSalary.CustomizableEdges = borderEdges9;
             this.btnSalary.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnSalary.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(41)))), ((int)(((byte)(56)))));
             this.btnSalary.DisabledFillColor = System.Drawing.Color.LightGray;
@@ -445,11 +445,11 @@ namespace Employees_Management_System
             this.btnEmployees.ColorContrastOnClick = 45;
             this.btnEmployees.ColorContrastOnHover = 45;
             this.btnEmployees.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges5.BottomLeft = true;
-            borderEdges5.BottomRight = true;
-            borderEdges5.TopLeft = true;
-            borderEdges5.TopRight = true;
-            this.btnEmployees.CustomizableEdges = borderEdges5;
+            borderEdges10.BottomLeft = true;
+            borderEdges10.BottomRight = true;
+            borderEdges10.TopLeft = true;
+            borderEdges10.TopRight = true;
+            this.btnEmployees.CustomizableEdges = borderEdges10;
             this.btnEmployees.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnEmployees.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(41)))), ((int)(((byte)(56)))));
             this.btnEmployees.DisabledFillColor = System.Drawing.Color.LightGray;
@@ -593,28 +593,29 @@ namespace Employees_Management_System
             this.bunifuPanel4.BorderThickness = 1;
             this.bunifuPanel4.Controls.Add(this.bunifuButton4);
             this.bunifuPanel4.Controls.Add(this.btnEmails);
-            this.bunifuPanel4.Controls.Add(this.customCircularPictureBox1);
+            this.bunifuPanel4.Controls.Add(this.pbEmployeePhoto);
+            this.bunifuPanel4.Controls.Add(this.lblEmployee);
             this.bunifuPanel4.Location = new System.Drawing.Point(0, 60);
             this.bunifuPanel4.Name = "bunifuPanel4";
             this.bunifuPanel4.ShowBorders = true;
             this.bunifuPanel4.Size = new System.Drawing.Size(300, 740);
             this.bunifuPanel4.TabIndex = 9;
             // 
-            // customCircularPictureBox1
+            // pbEmployeePhoto
             // 
-            this.customCircularPictureBox1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.customCircularPictureBox1.BorderColor = System.Drawing.Color.SpringGreen;
-            this.customCircularPictureBox1.BorderColor2 = System.Drawing.Color.DeepSkyBlue;
-            this.customCircularPictureBox1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.customCircularPictureBox1.BorderSize = 2;
-            this.customCircularPictureBox1.GradientAngle = 50F;
-            this.customCircularPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("customCircularPictureBox1.Image")));
-            this.customCircularPictureBox1.Location = new System.Drawing.Point(72, 17);
-            this.customCircularPictureBox1.Name = "customCircularPictureBox1";
-            this.customCircularPictureBox1.Size = new System.Drawing.Size(150, 150);
-            this.customCircularPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.customCircularPictureBox1.TabIndex = 0;
-            this.customCircularPictureBox1.TabStop = false;
+            this.pbEmployeePhoto.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.pbEmployeePhoto.BorderColor = System.Drawing.Color.SpringGreen;
+            this.pbEmployeePhoto.BorderColor2 = System.Drawing.Color.DeepSkyBlue;
+            this.pbEmployeePhoto.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.pbEmployeePhoto.BorderSize = 2;
+            this.pbEmployeePhoto.GradientAngle = 50F;
+            this.pbEmployeePhoto.Image = ((System.Drawing.Image)(resources.GetObject("pbEmployeePhoto.Image")));
+            this.pbEmployeePhoto.Location = new System.Drawing.Point(72, 17);
+            this.pbEmployeePhoto.Name = "pbEmployeePhoto";
+            this.pbEmployeePhoto.Size = new System.Drawing.Size(150, 150);
+            this.pbEmployeePhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbEmployeePhoto.TabIndex = 0;
+            this.pbEmployeePhoto.TabStop = false;
             // 
             // MainForm
             // 
@@ -625,7 +626,6 @@ namespace Employees_Management_System
             this.Controls.Add(this.btnAddVisits);
             this.Controls.Add(this.btnSalary);
             this.Controls.Add(this.btnEmployees);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.bunifuPanel2);
             this.Controls.Add(this.contentPanel);
             this.Controls.Add(this.bunifuPanel4);
@@ -639,19 +639,19 @@ namespace Employees_Management_System
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             this.bunifuPanel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.customCircularPictureBox1)).EndInit();
+            this.bunifuPanel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbEmployeePhoto)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         private Bunifu.UI.WinForms.BunifuPanel contentPanel;
-        private Custom_Controls.CustomCircularPictureBox customCircularPictureBox1;
+        private Custom_Controls.CustomCircularPictureBox pbEmployeePhoto;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblEmployee;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnEmployees;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnSalary;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnAddVisits;

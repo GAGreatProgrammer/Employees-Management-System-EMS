@@ -137,7 +137,7 @@
         gg==
 </value>
   </data>
-  <data name="txtParoli.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="txtPassword.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAV4AAAArCAYAAAAws+DcAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOtSURBVHhe7d1PaNNnHMfx5+hxR296W01l/qW21onViyKU
@@ -159,7 +159,7 @@
         kwCAr49z/wH8e+QHFYKnuQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="txtMomxmarebeli.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="txtEmployee.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAV4AAAArCAYAAAAws+DcAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOtSURBVHhe7d1PaNNnHMfx5+hxR296W01l/qW21onViyKU
