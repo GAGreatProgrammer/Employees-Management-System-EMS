@@ -70,5 +70,11 @@ namespace Employees_Management_System.User_Controls
             AverageSalaryByAgeChartForm averageSalaryByAgeChartForm = new AverageSalaryByAgeChartForm();
             averageSalaryByAgeChartForm.Show();
         }
+
+        private void btnComparativeAnalysis_Click(object sender, EventArgs e)
+        {
+            ComparativeAnalysisChartForm comparativeAnalysisChartForm = new ComparativeAnalysisChartForm();
+            comparativeAnalysisChartForm.Show();
+        }
     }
 }

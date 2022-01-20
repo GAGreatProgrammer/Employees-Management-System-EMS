@@ -533,7 +533,7 @@ namespace Employees_Management_System.Forms
             this.cboMaritalStatus.IntegralHeight = false;
             this.cboMaritalStatus.Items.AddRange(new object[] {
             "დაოჯახებული",
-            "დაუოჯახებელი"});
+            "დასაოჯახებელი"});
             this.cboMaritalStatus.ListBackColor = System.Drawing.Color.White;
             this.cboMaritalStatus.ListTextColor = System.Drawing.Color.Black;
             this.cboMaritalStatus.Location = new System.Drawing.Point(205, 249);

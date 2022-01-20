@@ -156,6 +156,9 @@
     <Reference Include="Bunifu.UI.WinForms.Deprecated, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
       <HintPath>..\packages\Bunifu.UI.WinForms.4.1.1\lib\Bunifu.UI.WinForms.Deprecated.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Spire.Doc, Version=7.11.0.41046, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
       <HintPath>..\packages\FreeSpire.Doc.7.11.0\lib\net46\Spire.Doc.dll</HintPath>
     </Reference>
@@ -168,6 +171,12 @@
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -178,6 +187,9 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="Telegram.Bot, Version=16.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Telegram.Bot.16.0.2\lib\net45\Telegram.Bot.dll</HintPath>
+    </Reference>
     <Reference Include="zxing, Version=0.16.7.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
       <HintPath>..\packages\ZXing.Net.0.16.7\lib\net47\zxing.dll</HintPath>
     </Reference>
@@ -189,6 +201,7 @@
     <Compile Include="Class\EmployeeGlobalInformation.cs" />
     <Compile Include="Class\GlobalMethods.cs" />
     <Compile Include="Class\GlobalVariables.cs" />
+    <Compile Include="Class\TelegramBotAPI.cs" />
     <Compile Include="Class\UserActivity.cs" />
     <Compile Include="Custom Controls\CustomButton.cs">
       <SubType>Component</SubType>
@@ -236,11 +249,11 @@
     <Compile Include="Forms\Blacklist.Designer.cs">
       <DependentUpon>Blacklist.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Department.cs">
+    <Compile Include="Forms\ComparativeAnalysisChartForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Department.Designer.cs">
-      <DependentUpon>Department.cs</DependentUpon>
+    <Compile Include="Forms\ComparativeAnalysisChartForm.Designer.cs">
+      <DependentUpon>ComparativeAnalysisChartForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\DepartmentSalaryChartForm.cs">
       <SubType>Form</SubType>
@@ -350,6 +363,12 @@
     <Compile Include="Forms\SendEmail.Designer.cs">
       <DependentUpon>SendEmail.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\TelegramBot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TelegramBot.Designer.cs">
+      <DependentUpon>TelegramBot.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Test.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -396,8 +415,8 @@
     <EmbeddedResource Include="Forms\Blacklist.resx">
       <DependentUpon>Blacklist.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Department.resx">
-      <DependentUpon>Department.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\ComparativeAnalysisChartForm.resx">
+      <DependentUpon>ComparativeAnalysisChartForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\DepartmentSalaryChartForm.resx">
       <DependentUpon>DepartmentSalaryChartForm.cs</DependentUpon>
@@ -452,6 +471,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SendEmail.resx">
       <DependentUpon>SendEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TelegramBot.resx">
+      <DependentUpon>TelegramBot.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Test.resx">
       <DependentUpon>Test.cs</DependentUpon>

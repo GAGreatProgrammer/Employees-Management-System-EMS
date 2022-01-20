@@ -40,6 +40,8 @@ namespace Employees_Management_System.User_Controls
             lblCameEmployees.Text = EmployeeGlobalInformation.EmployeeCame().ToString();
 
             lblNotCameEmployees.Text = EmployeeGlobalInformation.NotCameEmployees().ToString();
+
+            lblAverage.Text = EmployeeGlobalInformation.AverageCount().ToString();
         }
 
         private void btnSendEmail_Click(object sender, EventArgs e)
@@ -52,6 +54,12 @@ namespace Employees_Management_System.User_Controls
         {
             EmployeeVisitsFullInfoFiltering employeeVisitsFullInfoFiltering = new EmployeeVisitsFullInfoFiltering();
             employeeVisitsFullInfoFiltering.Show();
+        }
+
+        private void btnEMSBot_Click(object sender, EventArgs e)
+        {
+            TelegramBot telegramBot = new TelegramBot();
+            telegramBot.Show();
         }
     }
 }

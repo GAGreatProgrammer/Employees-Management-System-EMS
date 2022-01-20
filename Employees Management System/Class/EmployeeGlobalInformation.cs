@@ -26,6 +26,7 @@ namespace Employees_Management_System.Class
         private static float MinimumSalary = 0;
         private static float MaximumSalary = 0;
         private static float MaximumAward = 0;
+        private static int Average = 0;
 
 
         public static float EmployeeAverageMonthSalary()
@@ -384,6 +385,35 @@ namespace Employees_Management_System.Class
             }
 
             return MaximumAward;
+        }
+
+        public static int AverageCount()
+        {
+            try
+            {
+                sqlConnection.Open();
+
+                SqlCommand cmd = new SqlCommand($"SELECT DISTINCT COUNT(*) [Count] FROM EmployeeVisits WHERE [Date] = CAST(DATEADD(DAY, -1, GETDATE()) AS DATE)", sqlConnection);
+                SqlDataReader dr = cmd.ExecuteReader();
+
+                while (dr.Read())
+                {
+                    Average = int.Parse(dr.GetValue(0).ToString());
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                if (sqlConnection.State == ConnectionState.Open)
+                {
+                    sqlConnection.Close();
+                }
+            }
+
+            return Average;
         }
     }
 }

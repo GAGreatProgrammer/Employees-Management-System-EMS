@@ -45,21 +45,105 @@ namespace Employees_Management_System
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            if (!contentPanel.Controls.Contains(Employees.Instance))
-            {
-                contentPanel.Controls.Add(Employees.Instance);
-                Employees.Instance.Dock = DockStyle.Fill;
-                Employees.Instance.BringToFront();
-            }
+            //if (!contentPanel.Controls.Contains(Employees.Instance))
+            //{
+            //    contentPanel.Controls.Add(Employees.Instance);
+            //    Employees.Instance.Dock = DockStyle.Fill;
+            //    Employees.Instance.BringToFront();
+            //}
 
-            else
-            {
-                Employees.Instance.BringToFront();
-            }
+            //else
+            //{
+            //    Employees.Instance.BringToFront();
+            //}
 
             Fill();
 
+            GlobalMethods.EmployeeAccess();
+
             lblEmployee.Text = GlobalVariables.LoggedEmployeeFullName;
+
+            if(GlobalVariables.AccessLevel == 0)
+            {
+                MessageBox.Show("თქვენ არ გაქვთ წვდომის უფლება!", "გაფრთხილება", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                Environment.Exit(0);
+            }
+            else if(GlobalVariables.AccessLevel == 1)
+            {
+                if (!contentPanel.Controls.Contains(EmployeesQRCard.Instance))
+                {
+                    contentPanel.Controls.Add(EmployeesQRCard.Instance);
+                    EmployeesQRCard.Instance.Dock = DockStyle.Fill;
+                    EmployeesQRCard.Instance.BringToFront();
+                }
+
+                else
+                {
+                    EmployeesQRCard.Instance.BringToFront();
+                }
+
+                btnEmployees.Enabled = false;
+                btnSalary.Enabled = false;
+                btnAddVisits.Enabled = true;
+                btnEmails.Enabled = false;
+            }
+            else if (GlobalVariables.AccessLevel == 2)
+            {
+                if (!contentPanel.Controls.Contains(EmployeesQRCard.Instance))
+                {
+                    contentPanel.Controls.Add(EmployeesQRCard.Instance);
+                    EmployeesQRCard.Instance.Dock = DockStyle.Fill;
+                    EmployeesQRCard.Instance.BringToFront();
+                }
+
+                else
+                {
+                    EmployeesQRCard.Instance.BringToFront();
+                }
+
+                btnEmployees.Enabled = false;
+                btnSalary.Enabled = false;
+                btnAddVisits.Enabled = true;
+                btnEmails.Enabled = true;
+            }
+            else if (GlobalVariables.AccessLevel == 3)
+            {
+                if (!contentPanel.Controls.Contains(Employees_Salary.Instance))
+                {
+                    contentPanel.Controls.Add(Employees_Salary.Instance);
+                    Employees_Salary.Instance.Dock = DockStyle.Fill;
+                    Employees_Salary.Instance.BringToFront();
+                }
+
+                else
+                {
+                    Employees_Salary.Instance.BringToFront();
+                }
+
+                btnEmployees.Enabled = false;
+                btnSalary.Enabled = true;
+                btnAddVisits.Enabled = true;
+                btnEmails.Enabled = true;
+            }
+            else if (GlobalVariables.AccessLevel >= 4)
+            {
+                if (!contentPanel.Controls.Contains(Employees.Instance))
+                {
+                    contentPanel.Controls.Add(Employees.Instance);
+                    Employees.Instance.Dock = DockStyle.Fill;
+                    Employees.Instance.BringToFront();
+                }
+
+                else
+                {
+                    Employees.Instance.BringToFront();
+                }
+
+                btnEmployees.Enabled = true;
+                btnSalary.Enabled = true;
+                btnAddVisits.Enabled = true;
+                btnEmails.Enabled = true;
+            }
         }
 
         private void Fill()
