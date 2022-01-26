@@ -29,6 +29,7 @@ namespace Employees_Management_System.Forms
         public TelegramBot()
         {
             InitializeComponent();
+            this.Icon = Employees_Management_System.Properties.Resources.responsive;
         }
 
         private void TelegramBot_Load(object sender, EventArgs e)

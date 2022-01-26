@@ -19,6 +19,7 @@ namespace Employees_Management_System.Forms
         public SendEmail()
         {
             InitializeComponent();
+            this.Icon = Employees_Management_System.Properties.Resources.responsive;
         }
 
         private void SendEmail_Load(object sender, EventArgs e)

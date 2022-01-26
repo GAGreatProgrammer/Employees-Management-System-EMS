@@ -21,6 +21,7 @@ namespace Employees_Management_System.Forms
         public EmployeeSalaryRegistration()
         {
             InitializeComponent();
+            this.Icon = Employees_Management_System.Properties.Resources.responsive;
             sqlConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["EMSConnectionString"].ConnectionString);
 
         }

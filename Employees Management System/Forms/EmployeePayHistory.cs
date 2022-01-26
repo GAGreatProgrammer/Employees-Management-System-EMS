@@ -23,6 +23,7 @@ namespace Employees_Management_System.Forms
         public EmployeePayHistory()
         {
             InitializeComponent();
+            this.Icon = Employees_Management_System.Properties.Resources.responsive;
         }
 
         private void EmployeePayHistory_Load(object sender, EventArgs e)

@@ -34,6 +34,7 @@ namespace Employees_Management_System.Forms
         public QRCardGenerateForm()
         {
             InitializeComponent();
+            this.Icon = Employees_Management_System.Properties.Resources.responsive;
             sqlConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["EMSConnectionString"].ConnectionString);
 
         }

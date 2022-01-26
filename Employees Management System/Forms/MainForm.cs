@@ -38,6 +38,7 @@ namespace Employees_Management_System
         public MainForm()
         {
             InitializeComponent();
+            this.Icon = Employees_Management_System.Properties.Resources.responsive;
             sqlConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["EMSConnectionString"].ConnectionString);
 
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, Radius, Radius));
@@ -255,12 +256,6 @@ namespace Employees_Management_System
             {
                 EmployeesQRCard.Instance.BringToFront();
             }
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Test test = new Test();
-            test.Show();
         }
     }
 }
