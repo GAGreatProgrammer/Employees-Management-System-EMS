@@ -584,6 +584,7 @@
     <None Include="Resources\synchronize_24px.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\MainForm.PNG" />
     <Content Include="License\Bunifu.Licensing.dll" />
     <None Include="Resources\responsive.ico" />
     <None Include="Resources\attach_26px.png" />
