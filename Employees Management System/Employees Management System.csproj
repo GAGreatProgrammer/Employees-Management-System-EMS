@@ -489,6 +489,7 @@
     <EmbeddedResource Include="User Controls\EmployeesQRCard.resx">
       <DependentUpon>EmployeesQRCard.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Database\EMS.bak" />
     <None Include="EMSDataSet.xsc">
       <DependentUpon>EMSDataSet.xsd</DependentUpon>
     </None>
@@ -585,6 +586,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\MainForm.PNG" />
+    <Content Include="Database\EMS Create Tables.sql" />
+    <Content Include="Database\EMS SQL Procedures.sql" />
+    <Content Include="Database\EMS SQL Queries.sql" />
+    <Content Include="Database\EMS SQL Triggers.sql" />
+    <Content Include="Database\EMS.sql" />
     <Content Include="License\Bunifu.Licensing.dll" />
     <None Include="Resources\responsive.ico" />
     <None Include="Resources\attach_26px.png" />
