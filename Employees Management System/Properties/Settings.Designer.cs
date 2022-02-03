@@ -35,7 +35,7 @@ namespace Employees_Management_System.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Test@gmail.com")]
         public string EmailFrom {
             get {
                 return ((string)(this["EmailFrom"]));
@@ -47,7 +47,7 @@ namespace Employees_Management_System.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Test")]
         public string EmailPassword {
             get {
                 return ((string)(this["EmailPassword"]));

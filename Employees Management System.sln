@@ -7,16 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Employees Management System
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{A1D30092-0A9B-4292-ACF4-4E5AED2E147A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{A46D99B1-D501-4617-9C57-C72572D0BC66}"
-	ProjectSection(SolutionItems) = preProject
-		Employees Management System\Database\EMS Create Tables.sql = Employees Management System\Database\EMS Create Tables.sql
-		Employees Management System\Database\EMS SQL Procedures.sql = Employees Management System\Database\EMS SQL Procedures.sql
-		Employees Management System\Database\EMS SQL Queries.sql = Employees Management System\Database\EMS SQL Queries.sql
-		Employees Management System\Database\EMS SQL Triggers.sql = Employees Management System\Database\EMS SQL Triggers.sql
-		Employees Management System\Database\EMS.bak = Employees Management System\Database\EMS.bak
-		Employees Management System\Database\EMS.sql = Employees Management System\Database\EMS.sql
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
